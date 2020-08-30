@@ -1,0 +1,28 @@
+# LUMC prefixes
+PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#> 
+PREFIX owl:     <http://www.w3.org/2002/07/owl#> 
+PREFIX dct:  <http://purl.org/dc/terms/> 
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX ncit:    <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX sio:     <http://semanticscience.org/resource/> 
+PREFIX prov: <http://http://http://www.w3.org/ns/prov#>
+
+# Retrieve protein annotation from UniProt
+# UniProt prefixes
+PREFIX up:<http://purl.uniprot.org/core/> 
+
+SELECT DISTINCT ?cytokine ?uniprot_label
+WHERE {
+        ?cytokine rdf:type obo:OBI_0000070 ;
+                  sio:has_target ?protein .
+        SERVICE <http://sparql.uniprot.org/sparql> {
+		?protein rdfs:label ?uniprot_label .
+}
+}
+
+
+# Retrieve disease associations from DisGeNET
+
+# Retrieve pathways from WikiPathways

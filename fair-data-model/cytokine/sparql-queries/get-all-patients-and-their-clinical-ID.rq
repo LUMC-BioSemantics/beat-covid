@@ -1,0 +1,28 @@
+# LUMC prefixes
+PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#> 
+PREFIX owl:     <http://www.w3.org/2002/07/owl#> 
+PREFIX dct:  <http://purl.org/dc/terms/> 
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX ncit:    <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX sio:     <http://semanticscience.org/resource/> 
+PREFIX prov: <http://http://http://www.w3.org/ns/prov#>
+
+# Get all patients and their clinical ID
+
+SELECT DISTINCT ?person ?id WHERE {
+    # Get all person
+    ?person a sio:SIO_000776;
+            sio:SIO_000228 ?patient_role.
+    
+    # Get all person who plays patient role
+    ?patient_role a obo:OBI_0000093.
+    
+    # Get patient id (clinical ID)
+    OPTIONAL {    
+        ?id_node a obo:NCIT_C164337;        
+                 sio:SIO_000300 ?id;        
+                 obo:IAO_0000219 ?patient_role.
+    }
+}

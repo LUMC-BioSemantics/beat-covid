@@ -1,0 +1,21 @@
+# LUMC prefixes
+PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#> 
+PREFIX owl:     <http://www.w3.org/2002/07/owl#> 
+PREFIX dct:  <http://purl.org/dc/terms/> 
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX ncit:    <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX sio:     <http://semanticscience.org/resource/> 
+PREFIX prov: <http://http://http://www.w3.org/ns/prov#>
+
+# Count number of patients
+
+SELECT (COUNT (DISTINCT ?person) AS ?number_of_patients)  WHERE {
+    # Get all person
+    ?person a sio:SIO_000776;
+            sio:SIO_000228 ?patient_role.
+    
+    # Get all person who plays patitient role
+    ?patient_role a obo:OBI_0000093. 
+}

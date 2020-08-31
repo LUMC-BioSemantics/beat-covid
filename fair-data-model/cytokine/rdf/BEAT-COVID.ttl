@@ -1,0 +1,639 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-018> a sio:SIO_000776 ;
+	sio:SIO_000008 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-018/age> ;
+	sio:SIO_000228 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-018/role> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-018/age> sio:SIO_000300 "59"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	a sio:SIO_001013 .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-018/role> a <http://purl.obolibrary.org/obo/OBI_0000093> .
+
+<https://www.lumc.nl> a sio:SIO_000688 ;
+	rdfs:label "LUMC" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-018/role> <http://purl.obolibrary.org/obo/RO_0001025> <https://www.lumc.nl> .
+
+<https://www.lumc.nl/wards/icu> a <http://purl.obolibrary.org/obo/NCIT_C21541> ;
+	rdfs:label "ICUQ" ;
+	<http://purl.obolibrary.org/obo/BFO_0000050> <https://www.lumc.nl> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-018/role> <http://purl.obolibrary.org/obo/RO_0001025> <https://www.lumc.nl/wards/icu> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-018/id> <http://purl.obolibrary.org/obo/IAO_0000219> <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-018/role> ;
+	a sio:SIO_000115 ;
+	sio:SIO_000300 "BEAT-018" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-018/measurement-process/201708869> a sio:SIO_000006 ;
+	sio:SIO_000008 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-018/measurement-process/201708869/date> ;
+	sio:SIO_000229 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-018/measurement-process/201708869/quantitative-trait/lum_ccl21_1> ;
+	sio:SIO_000291 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-018/measurement-process/201708869/sampling-process> ;
+	<http://www.w3.org/ns/prov#wasInformedBy> <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-018/measurement-process/201708869/sampling-process/target> ;
+	sio:SIO_000229 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-018/measurement-process/201708869/quantitative-trait/lum_CXCL13_1> , <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-018/measurement-process/201708869/quantitative-trait/lum_CCL27_1> , <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-018/measurement-process/201708869/quantitative-trait/lum_CXCL5_1> , <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-018/measurement-process/201708869/quantitative-trait/lum_CCL11_1> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-018/measurement-process/2.01708869E8/date> a <http://purl.obolibrary.org/obo/NCIT_C25164> ;
+	dc:date "26-05-2020 15:31:31"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/1100207/id> a <http://purl.obolibrary.org/obo/NCIT_C164337> ;
+	<http://purl.obolibrary.org/obo/IAO_0000219> <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-018/role> ;
+	sio:SIO_000300 "1100207" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-018/measurement-process/201708869/quantitative-trait/lum_ccl21_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CCL21_1" ;
+	sio:SIO_000300 "101413"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/unit1> rdfs:label "pg/ml" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-018/measurement-process/201708869/quantitative-trait/lum_ccl21_1> sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/O00585> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-018/measurement-process/201708869/quantitative-trait/lum_CXCL13_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CXCL13_1" ;
+	sio:SIO_000300 "104"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/O43927> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-018/measurement-process/201708869/quantitative-trait/lum_CCL27_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CCL27_1" ;
+	sio:SIO_000300 "1254"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/Q9Y4X3> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-018/measurement-process/201708869/quantitative-trait/lum_CXCL5_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CXCL5_1" ;
+	sio:SIO_000300 "2787"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/P42830> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-018/measurement-process/0/quantitative-trait/lum_CCL11_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CCL11_1" ;
+	sio:SIO_000300 "199"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/P51671> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-007> a sio:SIO_000776 ;
+	sio:SIO_000008 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-007/age> ;
+	sio:SIO_000228 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-007/role> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-007/age> a sio:SIO_001013 ;
+	sio:SIO_000300 "30"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<https://www.lumc.nl> a sio:SIO_000688 .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-007/role> a <http://purl.obolibrary.org/obo/OBI_0000093> .
+
+<https://www.lumc.nl> rdfs:label "LUMC" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-007/role> <http://purl.obolibrary.org/obo/RO_0001025> <https://www.lumc.nl> .
+
+<https://www.lumc.nl/wards/icu> a <http://purl.obolibrary.org/obo/NCIT_C21541> ;
+	rdfs:label "ICUQ" ;
+	<http://purl.obolibrary.org/obo/BFO_0000050> <https://www.lumc.nl> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-007/role> <http://purl.obolibrary.org/obo/RO_0001025> <https://www.lumc.nl/wards/icu> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-007/id> a sio:SIO_000115 ;
+	<http://purl.obolibrary.org/obo/IAO_0000219> <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-007/role> ;
+	sio:SIO_000300 "BEAT-007" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-007/measurement-process/201903364> a sio:SIO_000006 ;
+	sio:SIO_000008 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-007/measurement-process/201903364/date> ;
+	sio:SIO_000229 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-007/measurement-process/201903364/quantitative-trait/lum_ccl21_1> ;
+	sio:SIO_000291 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-007/measurement-process/201903364/sampling-process> ;
+	<http://www.w3.org/ns/prov#wasInformedBy> <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-007/measurement-process/201903364/sampling-process/target> ;
+	sio:SIO_000229 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-007/measurement-process/201903364/quantitative-trait/lum_CXCL13_1> , <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-007/measurement-process/201903364/quantitative-trait/lum_CCL27_1> , <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-007/measurement-process/201903364/quantitative-trait/lum_CXCL5_1> , <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-007/measurement-process/201903364/quantitative-trait/lum_CCL11_1> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-007/measurement-process/2.01903364E8/date> a <http://purl.obolibrary.org/obo/NCIT_C25164> ;
+	dc:date "26-05-2020 15:42:21"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/1100125/id> a <http://purl.obolibrary.org/obo/NCIT_C164337> ;
+	<http://purl.obolibrary.org/obo/IAO_0000219> <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-007/role> ;
+	sio:SIO_000300 "1100125" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-007/measurement-process/201903364/quantitative-trait/lum_ccl21_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CCL21_1" ;
+	sio:SIO_000300 "82461"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/unit1> rdfs:label "pg/ml" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-007/measurement-process/201903364/quantitative-trait/lum_ccl21_1> sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/O00585> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-007/measurement-process/201903364/quantitative-trait/lum_CXCL13_1> rdfs:label "lum_CXCL13_1" ;
+	a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	sio:SIO_000300 "144"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/O43927> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-007/measurement-process/201903364/quantitative-trait/lum_CCL27_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CCL27_1" ;
+	sio:SIO_000300 "1090"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/Q9Y4X3> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-007/measurement-process/201903364/quantitative-trait/lum_CXCL5_1> rdfs:label "lum_CXCL5_1" ;
+	a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	sio:SIO_000300 "3606"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/P42830> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-007/measurement-process/1/quantitative-trait/lum_CCL11_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CCL11_1" ;
+	sio:SIO_000300 "246"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/P51671> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-026> a sio:SIO_000776 ;
+	sio:SIO_000008 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-026/age> ;
+	sio:SIO_000228 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-026/role> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-026/age> a sio:SIO_001013 ;
+	sio:SIO_000300 "54"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-026/role> a <http://purl.obolibrary.org/obo/OBI_0000093> .
+
+<https://www.lumc.nl> a sio:SIO_000688 ;
+	rdfs:label "LUMC" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-026/role> <http://purl.obolibrary.org/obo/RO_0001025> <https://www.lumc.nl> .
+
+<https://www.lumc.nl/wards/icu> a <http://purl.obolibrary.org/obo/NCIT_C21541> ;
+	rdfs:label "ICUQ" ;
+	<http://purl.obolibrary.org/obo/BFO_0000050> <https://www.lumc.nl> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-026/role> <http://purl.obolibrary.org/obo/RO_0001025> <https://www.lumc.nl/wards/icu> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-026/id> a sio:SIO_000115 ;
+	<http://purl.obolibrary.org/obo/IAO_0000219> <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-026/role> ;
+	sio:SIO_000300 "BEAT-026" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-026/measurement-process/201803814> a sio:SIO_000006 ;
+	sio:SIO_000008 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-026/measurement-process/201803814/date> ;
+	sio:SIO_000229 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-026/measurement-process/201803814/quantitative-trait/lum_ccl21_1> ;
+	sio:SIO_000291 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-026/measurement-process/201803814/sampling-process> ;
+	<http://www.w3.org/ns/prov#wasInformedBy> <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-026/measurement-process/201803814/sampling-process/target> ;
+	sio:SIO_000229 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-026/measurement-process/201803814/quantitative-trait/lum_CXCL13_1> , <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-026/measurement-process/201803814/quantitative-trait/lum_CCL27_1> , <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-026/measurement-process/201803814/quantitative-trait/lum_CXCL5_1> , <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-026/measurement-process/201803814/quantitative-trait/lum_CCL11_1> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-026/measurement-process/2.01803814E8/date> a <http://purl.obolibrary.org/obo/NCIT_C25164> ;
+	dc:date "26-05-2020 15:45:16"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/1100154/id> a <http://purl.obolibrary.org/obo/NCIT_C164337> ;
+	<http://purl.obolibrary.org/obo/IAO_0000219> <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-026/role> ;
+	sio:SIO_000300 "1100154" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-026/measurement-process/201803814/quantitative-trait/lum_ccl21_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CCL21_1" ;
+	sio:SIO_000300 "120696"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/unit1> rdfs:label "pg/ml" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-026/measurement-process/201803814/quantitative-trait/lum_ccl21_1> sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/O00585> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-026/measurement-process/201803814/quantitative-trait/lum_CXCL13_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CXCL13_1" ;
+	sio:SIO_000300 "89"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/O43927> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-026/measurement-process/201803814/quantitative-trait/lum_CCL27_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CCL27_1" ;
+	sio:SIO_000300 "1358"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/Q9Y4X3> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-026/measurement-process/201803814/quantitative-trait/lum_CXCL5_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CXCL5_1" ;
+	sio:SIO_000300 "2349"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/P42830> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-026/measurement-process/2/quantitative-trait/lum_CCL11_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CCL11_1" ;
+	sio:SIO_000300 "184"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/P51671> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001> a sio:SIO_000776 ;
+	sio:SIO_000008 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/age> ;
+	sio:SIO_000228 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/role> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/age> a sio:SIO_001013 ;
+	sio:SIO_000300 "58"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/role> a <http://purl.obolibrary.org/obo/OBI_0000093> .
+
+<https://www.lumc.nl> a sio:SIO_000688 ;
+	rdfs:label "LUMC" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/role> <http://purl.obolibrary.org/obo/RO_0001025> <https://www.lumc.nl> .
+
+<https://www.lumc.nl/wards/icu> a <http://purl.obolibrary.org/obo/NCIT_C21541> ;
+	rdfs:label "ICUQ" ;
+	<http://purl.obolibrary.org/obo/BFO_0000050> <https://www.lumc.nl> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/role> <http://purl.obolibrary.org/obo/RO_0001025> <https://www.lumc.nl/wards/icu> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/id> a sio:SIO_000115 ;
+	<http://purl.obolibrary.org/obo/IAO_0000219> <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/role> ;
+	sio:SIO_000300 "BEAT-001" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/measurement-process/202000138> a sio:SIO_000006 ;
+	sio:SIO_000008 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/measurement-process/202000138/date> ;
+	sio:SIO_000229 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/measurement-process/202000138/quantitative-trait/lum_ccl21_1> ;
+	sio:SIO_000291 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/measurement-process/202000138/sampling-process> ;
+	<http://www.w3.org/ns/prov#wasInformedBy> <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/measurement-process/202000138/sampling-process/target> ;
+	sio:SIO_000229 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/measurement-process/202000138/quantitative-trait/lum_CXCL13_1> , <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/measurement-process/202000138/quantitative-trait/lum_CCL27_1> , <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/measurement-process/202000138/quantitative-trait/lum_CXCL5_1> , <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/measurement-process/202000138/quantitative-trait/lum_CCL11_1> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/measurement-process/2.02000138E8/date> a <http://purl.obolibrary.org/obo/NCIT_C25164> ;
+	dc:date "26-05-2020 15:38:41"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/measurement-process/202000138/quantitative-trait/lum_ccl21_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CCL21_1" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/unit1> rdfs:label "pg/ml" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/measurement-process/202000138/quantitative-trait/lum_ccl21_1> sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	rdfs:comment "Value is out of range." ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/O00585> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/measurement-process/202000138/quantitative-trait/lum_CXCL13_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CXCL13_1" ;
+	sio:SIO_000300 "39"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/O43927> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/measurement-process/202000138/quantitative-trait/lum_CCL27_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CCL27_1" ;
+	sio:SIO_000300 "2345"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/Q9Y4X3> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/measurement-process/202000138/quantitative-trait/lum_CXCL5_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CXCL5_1" ;
+	sio:SIO_000300 "1013"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/P42830> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/measurement-process/3/quantitative-trait/lum_CCL11_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CCL11_1" ;
+	sio:SIO_000300 "118"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/P51671> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-023> a sio:SIO_000776 ;
+	sio:SIO_000008 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-023/age> ;
+	sio:SIO_000228 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-023/role> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-023/age> a sio:SIO_001013 ;
+	sio:SIO_000300 "54"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-023/role> a <http://purl.obolibrary.org/obo/OBI_0000093> .
+
+<https://www.lumc.nl> a sio:SIO_000688 ;
+	rdfs:label "LUMC" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-023/role> <http://purl.obolibrary.org/obo/RO_0001025> <https://www.lumc.nl> .
+
+<https://www.lumc.nl/wards/icu> a <http://purl.obolibrary.org/obo/NCIT_C21541> ;
+	rdfs:label "ICUQ" ;
+	<http://purl.obolibrary.org/obo/BFO_0000050> <https://www.lumc.nl> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-023/role> <http://purl.obolibrary.org/obo/RO_0001025> <https://www.lumc.nl/wards/icu> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-023/id> a sio:SIO_000115 ;
+	<http://purl.obolibrary.org/obo/IAO_0000219> <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-023/role> ;
+	sio:SIO_000300 "BEAT-023" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-023/measurement-process/202000131> a sio:SIO_000006 ;
+	sio:SIO_000008 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-023/measurement-process/202000131/date> ;
+	sio:SIO_000229 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-023/measurement-process/202000131/quantitative-trait/lum_ccl21_1> ;
+	sio:SIO_000291 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-023/measurement-process/202000131/sampling-process> ;
+	<http://www.w3.org/ns/prov#wasInformedBy> <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-023/measurement-process/202000131/sampling-process/target> ;
+	sio:SIO_000229 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-023/measurement-process/202000131/quantitative-trait/lum_CXCL13_1> , <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-023/measurement-process/202000131/quantitative-trait/lum_CCL27_1> , <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-023/measurement-process/202000131/quantitative-trait/lum_CXCL5_1> , <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-023/measurement-process/202000131/quantitative-trait/lum_CCL11_1> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-023/measurement-process/2.02000131E8/date> a <http://purl.obolibrary.org/obo/NCIT_C25164> ;
+	dc:date "26-05-2020 15:42:26"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/1100103/id> a <http://purl.obolibrary.org/obo/NCIT_C164337> ;
+	<http://purl.obolibrary.org/obo/IAO_0000219> <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-023/role> ;
+	sio:SIO_000300 "1100103" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-023/measurement-process/202000131/quantitative-trait/lum_ccl21_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CCL21_1" ;
+	sio:SIO_000300 "98246"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/unit1> rdfs:label "pg/ml" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-023/measurement-process/202000131/quantitative-trait/lum_ccl21_1> sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/O00585> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-023/measurement-process/202000131/quantitative-trait/lum_CXCL13_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CXCL13_1" ;
+	sio:SIO_000300 "107"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/O43927> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-023/measurement-process/202000131/quantitative-trait/lum_CCL27_1> rdfs:label "lum_CCL27_1" ;
+	a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	sio:SIO_000300 "1221"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/Q9Y4X3> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-023/measurement-process/202000131/quantitative-trait/lum_CXCL5_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CXCL5_1" ;
+	sio:SIO_000300 "2991"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/P42830> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-023/measurement-process/4/quantitative-trait/lum_CCL11_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CCL11_1" ;
+	sio:SIO_000300 "207"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/P51671> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001> a sio:SIO_000776 ;
+	sio:SIO_000008 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/age> ;
+	sio:SIO_000228 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/role> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/age> a sio:SIO_001013 ;
+	sio:SIO_000300 "54"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/role> a <http://purl.obolibrary.org/obo/OBI_0000093> .
+
+<https://www.lumc.nl> a sio:SIO_000688 ;
+	rdfs:label "LUMC" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/role> <http://purl.obolibrary.org/obo/RO_0001025> <https://www.lumc.nl> .
+
+<https://www.lumc.nl/wards/icu> a <http://purl.obolibrary.org/obo/NCIT_C21541> ;
+	rdfs:label "ICUQ" ;
+	<http://purl.obolibrary.org/obo/BFO_0000050> <https://www.lumc.nl> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/role> <http://purl.obolibrary.org/obo/RO_0001025> <https://www.lumc.nl/wards/icu> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/id> <http://purl.obolibrary.org/obo/IAO_0000219> <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/role> ;
+	a sio:SIO_000115 ;
+	sio:SIO_000300 "BEAT-001" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/measurement-process/201708856> a sio:SIO_000006 ;
+	sio:SIO_000008 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/measurement-process/201708856/date> ;
+	sio:SIO_000229 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/measurement-process/201708856/quantitative-trait/lum_ccl21_1> ;
+	sio:SIO_000291 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/measurement-process/201708856/sampling-process> ;
+	<http://www.w3.org/ns/prov#wasInformedBy> <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/measurement-process/201708856/sampling-process/target> ;
+	sio:SIO_000229 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/measurement-process/201708856/quantitative-trait/lum_CXCL13_1> , <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/measurement-process/201708856/quantitative-trait/lum_CCL27_1> , <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/measurement-process/201708856/quantitative-trait/lum_CXCL5_1> , <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/measurement-process/201708856/quantitative-trait/lum_CCL11_1> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/measurement-process/2.01708856E8/date> a <http://purl.obolibrary.org/obo/NCIT_C25164> ;
+	dc:date "26-05-2020 15:42:09"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/measurement-process/201708856/quantitative-trait/lum_ccl21_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CCL21_1" ;
+	sio:SIO_000300 "23788"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/unit1> rdfs:label "pg/ml" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/measurement-process/201708856/quantitative-trait/lum_ccl21_1> sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/O00585> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/measurement-process/201708856/quantitative-trait/lum_CXCL13_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CXCL13_1" ;
+	sio:SIO_000300 "1000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/O43927> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/measurement-process/201708856/quantitative-trait/lum_CCL27_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CCL27_1" ;
+	sio:SIO_000300 "366"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/Q9Y4X3> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/measurement-process/201708856/quantitative-trait/lum_CXCL5_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CXCL5_1" ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	rdfs:comment "Value is out of range." ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/P42830> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-001/measurement-process/5/quantitative-trait/lum_CCL11_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CCL11_1" ;
+	sio:SIO_000300 "2792"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/P51671> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-030> a sio:SIO_000776 ;
+	sio:SIO_000008 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-030/age> ;
+	sio:SIO_000228 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-030/role> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-030/age> a sio:SIO_001013 ;
+	sio:SIO_000300 "51"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<https://www.lumc.nl/wards/icu> rdfs:label "ICUQ" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-030/role> a <http://purl.obolibrary.org/obo/OBI_0000093> .
+
+<https://www.lumc.nl> a sio:SIO_000688 ;
+	rdfs:label "LUMC" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-030/role> <http://purl.obolibrary.org/obo/RO_0001025> <https://www.lumc.nl> .
+
+<https://www.lumc.nl/wards/icu> a <http://purl.obolibrary.org/obo/NCIT_C21541> ;
+	<http://purl.obolibrary.org/obo/BFO_0000050> <https://www.lumc.nl> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-030/role> <http://purl.obolibrary.org/obo/RO_0001025> <https://www.lumc.nl/wards/icu> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-030/id> a sio:SIO_000115 ;
+	<http://purl.obolibrary.org/obo/IAO_0000219> <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-030/role> ;
+	sio:SIO_000300 "BEAT-030" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-030/measurement-process/202104045> a sio:SIO_000006 ;
+	sio:SIO_000008 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-030/measurement-process/202104045/date> ;
+	sio:SIO_000229 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-030/measurement-process/202104045/quantitative-trait/lum_ccl21_1> ;
+	sio:SIO_000291 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-030/measurement-process/202104045/sampling-process> ;
+	<http://www.w3.org/ns/prov#wasInformedBy> <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-030/measurement-process/202104045/sampling-process/target> ;
+	sio:SIO_000229 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-030/measurement-process/202104045/quantitative-trait/lum_CXCL13_1> , <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-030/measurement-process/202104045/quantitative-trait/lum_CCL27_1> , <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-030/measurement-process/202104045/quantitative-trait/lum_CXCL5_1> , <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-030/measurement-process/202104045/quantitative-trait/lum_CCL11_1> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-030/measurement-process/2.02104045E8/date> a <http://purl.obolibrary.org/obo/NCIT_C25164> ;
+	dc:date "26-05-2020 15:35:45"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/1100031/id> a <http://purl.obolibrary.org/obo/NCIT_C164337> ;
+	<http://purl.obolibrary.org/obo/IAO_0000219> <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-030/role> ;
+	sio:SIO_000300 "1100031" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-030/measurement-process/202104045/quantitative-trait/lum_ccl21_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CCL21_1" ;
+	sio:SIO_000300 "141957"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/unit1> rdfs:label "pg/ml" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-030/measurement-process/202104045/quantitative-trait/lum_ccl21_1> sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/O00585> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-030/measurement-process/202104045/quantitative-trait/lum_CXCL13_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CXCL13_1" ;
+	sio:SIO_000300 "80"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/O43927> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-030/measurement-process/202104045/quantitative-trait/lum_CCL27_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CCL27_1" ;
+	sio:SIO_000300 "1458"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/Q9Y4X3> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-030/measurement-process/202104045/quantitative-trait/lum_CXCL5_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CXCL5_1" ;
+	sio:SIO_000300 "2043"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/P42830> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-030/measurement-process/6/quantitative-trait/lum_CCL11_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CCL11_1" ;
+	sio:SIO_000300 "166"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/P51671> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027> a sio:SIO_000776 ;
+	sio:SIO_000008 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/age> ;
+	sio:SIO_000228 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/role> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/age> a sio:SIO_001013 ;
+	sio:SIO_000300 "68"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/role> a <http://purl.obolibrary.org/obo/OBI_0000093> .
+
+<https://www.lumc.nl> a sio:SIO_000688 ;
+	rdfs:label "LUMC" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/role> <http://purl.obolibrary.org/obo/RO_0001025> <https://www.lumc.nl> .
+
+<https://www.lumc.nl/wards/icu> a <http://purl.obolibrary.org/obo/NCIT_C21541> ;
+	rdfs:label "ICUQ" ;
+	<http://purl.obolibrary.org/obo/BFO_0000050> <https://www.lumc.nl> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/role> <http://purl.obolibrary.org/obo/RO_0001025> <https://www.lumc.nl/wards/icu> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/id> <http://purl.obolibrary.org/obo/IAO_0000219> <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/role> ;
+	a sio:SIO_000115 ;
+	sio:SIO_000300 "BEAT-027" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/measurement-process/201907592> a sio:SIO_000006 ;
+	sio:SIO_000008 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/measurement-process/201907592/date> ;
+	sio:SIO_000229 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/measurement-process/201907592/quantitative-trait/lum_ccl21_1> ;
+	sio:SIO_000291 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/measurement-process/201907592/sampling-process> ;
+	<http://www.w3.org/ns/prov#wasInformedBy> <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/measurement-process/201907592/sampling-process/target> ;
+	sio:SIO_000229 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/measurement-process/201907592/quantitative-trait/lum_CXCL13_1> , <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/measurement-process/201907592/quantitative-trait/lum_CCL27_1> , <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/measurement-process/201907592/quantitative-trait/lum_CXCL5_1> , <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/measurement-process/201907592/quantitative-trait/lum_CCL11_1> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/measurement-process/2.01907592E8/date> a <http://purl.obolibrary.org/obo/NCIT_C25164> ;
+	dc:date "26-05-2020 15:31:34"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/1100099/id> a <http://purl.obolibrary.org/obo/NCIT_C164337> ;
+	<http://purl.obolibrary.org/obo/IAO_0000219> <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/role> ;
+	sio:SIO_000300 "1100099" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/measurement-process/201907592/quantitative-trait/lum_ccl21_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CCL21_1" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/unit1> rdfs:label "pg/ml" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/measurement-process/201907592/quantitative-trait/lum_ccl21_1> sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	rdfs:comment "Value is out of range." ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/O00585> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/measurement-process/201907592/quantitative-trait/lum_CXCL13_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CXCL13_1" ;
+	sio:SIO_000300 "60"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/O43927> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/measurement-process/201907592/quantitative-trait/lum_CCL27_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CCL27_1" ;
+	sio:SIO_000300 "1597"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/Q9Y4X3> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/measurement-process/201907592/quantitative-trait/lum_CXCL5_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CXCL5_1" ;
+	sio:SIO_000300 "1607"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/P42830> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/measurement-process/7/quantitative-trait/lum_CCL11_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CCL11_1" ;
+	sio:SIO_000300 "149"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/P51671> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027> a sio:SIO_000776 ;
+	sio:SIO_000008 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/age> ;
+	sio:SIO_000228 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/role> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/age> a sio:SIO_001013 ;
+	sio:SIO_000300 "67"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<https://www.lumc.nl> a sio:SIO_000688 .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/role> a <http://purl.obolibrary.org/obo/OBI_0000093> .
+
+<https://www.lumc.nl> rdfs:label "LUMC" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/role> <http://purl.obolibrary.org/obo/RO_0001025> <https://www.lumc.nl> .
+
+<https://www.lumc.nl/wards/icu> a <http://purl.obolibrary.org/obo/NCIT_C21541> ;
+	rdfs:label "ICUQ" ;
+	<http://purl.obolibrary.org/obo/BFO_0000050> <https://www.lumc.nl> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/role> <http://purl.obolibrary.org/obo/RO_0001025> <https://www.lumc.nl/wards/icu> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/id> a sio:SIO_000115 ;
+	<http://purl.obolibrary.org/obo/IAO_0000219> <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/role> ;
+	sio:SIO_000300 "BEAT-027" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/measurement-process/201810594> a sio:SIO_000006 ;
+	sio:SIO_000008 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/measurement-process/201810594/date> ;
+	sio:SIO_000229 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/measurement-process/201810594/quantitative-trait/lum_ccl21_1> ;
+	sio:SIO_000291 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/measurement-process/201810594/sampling-process> ;
+	<http://www.w3.org/ns/prov#wasInformedBy> <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/measurement-process/201810594/sampling-process/target> ;
+	sio:SIO_000229 <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/measurement-process/201810594/quantitative-trait/lum_CXCL13_1> , <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/measurement-process/201810594/quantitative-trait/lum_CCL27_1> , <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/measurement-process/201810594/quantitative-trait/lum_CXCL5_1> , <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/measurement-process/201810594/quantitative-trait/lum_CCL11_1> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/measurement-process/2.01810594E8/date> a <http://purl.obolibrary.org/obo/NCIT_C25164> ;
+	dc:date "26-05-2020 15:45:20"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/1100096/id> a <http://purl.obolibrary.org/obo/NCIT_C164337> ;
+	<http://purl.obolibrary.org/obo/IAO_0000219> <https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/role> ;
+	sio:SIO_000300 "1100096" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/measurement-process/201810594/quantitative-trait/lum_ccl21_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CCL21_1" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/unit1> rdfs:label "pg/ml" .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/measurement-process/201810594/quantitative-trait/lum_ccl21_1> sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	rdfs:comment "Value is out of range." ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/O00585> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/measurement-process/201810594/quantitative-trait/lum_CXCL13_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CXCL13_1" ;
+	sio:SIO_000300 "39"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/O43927> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/measurement-process/201810594/quantitative-trait/lum_CCL27_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CCL27_1" ;
+	sio:SIO_000300 "2355"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/Q9Y4X3> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/measurement-process/201810594/quantitative-trait/lum_CXCL5_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	rdfs:label "lum_CXCL5_1" ;
+	sio:SIO_000300 "1013"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/P42830> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEAT-027/measurement-process/8/quantitative-trait/lum_CCL11_1> a <http://purl.obolibrary.org/obo/IAO_0000109> ;
+	sio:SIO_000300 "118"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	rdfs:label "lum_CCL11_1" ;
+	sio:SIO_000221 <https://rdf.biosemantics.org/resources/beat-covid/unit1> ;
+	sio:SIO_000628 <http://purl.uniprot.org/uniprot/P51671> .

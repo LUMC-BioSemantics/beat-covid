@@ -207,6 +207,183 @@
     <Declaration>
         <DataProperty abbreviatedIRI="rdfs:label"/>
     </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_001024"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/NCIT_C25164"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/OBI_0000272"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000216"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000217"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/RO_0001025"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000291"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_001013"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000960"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000688"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_010035"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000672"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000793"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/RO_0002091"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000715"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_001403"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_010043"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/NCIT_C21541"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000300"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_010056"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/OBI_0000070"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000498"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000011"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000132"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000016"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000776"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000139"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_001211"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000004"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000642"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#wasInformedBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.org/dc/terms/conformsTo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_001210"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.org/dc/terms/Agent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000005"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000006"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/NCIT_C48906"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000008"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_010079"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_001050"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_001292"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000992"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_001289"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000356"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_001049"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000230"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000115"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_010003"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000221"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000340"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000229"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/IAO_0000003"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000628"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000228"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.bioassayontology.org/bao#BAO_0002854"/>
+    </Declaration>
     <SubClassOf>
         <Class IRI="#Beat_COVID_ID"/>
         <Class IRI="http://semanticscience.org/resource/SIO_000115"/>
@@ -275,6 +452,306 @@
         <Class IRI="http://semanticscience.org/resource/SIO_010056"/>
         <Class IRI="http://semanticscience.org/resource/SIO_000005"/>
     </SubClassOf>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <Literal xml:lang="en">part_of</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/IAO_0000003"/>
+        <Literal xml:lang="en">Unit</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <Literal xml:lang="en">Quantitative trait measurement value (measurement datum)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
+        <Literal xml:lang="en">denotes</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/NCIT_C21541"/>
+        <Literal xml:lang="en">Ward</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/NCIT_C25164"/>
+        <Literal xml:lang="en">Date</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/NCIT_C48906"/>
+        <Literal xml:lang="en">Order</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <Literal xml:lang="en">Assay</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <Literal xml:lang="en">Measurement process</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/OBI_0000272"/>
+        <Literal xml:lang="en">Kit protocol</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <Literal xml:lang="en">Device</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/RO_0001025"/>
+        <Literal xml:lang="en">located_in</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/RO_0002091"/>
+        <Literal xml:lang="en">starts_during</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://purl.org/dc/terms/Agent"/>
+        <Literal xml:lang="en">Agent</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://purl.org/dc/terms/conformsTo"/>
+        <Literal xml:lang="en">conforms_to</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000004"/>
+        <Literal xml:lang="en">Material entity</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000005"/>
+        <Literal xml:lang="en">Quality</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000006"/>
+        <Literal xml:lang="en">Process</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <Literal xml:lang="en">has_attribute</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000011"/>
+        <Literal xml:lang="en">is_attribute_of</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000016"/>
+        <Literal xml:lang="en">Role</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000115"/>
+        <Literal xml:lang="en">Identifier</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000132"/>
+        <Literal xml:lang="en">has_participant</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000139"/>
+        <Literal xml:lang="en">has_agent</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000216"/>
+        <Literal xml:lang="en">has_measurement_value</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000217"/>
+        <Literal xml:lang="en">has_quality</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000221"/>
+        <Literal xml:lang="en">has_unit</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000228"/>
+        <Literal xml:lang="en">has_role</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000229"/>
+        <Literal xml:lang="en">has_output</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000230"/>
+        <Literal xml:lang="en">has_input</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000291"/>
+        <Literal xml:lang="en">has_target</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <Literal xml:lang="en">has_value</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000340"/>
+        <Literal xml:lang="en">Qualitative trait measurement value (realizable entity)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000356"/>
+        <Literal xml:lang="en">is_realized_in</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000498"/>
+        <Literal>Person</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000628"/>
+        <Literal xml:lang="en">refers_to</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000642"/>
+        <Literal xml:lang="en">is_basis_for</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000672"/>
+        <Literal xml:lang="en">is_identifier_for</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000688"/>
+        <Literal xml:lang="en">Healthcare institute</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000715"/>
+        <Literal xml:lang="en">Patient</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000776"/>
+        <Literal xml:lang="en">Entity type (or sio:object)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000793"/>
+        <Literal xml:lang="en">measure_at</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000960"/>
+        <Literal xml:lang="en">Supported</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_000992"/>
+        <Literal xml:lang="en">Unsupported</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_001013"/>
+        <Literal xml:lang="en">Age</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_001024"/>
+        <Literal xml:lang="en">Clinical process</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_001049"/>
+        <Literal xml:lang="en">Sampling process</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_001050"/>
+        <Literal xml:lang="en">Sample</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_001210"/>
+        <Literal xml:lang="en">Positive</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_001211"/>
+        <Literal xml:lang="en">Negative</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_001289"/>
+        <Literal xml:lang="en">Never</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_001292"/>
+        <Literal xml:lang="en">Always</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_001403"/>
+        <Literal xml:lang="en">is_associated_with</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_010003"/>
+        <Literal xml:lang="en">Organ</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_010035"/>
+        <Literal xml:lang="en">Gene</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_010043"/>
+        <Literal xml:lang="en">Protein</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_010056"/>
+        <Literal xml:lang="en">Phenotype</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://semanticscience.org/resource/SIO_010079"/>
+        <Literal xml:lang="en">is_encoded_by</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://www.bioassayontology.org/bao#BAO_0002854"/>
+        <Literal xml:lang="en">has_bioassay_type</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#wasInformedBy"/>
+        <Literal xml:lang="en">was_informed_by</Literal>
+    </DataPropertyAssertion>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C21541"/>
@@ -689,303 +1166,8 @@
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000050</IRI>
-        <Literal xml:lang="en">part_of</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000003</IRI>
-        <Literal xml:lang="en">Unit</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000109</IRI>
-        <Literal xml:lang="en">Quantitative trait measurement value (measurement datum)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000219</IRI>
-        <Literal xml:lang="en">denotes</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/NCIT_C21541</IRI>
-        <Literal xml:lang="en">Ward</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/NCIT_C25164</IRI>
-        <Literal xml:lang="en">Date</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/NCIT_C48906</IRI>
-        <Literal xml:lang="en">Order</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/OBI_0000070</IRI>
-        <Literal xml:lang="en">Assay</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0000070</IRI>
-        <Literal xml:lang="en">Measurement process</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0000272</IRI>
-        <Literal xml:lang="en">Kit protocol</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0000968</IRI>
-        <Literal xml:lang="en">Device</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/RO_0001025</IRI>
-        <Literal xml:lang="en">located_in</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/RO_0002091</IRI>
-        <Literal xml:lang="en">starts_during</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.org/dc/terms/Agent</IRI>
-        <Literal xml:lang="en">Agent</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.org/dc/terms/conformsTo</IRI>
-        <Literal xml:lang="en">conforms_to</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_000004</IRI>
-        <Literal xml:lang="en">Material entity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_000005</IRI>
-        <Literal xml:lang="en">Quality</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_000006</IRI>
-        <Literal xml:lang="en">Process</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_000008</IRI>
-        <Literal xml:lang="en">has_attribute</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_000011</IRI>
-        <Literal xml:lang="en">is_attribute_of</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_000016</IRI>
-        <Literal xml:lang="en">Role</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_000115</IRI>
-        <Literal xml:lang="en">Identifier</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_000132</IRI>
-        <Literal xml:lang="en">has_participant</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_000139</IRI>
-        <Literal xml:lang="en">has_agent</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_000216</IRI>
-        <Literal xml:lang="en">has_measurement_value</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_000217</IRI>
-        <Literal xml:lang="en">has_quality</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_000221</IRI>
-        <Literal xml:lang="en">has_unit</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_000228</IRI>
-        <Literal xml:lang="en">has_role</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_000229</IRI>
-        <Literal xml:lang="en">has_output</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_000230</IRI>
-        <Literal xml:lang="en">has_input</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_000291</IRI>
-        <Literal xml:lang="en">has_target</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_000300</IRI>
-        <Literal xml:lang="en">has_value</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_000340</IRI>
-        <Literal xml:lang="en">Qualitative trait measurement value (realizable entity)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_000356</IRI>
-        <Literal xml:lang="en">is_realized_in</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_000498</IRI>
-        <Literal>Person</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_000628</IRI>
-        <Literal xml:lang="en">refers_to</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_000642</IRI>
-        <Literal xml:lang="en">is_basis_for</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_000672</IRI>
-        <Literal xml:lang="en">is_identifier_for</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_000688</IRI>
-        <Literal xml:lang="en">Healthcare institute</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_000715</IRI>
-        <Literal xml:lang="en">Patient</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_000776</IRI>
-        <Literal xml:lang="en">Entity type (or sio:object)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_000793</IRI>
-        <Literal xml:lang="en">measure_at</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_000960</IRI>
-        <Literal xml:lang="en">Supported</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_000992</IRI>
-        <Literal xml:lang="en">Unsupported</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_001013</IRI>
-        <Literal xml:lang="en">Age</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_001024</IRI>
-        <Literal xml:lang="en">Clinical process</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_001049</IRI>
-        <Literal xml:lang="en">Sampling process</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_001050</IRI>
-        <Literal xml:lang="en">Sample</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_001210</IRI>
-        <Literal xml:lang="en">Positive</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_001211</IRI>
-        <Literal xml:lang="en">Negative</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_001289</IRI>
-        <Literal xml:lang="en">Never</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_001292</IRI>
-        <Literal xml:lang="en">Always</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_001403</IRI>
-        <Literal xml:lang="en">is_associated_with</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_010003</IRI>
-        <Literal xml:lang="en">Organ</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_010035</IRI>
-        <Literal xml:lang="en">Gene</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_010043</IRI>
-        <Literal xml:lang="en">Protein</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_010056</IRI>
-        <Literal xml:lang="en">Phenotype</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/resource/SIO_010079</IRI>
-        <Literal xml:lang="en">is_encoded_by</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.bioassayontology.org/bao#BAO_0002854</IRI>
-        <Literal xml:lang="en">has_bioassay_type</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/ns/prov#wasInformedBy</IRI>
-        <Literal xml:lang="en">was_informed_by</Literal>
+        <Literal xml:lang="en">assay</Literal>
     </AnnotationAssertion>
 </Ontology>
 

@@ -1,12 +1,109 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/queralt/ontologies/2020/8/untitled-ontology-25#"
-     xml:base="http://www.semanticweb.org/queralt/ontologies/2020/8/untitled-ontology-25"
+<rdf:RDF xmlns="http://purl.org/beat-covid/cytokines-semantic-model.owl#"
+     xml:base="http://purl.org/beat-covid/cytokines-semantic-model.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:bao="http://www.bioassayontology.org/bao#"
+     xmlns:csm="http://purl.org/beat-covid/cytokines-semantic-model#"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:sio="http://semanticscience.org/resource/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/queralt/ontologies/2020/8/untitled-ontology-25"/>
+    <owl:Ontology rdf:about="http://purl.org/beat-covid/cytokines-semantic-model.owl">
+        <owl:versionIRI rdf:resource="http://purl.org/beat-covid/cytokines-semantic-model/v1.0/release.owl"/>
+        <dc:contributor rdf:resource="http://orcid.org/0000−0002−1215−167X"/>
+        <dc:contributor rdf:resource="http://orcid.org/0000−0002−6844−0067"/>
+        <dc:contributor rdf:resource="http://orcid.org/0000−0002−8691−772X"/>
+        <dc:contributor rdf:resource="http://orcid.org/0000−0003−1795−5930"/>
+        <dc:contributor rdf:resource="http://orcid.org/0000−0003−3934−0072"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-0169-8159"/>
+        <dct:description xml:lang="en">The cytokine semantic model provides an ontology for integration of health COVID-19 observational data collected in the LUMC hospital for patient monitoring and research.</dct:description>
+        <dct:issued>30-08-2020</dct:issued>
+        <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dct:modified>30-09-2020</dct:modified>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">free to use,share,modify. modify with attribution [http://creativecommons.org/licenses/by/4.0/].</dct:modified>
+        <dct:title xml:lang="en">Cytokines semantic model (CSM)</dct:title>
+        <owl:versionInfo xml:lang="en">1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
     
 
 

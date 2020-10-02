@@ -54,6 +54,12 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
+    
+
+
     <!-- http://purl.org/dc/terms/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
@@ -145,9 +151,9 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000219">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/beat-covid/cytokines-semantic-model#beat_covid_id"/>
+        <rdfs:domain rdf:resource="http://purl.org/beat-covid/cytokines-semantic-model#clinical_id"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000115"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/queralt/ontologies/2020/8/untitled-ontology-25#OWLClass_887361d7_17be_4f9a_a69f_061f69c49307"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/queralt/ontologies/2020/8/untitled-ontology-25#OWLClass_e0975ad3_75e1_4a28_a905_ac93bc426bd3"/>
         <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000016"/>
         <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000715"/>
     </owl:ObjectProperty>
@@ -340,11 +346,11 @@
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000340"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_001024"/>
+        <rdfs:range rdf:resource="http://purl.org/beat-covid/cytokines-semantic-model#beat_covid_id"/>
+        <rdfs:range rdf:resource="http://purl.org/beat-covid/cytokines-semantic-model#clinical_id"/>
         <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_010003"/>
         <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_010043"/>
         <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_010056"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/queralt/ontologies/2020/8/untitled-ontology-25#OWLClass_887361d7_17be_4f9a_a69f_061f69c49307"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/queralt/ontologies/2020/8/untitled-ontology-25#OWLClass_e0975ad3_75e1_4a28_a905_ac93bc426bd3"/>
     </owl:ObjectProperty>
     
 
@@ -363,8 +369,8 @@
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000672">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/beat-covid/cytokines-semantic-model#record_id"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000115"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/queralt/ontologies/2020/8/untitled-ontology-25#OWLClass_244a89da_13d5_4b21_9031_db7fe0f2d2d9"/>
         <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_001050"/>
     </owl:ObjectProperty>
     
@@ -537,6 +543,30 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000968 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    
+
+
+    <!-- http://purl.org/beat-covid/cytokines-semantic-model#beat_covid_id -->
+
+    <owl:Class rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#beat_covid_id">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000115"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/beat-covid/cytokines-semantic-model#clinical_id -->
+
+    <owl:Class rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#clinical_id">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000115"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/beat-covid/cytokines-semantic-model#record_id -->
+
+    <owl:Class rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#record_id">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000115"/>
+    </owl:Class>
     
 
 
@@ -717,30 +747,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/queralt/ontologies/2020/8/untitled-ontology-25#OWLClass_244a89da_13d5_4b21_9031_db7fe0f2d2d9 -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/queralt/ontologies/2020/8/untitled-ontology-25#OWLClass_244a89da_13d5_4b21_9031_db7fe0f2d2d9">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000115"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/queralt/ontologies/2020/8/untitled-ontology-25#OWLClass_887361d7_17be_4f9a_a69f_061f69c49307 -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/queralt/ontologies/2020/8/untitled-ontology-25#OWLClass_887361d7_17be_4f9a_a69f_061f69c49307">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000115"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/queralt/ontologies/2020/8/untitled-ontology-25#OWLClass_e0975ad3_75e1_4a28_a905_ac93bc426bd3 -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/queralt/ontologies/2020/8/untitled-ontology-25#OWLClass_e0975ad3_75e1_4a28_a905_ac93bc426bd3">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000115"/>
-    </owl:Class>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -821,6 +827,24 @@
     <!-- http://purl.obolibrary.org/obo/RO_0002091 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RO_0002091"/>
+    
+
+
+    <!-- http://purl.org/beat-covid/cytokines-semantic-model#beat_covid_id -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#beat_covid_id"/>
+    
+
+
+    <!-- http://purl.org/beat-covid/cytokines-semantic-model#clinical_id -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#clinical_id"/>
+    
+
+
+    <!-- http://purl.org/beat-covid/cytokines-semantic-model#record_id -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#record_id"/>
     
 
 
@@ -1112,24 +1136,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/queralt/ontologies/2020/8/untitled-ontology-25#OWLClass_244a89da_13d5_4b21_9031_db7fe0f2d2d9 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/queralt/ontologies/2020/8/untitled-ontology-25#OWLClass_244a89da_13d5_4b21_9031_db7fe0f2d2d9"/>
-    
-
-
-    <!-- http://www.semanticweb.org/queralt/ontologies/2020/8/untitled-ontology-25#OWLClass_887361d7_17be_4f9a_a69f_061f69c49307 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/queralt/ontologies/2020/8/untitled-ontology-25#OWLClass_887361d7_17be_4f9a_a69f_061f69c49307"/>
-    
-
-
-    <!-- http://www.semanticweb.org/queralt/ontologies/2020/8/untitled-ontology-25#OWLClass_e0975ad3_75e1_4a28_a905_ac93bc426bd3 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/queralt/ontologies/2020/8/untitled-ontology-25#OWLClass_e0975ad3_75e1_4a28_a905_ac93bc426bd3"/>
-    
-
-
     <!-- http://www.w3.org/2000/01/rdf-schema#label -->
 
     <owl:NamedIndividual rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -1154,30 +1160,46 @@
         <rdfs:label xml:lang="en">part of</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000003">
+        <dct:description xml:lang="en">a measurement unit label is as a label that is part of a scalar measurement datum and denotes a unit of measure.</dct:description>
+        <dc:identifier>IAO_0000003</dc:identifier>
         <rdfs:label xml:lang="en">measurement unit label</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000109">
+        <dct:description xml:lang="en">a measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device.</dct:description>
         <rdfs:label xml:lang="en">measurement datum</rdfs:label>
+        <dc:identifier>IAO_0000109</dc:identifier>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000219">
         <rdfs:label xml:lang="en">denotes</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C21541">
+        <dc:identifier>NCIT_C21541</dc:identifier>
         <rdfs:label xml:lang="en">healthcare facility</rdfs:label>
+        <dct:description xml:lang="en">the buildings and organizations where healthcare services are provided, e.g. ward.</dct:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C25164">
+        <dc:identifier>NCIT_C25164</dc:identifier>
         <rdfs:label xml:lang="en">date</rdfs:label>
+        <dct:description xml:lang="en">the particular day, month and year an event has happened or will happen.</dct:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C48906">
         <rdfs:label xml:lang="en">order</rdfs:label>
+        <dct:description xml:lang="en">the act of requesting that a person, business, or organization do or supply something.</dct:description>
+        <dc:identifier>NCIT_C48906</dc:identifier>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000070">
+        <dct:description xml:lang="en">a planned process with the objective to produce information about the material entity that is the evaluant, by physically examining it or its proxies.</dct:description>
+        <dc:identifier>OBI_0000070</dc:identifier>
         <rdfs:label xml:lang="en">assay</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000272">
+        <dc:identifier>OBI_0000272</dc:identifier>
+        <dct:description xml:lang="en">a plan specification which has sufficient level of detail and quantitative information to communicate it between investigation agents, so that different investigation agents will reliably be able to independently reproduce the process.</dct:description>
         <rdfs:label xml:lang="en">protocol</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000968">
+        <dc:identifier>OBI_0000968</dc:identifier>
+        <dct:description xml:lang="en">a material entity that is designed to perform a function in a scientific investigation, but is not a reagent.</dct:description>
         <rdfs:label xml:lang="en">device</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0001025">
@@ -1186,8 +1208,25 @@
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002091">
         <rdfs:label xml:lang="en">starts during</rdfs:label>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#beat_covid_id">
+        <dc:identifier>beat_covid_id</dc:identifier>
+        <rdfs:label xml:lang="en">Beat-COVID_ID</rdfs:label>
+        <dct:description xml:lang="en">an identifier for a patient participating in the Beat-COVID study.</dct:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#clinical_id">
+        <rdfs:label xml:lang="en">Clinical_ID</rdfs:label>
+        <dct:description xml:lang="en">an identifier for a patient in the clinical database.</dct:description>
+        <dc:identifier>clinical_id</dc:identifier>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#record_id">
+        <dc:identifier>record_id</dc:identifier>
+        <dct:description xml:lang="en">an identifier for a sample or set of samples.</dct:description>
+        <rdfs:label xml:lang="en">Record_ID</rdfs:label>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/Agent">
         <rdfs:label xml:lang="en">agent</rdfs:label>
+        <dct:description xml:lang="en">a resource that acts or has the power to act.</dct:description>
+        <dc:identifier>Agent</dc:identifier>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/conformsTo">
         <rdfs:label xml:lang="en">conforms to</rdfs:label>
@@ -1199,13 +1238,19 @@
         <rdfs:label xml:lang="en">identifier</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000004">
+        <dct:description xml:lang="en">a material entity is a physical entity that is spatially extended, exists as a whole at any point in time and has mass.</dct:description>
         <rdfs:label xml:lang="en">material entity</rdfs:label>
+        <dc:identifier>SIO_000004</dc:identifier>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000005">
+        <dc:identifier>SIO_000005</dc:identifier>
         <rdfs:label xml:lang="en">quality</rdfs:label>
+        <dct:description xml:lang="en">a quality is an attribute that is intrinsically associated with its bearer (or its parts), but whose presence/absence and observed/measured value may vary.</dct:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000006">
         <rdfs:label xml:lang="en">process</rdfs:label>
+        <dc:identifier>SIO_000006</dc:identifier>
+        <dct:description xml:lang="en">a process is an entity that is identifiable only through the unfolding of time, has temporal parts, and unless otherwise specified/predicted, cannot be identified from any instant of time in which it exists.</dct:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000008">
         <rdfs:label xml:lang="en">has attribute</rdfs:label>
@@ -1214,10 +1259,14 @@
         <rdfs:label xml:lang="en">is attribute of</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000016">
+        <dc:identifier>SIO_000016</dc:identifier>
+        <dct:description xml:lang="en">a role is a realizable entity that describes behaviours, rights and obligations of an entity in some particular circumstance.</dct:description>
         <rdfs:label xml:lang="en">role</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000115">
+        <dct:description xml:lang="en">an identifier is a label that specifically refers to (identifies) an entity (instance/type).</dct:description>
         <rdfs:label xml:lang="en">identifier</rdfs:label>
+        <dc:identifier>SIO_000115</dc:identifier>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000132">
         <rdfs:label xml:lang="en">has participant</rdfs:label>
@@ -1251,12 +1300,16 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000340">
         <rdfs:label xml:lang="en">realizable entity</rdfs:label>
+        <dct:description xml:lang="en">a realizable entity is an attribute that is exhibited under some condition and is realized in some process.</dct:description>
+        <dc:identifier>SIO_000340</dc:identifier>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000356">
         <rdfs:label xml:lang="en">is realized in</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000498">
         <rdfs:label xml:lang="en">person</rdfs:label>
+        <dc:identifier>SIO_000498</dc:identifier>
+        <dct:description xml:lang="en">a person is an object that has certain capacities or attributes constituting personhood.</dct:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000628">
         <rdfs:label xml:lang="en">refers to</rdfs:label>
@@ -1268,45 +1321,71 @@
         <rdfs:label xml:lang="en">is identifier for</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000688">
+        <dct:description xml:lang="en">institute is a society or organization having a object or common factor, and is normally applied to those with a scientific, educational, or social objective, e.g. Leiden University Medical Center (LUMC).</dct:description>
+        <dc:identifier>SIO_000688</dc:identifier>
         <rdfs:label xml:lang="en">institute</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000715">
+        <dc:identifier>SIO_000715</dc:identifier>
         <rdfs:label xml:lang="en">patient role</rdfs:label>
+        <dct:description xml:lang="en">a patient role is the role of an individual that is the recepient of medical care.</dct:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000776">
+        <dct:description xml:lang="en">an object is an entity that is wholly identifiable at any instant of time during which it exists.</dct:description>
         <rdfs:label xml:lang="en">object</rdfs:label>
+        <dc:identifier>SIO_000776</dc:identifier>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000793">
         <rdfs:label xml:lang="en">measured at</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000960">
         <rdfs:label xml:lang="en">real</rdfs:label>
+        <dct:description xml:lang="en">real is the quality of an entity that exists in real space and time.</dct:description>
+        <dc:identifier>SIO_000960</dc:identifier>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000992">
         <rdfs:label xml:lang="en">unsupported</rdfs:label>
+        <dc:identifier>SIO_000992</dc:identifier>
+        <dct:description xml:lang="en">unsupported is an existence quality in which there is no evidence to support the existence of the entity in any world (real or hypothetical).</dct:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001013">
+        <dct:description xml:lang="en">age is the length of time that a person has lived or a thing has existed.</dct:description>
+        <dc:identifier>SIO_001013</dc:identifier>
         <rdfs:label xml:lang="en">age</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001024">
+        <dc:identifier>SIO_001024</dc:identifier>
+        <dct:description xml:lang="en">a medical procedure is a procedure to identify, examine, alleviate or eliminate an undesirable biological disease or disorder.</dct:description>
         <rdfs:label xml:lang="en">medical procedure</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001049">
         <rdfs:label xml:lang="en">sampling</rdfs:label>
+        <dct:description xml:lang="en">sampling is the act of obtaining a sample, whether through selection, collection or preparation.</dct:description>
+        <dc:identifier>SIO_001049</dc:identifier>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001050">
         <rdfs:label xml:lang="en">sample</rdfs:label>
+        <dct:description xml:lang="en">a sample is a limited quantity of something (e.g. an individual or set of individuals from a population, or a portion of a substance) to be used for testing, analysis, inspection, investigation, demonstration, or trial use.</dct:description>
+        <dc:identifier>SIO_001050</dc:identifier>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001210">
         <rdfs:label xml:lang="en">positive</rdfs:label>
+        <dc:identifier>SIO_001210</dc:identifier>
+        <dct:description xml:lang="en">positive is an assertional qualifier that expresses the validity or truth of a basic assertion, e.g. in a medical examination the observation is the presence of a trait or phenotype.</dct:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001211">
         <rdfs:label xml:lang="en">negative</rdfs:label>
+        <dct:description xml:lang="en">negative is an assertional qualifier that expresses the falsity or lack of truth of a basic assertion, e.g. in a medical examination the observation is the absence of a trait or phenotype.</dct:description>
+        <dc:identifier>SIO_001211</dc:identifier>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001289">
+        <dct:description xml:lang="en">never refers to in none of the occasions.</dct:description>
+        <dc:identifier>SIO_001289</dc:identifier>
         <rdfs:label xml:lang="en">never</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001292">
+        <dct:description xml:lang="en">always indicates that the event occurs at all times.</dct:description>
+        <dc:identifier>SIO_001292</dc:identifier>
         <rdfs:label xml:lang="en">always</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001403">
@@ -1314,30 +1393,29 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_010003">
         <rdfs:label xml:lang="en">organ</rdfs:label>
+        <dct:description xml:lang="en">an organ is a collection of tissues joined in structural unit to serve a common function.</dct:description>
+        <dc:identifier>SIO_010003</dc:identifier>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_010035">
+        <dct:description xml:lang="en">a gene is part of a nucleic acid that contains all the necessary elements to encode a functional transcript.</dct:description>
         <rdfs:label xml:lang="en">gene</rdfs:label>
+        <dc:identifier>SIO_010035</dc:identifier>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_010043">
         <rdfs:label xml:lang="en">protein</rdfs:label>
+        <dct:description xml:lang="en">a protein is an organic polymer that is composed of one or more linear polymers of amino acids.</dct:description>
+        <dc:identifier>SIO_010043</dc:identifier>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_010056">
         <rdfs:label xml:lang="en">phenotype</rdfs:label>
+        <dc:identifier>SIO_010056</dc:identifier>
+        <dct:description xml:lang="en">a phenotype is an observable characteristic of an individual.</dct:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_010079">
         <rdfs:label xml:lang="en">is encoded by</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0002854">
         <rdfs:label xml:lang="en">has bioassay type</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/queralt/ontologies/2020/8/untitled-ontology-25#OWLClass_244a89da_13d5_4b21_9031_db7fe0f2d2d9">
-        <rdfs:label xml:lang="en">Record_ID</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/queralt/ontologies/2020/8/untitled-ontology-25#OWLClass_887361d7_17be_4f9a_a69f_061f69c49307">
-        <rdfs:label xml:lang="en">Beat-COVID_ID</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/queralt/ontologies/2020/8/untitled-ontology-25#OWLClass_e0975ad3_75e1_4a28_a905_ac93bc426bd3">
-        <rdfs:label xml:lang="en">Clinical_ID</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
         <rdfs:label xml:lang="en">label</rdfs:label>
@@ -1391,6 +1469,14 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#beat_covid_id"/>
+            <rdf:Description rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#clinical_id"/>
+            <rdf:Description rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#record_id"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000960"/>
             <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000992"/>
             <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001210"/>
@@ -1398,14 +1484,6 @@
             <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001289"/>
             <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001292"/>
             <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_010056"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/queralt/ontologies/2020/8/untitled-ontology-25#OWLClass_244a89da_13d5_4b21_9031_db7fe0f2d2d9"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/queralt/ontologies/2020/8/untitled-ontology-25#OWLClass_887361d7_17be_4f9a_a69f_061f69c49307"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/queralt/ontologies/2020/8/untitled-ontology-25#OWLClass_e0975ad3_75e1_4a28_a905_ac93bc426bd3"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>

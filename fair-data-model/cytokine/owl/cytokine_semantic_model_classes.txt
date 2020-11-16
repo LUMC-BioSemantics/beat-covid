@@ -1,0 +1,44 @@
+agent	http://purl.org/dc/terms/Agent
+measurement unit label	http://purl.obolibrary.org/obo/IAO_0000003
+measurement datum	http://purl.obolibrary.org/obo/IAO_0000109
+healthcare facility	http://purl.obolibrary.org/obo/NCIT_C21541
+date	http://purl.obolibrary.org/obo/NCIT_C25164
+order	http://purl.obolibrary.org/obo/NCIT_C48906
+protocol	http://purl.obolibrary.org/obo/OBI_0000272
+device	http://purl.obolibrary.org/obo/OBI_0000968
+material entity	http://semanticscience.org/resource/SIO_000004
+	organ	http://semanticscience.org/resource/SIO_010003
+	protein	http://semanticscience.org/resource/SIO_010043
+quality	http://semanticscience.org/resource/SIO_000005
+	real http://semanticscience.org/resource/SIO_000960
+	unsupported	http://semanticscience.org/resource/SIO_000992
+	positive	http://semanticscience.org/resource/SIO_001210
+	negative	http://semanticscience.org/resource/SIO_001211
+	never	http://semanticscience.org/resource/SIO_001289
+	always	http://semanticscience.org/resource/SIO_001292
+	phenotype	http://semanticscience.org/resource/SIO_010056
+
+process	http://semanticscience.org/resource/SIO_000006
+	assay	http://purl.obolibrary.org/obo/OBI_0000070
+	medical procedure	http://semanticscience.org/resource/SIO_001024
+	sampling	http://semanticscience.org/resource/SIO_001049
+role	http://semanticscience.org/resource/SIO_000016
+	patient role	http://semanticscience.org/resource/SIO_000715
+identifier	http://semanticscience.org/resource/SIO_000115
+	Beat_COVID_ID
+	Clinical_ID
+	Record_ID
+realizable entity	http://semanticscience.org/resource/SIO_000340
+institute	http://semanticscience.org/resource/SIO_000688
+object	http://semanticscience.org/resource/SIO_000776
+	person	http://semanticscience.org/resource/SIO_000498
+age	http://semanticscience.org/resource/SIO_001013
+sample	http://semanticscience.org/resource/SIO_001050
+gene	http://semanticscience.org/resource/SIO_010035
+
+
+
+
+
+
+	

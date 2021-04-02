@@ -1,0 +1,124 @@
+@prefix bc:    <<https://rdf.biosemantics.org/resources/beat-covid/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix dct:     <http://purl.org/dc/terms/> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
+@prefix ncit:    <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> .
+@prefix sio:     <http://semanticscience.org/resource/> .
+@prefix prov:    <http://http://http://www.w3.org/ns/prov#> .
+
+
+
+# LAB MEASUREMENTS (MEASUREMENT PROCESS)
+# Process
+bc:measurement_process_ a sio:process ;
+                        sio:has-target sio:protein ;
+                        sio:has-input sio:sample ; # sample as record_id
+                        sio:has-output bc:protein_measurement_ ;
+                        sio:has-attribute ncit:date ;
+                        dct:conforms-to obi:protocol ;
+                        sio:has-participant obi:device ;
+                        # sio:refers-to bc:person_clinical_id_ ;
+                        prov:is-informed-by bc:sampling_process_ .
+
+
+# Entity
+bc:person_ a sio:SIO_000498 ;
+           sio:has-role bc:person_study_role_ ,
+                        bc:person_donor_role_ ,
+                        bc:person_patient_role_ ;
+           sio:has-attribute hp:fever . # attribute
+   
+# Attribute/object
+sio:protein bfo:part-of bc:person_ . # cytokine
+sio:protein sio:has-measurement-value bc:protein_measurement_ .
+
+
+# Role
+bc:person_study_role_ a sio:role ; # (instance uri= patient-process)
+                sio:is-realized-in bc:measurement_process_ ;
+                ro:located-in ncit:healthcare_facility, 
+                              sio:institute ;
+                sio:has-attribute sio:age .
+           
+ncit:healthcare_facility bfo:part-of sio:institute .
+
+
+# Identifier
+bc:person_study_identifier_ a sio:identifier ;
+               iao:denotes bc:person_study_role_ .
+
+
+# Measurement
+bc:protein_measurement_ a cmo:protein-measurement ;
+                        sio:has-unit uo:unit ;
+                        sio:has-value "13"^^xsd:float ;
+                        sio:refers-to sio:protein .
+
+
+
+
+# BIOSAMPLES (SAMPLING PROCESS)
+# Process
+bc:sampling_process_ a sio:sampling ;
+                     sio:has-target sio:organ ; # blood
+                     sio:has-output sio:sample ;
+                     ro:starts-during ncit:order ;
+                     sio:has-attribute ncit:Date .
+
+# Attribute/object
+sio:organ bfo:part-of bc:person_ . # to relate with biosample
+
+
+# Role
+bc:person_donor_role_ a sio:role ;
+                      sio:is-realized-in bc:sampling_process_ .
+
+# Identifier
+bc:sample_identifier_ a sio:identifier ; # record_id
+                      sio:is-identifier-for bc:sample_ ;
+                      dct:identifier "21007"^^xsd:string .
+
+# Sample
+bc:sample_ a sio:sample ;
+           sio:refers-to sio:organ ; # serum
+           dct:date ncit:Date .
+
+
+
+
+# CLINICAL OBSERVATIONS (EXAMINATION PROCESS)
+# Process
+bc:clinical_exam_process_ a sio:medical_procedure ;
+                          sio:has-input bc:protein_measurement_ ;
+                          sio:has-output bc:person_observation_ ;
+                          sio:has-target bc:person_ ; 
+                          sio:refers-to bc:person_beat_id_ ;
+                          sio:has-attribute ncit:Date ;
+                          prov:is-informed-by bc:measurement_process_ .
+
+
+
+# Entity
+               
+
+# Attribute/object
+hp:fever a sio:phenotype .         
+
+
+# Role
+bc:person_patient_role_ a sio:role ;
+                        sio:is-realized-in bc:clinical_exam_process_ .
+
+
+# Identifier
+bc:person_clinical_id a sio:identifier ;
+                      iao:denotes bc:person_patient_role_ .
+
+
+# Observation
+bc:person_observation_ a sio:realizable_entity ;
+                       sio:refers-to hp:fever ;

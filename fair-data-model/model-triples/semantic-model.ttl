@@ -1,124 +1,146 @@
-@prefix bc:    <<https://rdf.biosemantics.org/resources/beat-covid/> .
+@prefix bc:      <https://rdf.biosemantics.org/resources/beat-covid/> .
+@prefix bco:     <http://purl.org/beat-covid/cytokines-semantic-model.owl#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
-@prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix dc:      <http://purl.org/dc/elements/1.1/> .
 @prefix dct:     <http://purl.org/dc/terms/> .
 @prefix obo:     <http://purl.obolibrary.org/obo/> .
-@prefix ncit:    <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> .
 @prefix sio:     <http://semanticscience.org/resource/> .
+@prefix efo:     <http://www.ebi.ac.uk/efo/> .
 @prefix prov:    <http://http://http://www.w3.org/ns/prov#> .
 
 
 
 # LAB MEASUREMENTS (MEASUREMENT PROCESS)
 # Process
-bc:measurement_process_ a sio:process ;
-                        sio:has-target sio:protein ;
-                        sio:has-input sio:sample ; # sample as record_id
-                        sio:has-output bc:protein_measurement_ ;
-                        sio:has-attribute ncit:date ;
-                        dct:conforms-to obi:protocol ;
-                        sio:has-participant obi:device ;
-                        # sio:refers-to bc:person_clinical_id_ ;
-                        prov:is-informed-by bc:sampling_process_ .
+bc:measurement_process_ a obo:OBI_0000070 ;
+                        sio:SIO_000291 <http://purl.uniprot.org/uniprot/O00585> ;
+                        sio:SIO_000230 bc:sample_ ; # sample as record_id
+                        sio:SIO_000229 bc:measurement_ ;
+                        sio:SIO_000008 bc:measurement_process_date_ ;
+                        dct:conformsTo obo:OBI_0000272 ; # NB sio has 'experimental protocol SIO_001043' 
+                        sio:SIO_000132 obo:OBI_0000968 ; # NB sio has 'device SIO_000956'
+                        sio:SIO_000628 bc:person_clinical_id_ ;
+                        prov:wasInformedBy bc:sampling_process_ .
 
+bc:measurement_process_date_ a obo:NCIT_C25164 ;
+                             dc:date "26-05-2020 15:31:31"^^xsd:dateTime .
 
 # Entity
-bc:person_ a sio:SIO_000498 ;
-           sio:has-role bc:person_study_role_ ,
-                        bc:person_donor_role_ ,
-                        bc:person_patient_role_ ;
-           sio:has-attribute hp:fever . # attribute
+bc:person_ a sio:SIO_000498 ; # (instance uri= beat_id)
+           sio:SIO_000228 bc:person_study_role_ ,
+                          bc:person_donor_role_ ,
+                          bc:person_patient_role_ ;
+           sio:SIO_000217 obo:HP_0001945 . # attribute is phenotype fever. NB that in SIO Core v2 is sio:SIO_000008 (has-attribute)
    
 # Attribute/object
-sio:protein bfo:part-of bc:person_ . # cytokine
-sio:protein sio:has-measurement-value bc:protein_measurement_ .
+<http://purl.uniprot.org/uniprot/O00585> a sio:SIO_010043 ;
+                                         obo:BFO_0000050 bc:person_ ; # cytokine
+                                         sio:SIO_000216 bc:measurement_ .
 
 
 # Role
-bc:person_study_role_ a sio:role ; # (instance uri= patient-process)
-                sio:is-realized-in bc:measurement_process_ ;
-                ro:located-in ncit:healthcare_facility, 
-                              sio:institute ;
-                sio:has-attribute sio:age .
+bc:person_study_role_ a sio:SIO_000883 ; # obo:OBI_0000093 ; # (instance uri= patient-process). NB in the ontology is sio:SIO_000715, both 'patient role'. suggest sio 'http://semanticscience.org/resource/SIO_000883 subject role', ie child of investigational role
+                      sio:SIO_000356 bc:measurement_process_ ;
+                      obo:RO_0001025 <https://www.lumc.nl/wards/icu> , 
+                               <https://www.lumc.nl> ;
+                      sio:SIO_000008 bc:person_age_ .
            
-ncit:healthcare_facility bfo:part-of sio:institute .
+<https://www.lumc.nl/wards/icu> a obo:NCIT_C21541 ;
+                                rdfs:label "ICUQ" ; 
+                                obo:BFO_0000050 <https://www.lumc.nl> .
+
+<https://www.lumc.nl> a sio:SIO_000688 ;
+              rdfs:label "LUMC" .
+
+bc:person_age_ a sio:SIO_001013 ;
+               sio:SIO_000300 "59"^^xsd:int .
 
 
 # Identifier
-bc:person_study_identifier_ a sio:identifier ;
-               iao:denotes bc:person_study_role_ .
+bc:person_study_id_ a bco:beat_covid_id ;
+                    sio:SIO_000300 "BEAT-018" ;
+                    obo:IAO_0000219 bc:person_study_role_ .
 
 
 # Measurement
-bc:protein_measurement_ a cmo:protein-measurement ;
-                        sio:has-unit uo:unit ;
-                        sio:has-value "13"^^xsd:float ;
-                        sio:refers-to sio:protein .
+bc:measurement_ a obo:IAO_0000109 ;
+                rdfs:label "lum_CCL21_1" ;
+                sio:SIO_000221 efo:EFO_0004385 ;
+                sio:SIO_000300 "101413"^^xsd:float ;
+                sio:SIO_000628 <http://purl.uniprot.org/uniprot/O00585> .
 
-
+efo:EFO_0004385 a obo:IAO_0000003 ;
+                rdfs:label "pg/ml" .
 
 
 # BIOSAMPLES (SAMPLING PROCESS)
 # Process
-bc:sampling_process_ a sio:sampling ;
-                     sio:has-target sio:organ ; # blood
-                     sio:has-output sio:sample ;
-                     ro:starts-during ncit:order ;
-                     sio:has-attribute ncit:Date .
+bc:sampling_process_ a sio:SIO_001049 ;
+                     sio:SIO_000291 obo:UBERON_0000178 ; # blood
+                     sio:SIO_000229 bc:sample_ ;
+                     obo:RO_0002091 obo:NCIT_C48906 ;
+                     sio:SIO_000008 bc:sampling_process_date_ .
+
+bc:sampling_process_date_ a obo:NCIT_C25164 ;
+                          dc:date "20-04-2020 15:00:31"^^xsd:dateTime .
+
 
 # Attribute/object
-sio:organ bfo:part-of bc:person_ . # to relate with biosample
+obo:UBERON_0000178 a sio:SIO_010003 ;
+                   obo:BFO_0000050 bc:person_ . # to relate with biosample
 
 
 # Role
-bc:person_donor_role_ a sio:role ;
-                      sio:is-realized-in bc:sampling_process_ .
+bc:person_donor_role_ a obo:OBI_1110087 ; # sio:SIO_000016 ; # suggest obi 'donor role http://purl.obolibrary.org/obo/OBI_1110087'
+                      sio:SIO_000356 bc:sampling_process_ .
 
 # Identifier
-bc:sample_identifier_ a sio:identifier ; # record_id
-                      sio:is-identifier-for bc:sample_ ;
+bc:sample_id_ a bco:record_id ; # record_id
+                      sio:SIO_000672 bc:sample_ ;
                       dct:identifier "21007"^^xsd:string .
 
+bc:person_donor_id_ a obo:NCIT_C164796 ; # obo:NCIT_C164337 ; # suggest 'donor identifier http://purl.obolibrary.org/obo/NCIT_C164796'
+                    sio:SIO_000300 "1100207" ;
+                    obo:IAO_0000219 bc:person_donor_role_ .
+
 # Sample
-bc:sample_ a sio:sample ;
-           sio:refers-to sio:organ ; # serum
-           dct:date ncit:Date .
+bc:sample_ a sio:SIO_001050 ;
+           sio:SIO_000628 sio:SIO_010003 . # serum
 
 
 
 
 # CLINICAL OBSERVATIONS (EXAMINATION PROCESS)
 # Process
-bc:clinical_exam_process_ a sio:medical_procedure ;
-                          sio:has-input bc:protein_measurement_ ;
-                          sio:has-output bc:person_observation_ ;
-                          sio:has-target bc:person_ ; 
-                          sio:refers-to bc:person_beat_id_ ;
-                          sio:has-attribute ncit:Date ;
-                          prov:is-informed-by bc:measurement_process_ .
+bc:clinical_exam_process_ a sio:SIO_001024 ;
+                          sio:SIO_000230 bc:measurement_ ;
+                          sio:SIO_000229 bc:clinical_observation_ ;
+                          sio:SIO_000291 bc:person_ ; 
+                          sio:SIO_000628 bc:person_study_id_ ;
+                          sio:SIO_000008 bc:clinical_exam_process_date_ ;
+                          prov:wasInformedBy bc:measurement_process_ .
 
-
-
-# Entity
-               
+bc:clinical_exam_process_date_ a obo:NCIT_C25164 ;
+                              dc:date "22-05-2020 01:00:31"^^xsd:dateTime .
 
 # Attribute/object
-hp:fever a sio:phenotype .         
+obo:HP_0001945 a sio:SIO_010056 ;
+               rdfs:label "Fever" .         
 
 
 # Role
-bc:person_patient_role_ a sio:role ;
-                        sio:is-realized-in bc:clinical_exam_process_ .
+bc:person_patient_role_ a sio:SIO_000715 ;
+                        sio:SIO_000356 bc:clinical_exam_process_ .
 
 
 # Identifier
-bc:person_clinical_id a sio:identifier ;
-                      iao:denotes bc:person_patient_role_ .
+bc:person_clinical_id_ a bco:clinical_id ;
+                       sio:SIO_000300 "CLINICAL_ID-2425" ;
+                       obo:IAO_0000219 bc:person_patient_role_ .
 
 
 # Observation
-bc:person_observation_ a sio:realizable_entity ;
-                       sio:refers-to hp:fever ;
+bc:clinical_observation_ a sio:SIO_000340 ;
+                         sio:SIO_000628 obo:HP_0001945 .

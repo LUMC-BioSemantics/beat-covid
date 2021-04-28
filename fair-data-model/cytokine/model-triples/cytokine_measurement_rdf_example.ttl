@@ -64,7 +64,7 @@ bc:person_study_role_ a sio:SIO_000883 ;
                                 obo:BFO_0000050 <https://www.lumc.nl> .
 
 <https://www.lumc.nl> a sio:SIO_000688 ;
-              sio:SIO_000300 "LUMC"^^xsd:string .
+              sio:SIO_000300 "LUMC"^^xsd:string ;
               rdfs:label "LUMC"@en .
 
 bc:person_age_ a sio:SIO_001013 ;

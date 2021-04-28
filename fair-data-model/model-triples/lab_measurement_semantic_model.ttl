@@ -1,0 +1,102 @@
+@prefix bc:      <https://rdf.biosemantics.org/resources/beat-covid/> .
+@prefix bco:     <http://purl.org/beat-covid/cytokines-semantic-model.owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:     <http://purl.org/dc/terms/> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
+@prefix sio:     <http://semanticscience.org/resource/> .
+@prefix efo:     <http://www.ebi.ac.uk/efo/> .
+@prefix prov:    <http://http://http://www.w3.org/ns/prov#> .
+
+
+
+# LAB MEASUREMENTS (MEASUREMENT PROCESS)
+# Process
+bc:measurement_process_ a obo:OBI_0000070 ;
+                        sio:SIO_000291 bc:trait_cytokine_ ;
+                        sio:SIO_000230 bc:sample_ ; # sample as record_id
+                        sio:SIO_000229 bc:quantitative_trait_ ;
+                        sio:SIO_000008 bc:measurement_process_date_ ;
+                        dct:conformsTo bc:kit_ ; 
+                        sio:SIO_000132 bc:device_ ; 
+                        sio:SIO_000628 bc:person_clinical_id_ ;
+                        prov:wasInformedBy bc:sampling_process_ .
+
+
+bc:kit_ a obo:OBI_0000272 ;
+        sio:SIO_000300 "1"^^xsd:string ; # NB sio has 'experimental protocol SIO_001043' 
+        rdfs:label "Kit 1"@en . # NB sio has 'experimental protocol SIO_001043' 
+
+bc:device_ a obo:OBI_0000968 ;
+           sio:SIO_000300 "lum"^^xsd:string ; # NB sio has 'device SIO_000956'
+           rdfs:label "Luminex"@en . # NB sio has 'device SIO_000956'
+
+bc:measurement_process_date_ a obo:NCIT_C25164 ;
+                             dct:date "04-05-2020"^^xsd:date .
+
+# Entity
+bc:person_ a sio:SIO_000498 ; # (instance uri= beat_id)
+           sio:SIO_000228 bc:person_study_role_ .
+   
+# Attribute/object
+bc:trait_cytokine_ a sio:SIO_010043 ;
+                   sio:SIO_000300 "CCL21"^^xsd:string ;
+                   obo:BFO_0000050 bc:person_ ; # cytokine
+                   sio:SIO_010079 bc:cytokine_ ;
+                   sio:SIO_000216 bc:quantitative_trait_ .
+
+bc:cytokine_ a sio:SIO_010035 .
+
+# Role
+bc:person_study_role_ a sio:SIO_000883 ; # obo:OBI_0000093 ; # (instance uri= patient-process). NB in the ontology is sio:SIO_000715, both 'patient role'. suggest sio 'http://semanticscience.org/resource/SIO_000883 subject role', ie child of investigational role
+                      sio:SIO_000356 bc:measurement_process_ ;
+                      obo:RO_0001025 bc:ward_ , 
+                                     bc:institute_ ;
+                      sio:SIO_000008 bc:person_age_ .
+           
+bc:ward_ a obo:NCIT_C21541 ;
+           sio:SIO_000300 "ICUQ"^^xsd:string ;
+           rdfs:label "ICUQ"@en ; 
+           obo:BFO_0000050 <https://www.lumc.nl> .
+
+bc:institute_ a sio:SIO_000688 ;
+              sio:SIO_000300 "LUMC"^^xsd:string ;
+              rdfs:label "LUMC"@en .
+
+bc:person_age_ a sio:SIO_001013 ;
+               sio:SIO_000300 "59"^^xsd:int .
+
+
+# Identifier
+bc:person_study_id_ a bco:beat_covid_id ;
+                    sio:SIO_000300 "BEAT-018"^^xsd:string ;
+                    obo:IAO_0000219 bc:person_study_role_ .
+
+
+# Measurement
+bc:quantitative_trait_ a obo:IAO_0000109 ;
+                rdfs:label "lum_CCL21_1"^^xsd:string ;
+                sio:SIO_000221 efo:EFO_0004385 ;
+                sio:SIO_000300 "101413"^^xsd:float ;
+                sio:SIO_000628 <http://purl.uniprot.org/uniprot/O00585> .
+
+efo:EFO_0004385 a obo:IAO_0000003 ;
+                rdfs:label "pg/ml"^^xsd:string .
+
+
+
+
+# BIOSAMPLES (SAMPLING PROCESS)
+# Process
+bc:sampling_process_ a sio:SIO_001049 .
+
+# Sample
+bc:sample_ a sio:SIO_001050 .
+
+
+
+
+# CLINICAL OBSERVATIONS (EXAMINATION PROCESS)
+# Identifier
+bc:person_clinical_id_ a bco:clinical_id .

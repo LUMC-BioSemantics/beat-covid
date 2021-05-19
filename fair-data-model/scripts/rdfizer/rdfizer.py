@@ -23,10 +23,10 @@ has_output = sio.SIO_000229
 has_value = sio.SIO_000300
 
 # Functions
-def generate_rdf(variables_tuple):
+def generate_rdf(variables_dict):
     """
     This function generates an RDF data structure from a tuple of values
-    :param variables_tuple:
+    :param variables_dict:
     :return:
     """
 
@@ -40,15 +40,51 @@ def generate_rdf(variables_tuple):
     rdf.bind("prov", prov)
 
     # entry
-    lab = bc[variables_tuple[0]]
-    sample = bc[variables_tuple[0]]
+    if not variables_dict['clinical_id']: variables_dict['clinical_id'] = "NA"
+    person = bc["person/BEATCOVID_" + variables_dict['beat_id'] + "_CLINICAL_" + variables_dict['clinical_id']]
+    sample = bc["sample/BEATCOVID_" + variables_dict['record_id']]
 
     # add triples to entry
-    # lab measurement process entry
-    rdf.add(lab, RDF.type, bco.OBI_0000070)
+    # LAB MEASUREMENTS (MEASUREMENT PROCESS)
+    i = 0
+    for measurement in variables_dict.keys():
+        if "lum_date_" in measurement: continue
+        if "lum" in measurement:
+            i += 1
+            device_string, protein_string, kit_string = measurement.split("_")
+            # kit
+            kit = bc["lab/kit_" + kit_string]
+            # device
+            device = bc["lab/device_" + device_string]
+            # measurement process date
+            measurement_process_date = bc["lab/measurement_process_date/BEATCOVID_"
+                                          + variables_dict['lum_date_meas']]
+            # attribute/object
+            trait = bc["trait/BEATCOVID_" + variables_dict['record_id']
+               + protein_string]
+            # gene
+            gene = bc["gene/" + i.zfill(5)]
+            # role
+            person_study_role = bc["role/BEATCOVID_" + variables_dict['beat_id']
+                                   + variables_dict['record_id']]
+            # ward
+            # institute
+            # person age
+            # identifier
+            # measurement
+            quantitative_trait = bc["lab/quantitative_trait/BEATCOVID_" + variables_dict['record_id']
+                                  + measurement]
+            # unit
+            #print(i, measurement, device, protein, kit)
+            # lab measurement process
+            lab_meas_process = bc["lab/measurement_process/BEATCOVID_" + variables_dict['record_id']
+                                  + measurement]
+            rdf.add((lab_meas_process, RDF.type, obo.OBI_0000070))
+            
+    rdf.add((person, RDF.type, obo.OBI_0000070))
 
     # sample process entry
-    rdf.add(sample, RDF.type, bco.SIO_001049)
+    rdf.add((sample, RDF.type, sio.SIO_001049))
 
     return rdf
 
@@ -73,5 +109,21 @@ if __name__ == "__main__":
     #         values_tuple = line.rstrip().split(",")
     #         rdf = generate_rdf(values_tuple)
     #         rdf.serialize(f"{out_path}/{values_tuple[0].zfill(5)}.ttl", format="turtle")
+    out_path = "/home/nur/workspace/beat-covid/fair-data-model/rdf"
+    if not os.path.isdir(out_path): os.makedirs(out_path)
+    header = 1
+    rows_list = list()
     for line in open("/home/nur/workspace/beat-covid/fair-data-model/cytokine/synthetic-data/BEAT-COVID1_excel_export_2020-05-28_Luminex_synthetic-data.csv"):
-        print(f"{line}")
+        if header:
+                header_tuple = line.rstrip().split("\t")
+                header = 0
+                continue
+        values_tuple = line.rstrip().split("\t")
+        raw_data_dict = dict(zip(header_tuple,values_tuple))
+        rows_list.append(raw_data_dict)
+    for row in rows_list:
+        crf = generate_rdf(row)
+        crf.serialize(f"{out_path}/{row['record_id'].zfill(5)}.ttl", format="turtle")
+        #print(f"row: {row}\nheader: {header_tuple}\nvalues: {values_tuple}")
+    print(f"row: {row}")
+

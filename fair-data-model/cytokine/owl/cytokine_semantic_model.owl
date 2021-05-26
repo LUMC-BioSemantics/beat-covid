@@ -151,11 +151,14 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000219">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/NCIT_C164796"/>
         <rdfs:domain rdf:resource="http://purl.org/beat-covid/cytokines-semantic-model#beat_covid_id"/>
         <rdfs:domain rdf:resource="http://purl.org/beat-covid/cytokines-semantic-model#clinical_id"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000115"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/OBI_1110087"/>
         <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000016"/>
         <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000715"/>
+        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000883"/>
     </owl:ObjectProperty>
     
 
@@ -165,7 +168,7 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001025">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000715"/>
+        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000883"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCIT_C21541"/>
         <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000688"/>
     </owl:ObjectProperty>
@@ -192,16 +195,27 @@
     
 
 
+    <!-- http://semanticscience.org/resource/SIO_000001 -->
+
+    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000001">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_001013"/>
+        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000883"/>
+        <dc:identifier>SIO_000001</dc:identifier>
+        <dct:description xml:lang="en">A is related to B iff there is some relation between A and B.</dct:description>
+        <rdfs:label xml:lang="en">is related to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://semanticscience.org/resource/SIO_000008 -->
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000008">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000001"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
-        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000715"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_001023"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_001049"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25164"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_001013"/>
     </owl:ObjectProperty>
     
 
@@ -209,7 +223,7 @@
     <!-- http://semanticscience.org/resource/SIO_000011 -->
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000011">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000001"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_001331"/>
         <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
     </owl:ObjectProperty>
@@ -219,7 +233,7 @@
     <!-- http://semanticscience.org/resource/SIO_000132 -->
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000132">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000001"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
     </owl:ObjectProperty>
@@ -229,7 +243,7 @@
     <!-- http://semanticscience.org/resource/SIO_000216 -->
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000216">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000008"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_010043"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
     </owl:ObjectProperty>
@@ -239,7 +253,7 @@
     <!-- http://semanticscience.org/resource/SIO_000221 -->
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000221">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000008"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
@@ -250,11 +264,13 @@
     <!-- http://semanticscience.org/resource/SIO_000228 -->
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000228">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000008"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/OBI_1110087"/>
         <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000016"/>
         <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000715"/>
+        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000883"/>
     </owl:ObjectProperty>
     
 
@@ -262,7 +278,7 @@
     <!-- http://semanticscience.org/resource/SIO_000229 -->
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000229">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000132"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_001023"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_001049"/>
@@ -276,7 +292,7 @@
     <!-- http://semanticscience.org/resource/SIO_000230 -->
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000230">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000132"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_001023"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_001049"/>
@@ -291,7 +307,7 @@
     <!-- http://semanticscience.org/resource/SIO_000291 -->
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000291">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000230"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_001023"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_001049"/>
@@ -306,10 +322,13 @@
     <!-- http://semanticscience.org/resource/SIO_000356 -->
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000356">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000001"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/OBI_1110087"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000016"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000715"/>
+        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000883"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000006"/>
         <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_001023"/>
         <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_001049"/>
     </owl:ObjectProperty>
@@ -319,7 +338,7 @@
     <!-- http://semanticscience.org/resource/SIO_000628 -->
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000628">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000001"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000340"/>
@@ -336,7 +355,7 @@
     <!-- http://semanticscience.org/resource/SIO_000672 -->
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000672">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000011"/>
         <rdfs:domain rdf:resource="http://purl.org/beat-covid/cytokines-semantic-model#record_id"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000115"/>
         <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_001050"/>
@@ -347,7 +366,7 @@
     <!-- http://semanticscience.org/resource/SIO_000793 -->
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000793">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000001"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25164"/>
     </owl:ObjectProperty>
@@ -357,7 +376,7 @@
     <!-- http://semanticscience.org/resource/SIO_001403 -->
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_001403">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000001"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_001331"/>
         <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000960"/>
         <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000992"/>
@@ -372,7 +391,7 @@
     <!-- http://semanticscience.org/resource/SIO_010079 -->
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_010079">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000001"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_010043"/>
         <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_010035"/>
     </owl:ObjectProperty>
@@ -1230,8 +1249,8 @@
      -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
-        <dct:description xml:lang="en">a core relation that holds between a part and its whole.</dct:description>
         <dc:identifier>BFO_0000050</dc:identifier>
+        <dct:description xml:lang="en">a core relation that holds between a part and its whole.</dct:description>
         <rdfs:label xml:lang="en">part of</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000003">
@@ -1333,8 +1352,8 @@
         <dct:description xml:lang="en">a quality is an attribute that is intrinsically associated with its bearer (or its parts), but whose presence/absence and observed/measured value may vary.</dct:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000006">
-        <rdfs:label xml:lang="en">process</rdfs:label>
         <dc:identifier>SIO_000006</dc:identifier>
+        <rdfs:label xml:lang="en">process</rdfs:label>
         <dct:description xml:lang="en">a process is an entity that is identifiable only through the unfolding of time, has temporal parts, and unless otherwise specified/predicted, cannot be identified from any instant of time in which it exists.</dct:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000008">
@@ -1343,8 +1362,8 @@
         <rdfs:label xml:lang="en">has attribute</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000011">
-        <rdfs:label xml:lang="en">is attribute of</rdfs:label>
         <dc:identifier>SIO_000011</dc:identifier>
+        <rdfs:label xml:lang="en">is attribute of</rdfs:label>
         <dct:description xml:lang="en">is attribute of is a relation that associates an attribute with an entity where an attribute is an intrinsic characteristic such as a quality, capability, disposition, function, or is an externally derived attribute determined from some descriptor (e.g. a quantity, position, label/identifier) either directly or indirectly through generalization of entities of the same type.</dct:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000016">
@@ -1363,8 +1382,8 @@
         <dct:description xml:lang="en">has participant is a relation that describes the participation of the object in the (processual) subject.</dct:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000216">
-        <dc:identifier>SIO_000216</dc:identifier>
         <dct:description xml:lang="en">has measurement value is a relation between a quality/realizable and a measurement value.</dct:description>
+        <dc:identifier>SIO_000216</dc:identifier>
         <rdfs:label xml:lang="en">has measurement value</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000221">
@@ -1463,8 +1482,8 @@
         <dc:identifier>SIO_001049</dc:identifier>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001050">
-        <rdfs:label xml:lang="en">sample</rdfs:label>
         <dct:description xml:lang="en">a sample is a limited quantity of something (e.g. an individual or set of individuals from a population, or a portion of a substance) to be used for testing, analysis, inspection, investigation, demonstration, or trial use.</dct:description>
+        <rdfs:label xml:lang="en">sample</rdfs:label>
         <dc:identifier>SIO_001050</dc:identifier>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001210">
@@ -1524,8 +1543,8 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
         <dct:description xml:lang="en">A human-readable name for the subject.</dct:description>
-        <rdfs:label xml:lang="en">label</rdfs:label>
         <dc:identifier>label</dc:identifier>
+        <rdfs:label xml:lang="en">label</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/ns/prov#wasInformedBy">
         <rdfs:label xml:lang="en">was informed by</rdfs:label>

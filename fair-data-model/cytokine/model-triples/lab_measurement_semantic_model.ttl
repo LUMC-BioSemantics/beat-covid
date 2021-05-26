@@ -52,20 +52,20 @@ bc:cytokine_ a sio:SIO_010035 .
 bc:person_study_role_ a sio:SIO_000883 ; # obo:OBI_0000093 ; # (instance uri= patient-process). NB in the ontology is sio:SIO_000715, both 'patient role'. suggest sio 'http://semanticscience.org/resource/SIO_000883 subject role', ie child of investigational role
                       sio:SIO_000356 bc:measurement_process_ ;
                       obo:RO_0001025 bc:ward_ , 
-                                     bc:institute_ ;
-                      sio:SIO_000008 bc:person_age_ .
+                                     bc:institute_ .
            
 bc:ward_ a obo:NCIT_C21541 ;
            sio:SIO_000300 "ICUQ"^^xsd:string ;
            rdfs:label "ICUQ"@en ; 
-           obo:BFO_0000050 <https://www.lumc.nl> .
+           obo:BFO_0000050 bc:institute_ .
 
 bc:institute_ a sio:SIO_000688 ;
               sio:SIO_000300 "LUMC"^^xsd:string ;
               rdfs:label "LUMC"@en .
 
 bc:person_age_ a sio:SIO_001013 ;
-               sio:SIO_000300 "59"^^xsd:int .
+               sio:SIO_000300 "59"^^xsd:int ;
+               sio:SIO_000001 bc:person_study_role_ .
 
 
 # Identifier

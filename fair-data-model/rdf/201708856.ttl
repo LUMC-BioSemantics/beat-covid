@@ -1,0 +1,57 @@
+@prefix bco: <http://purl.org/beat-covid/cytokines-semantic-model.owl#> .
+@prefix ns1: <http://purl.org/dc/terms/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/biosample/BEATCOVID_201708856> a sio:SIO_001050 .
+
+<https://rdf.biosemantics.org/resources/beat-covid/clinical/patient_id/NA> a bco:clinical_id .
+
+<https://rdf.biosemantics.org/resources/beat-covid/lab/device_lum> a obo:OBI_0000968 ;
+    rdfs:label "Luminex"@en ;
+    sio:SIO_000300 "lum"^^xsd:string .
+
+<https://rdf.biosemantics.org/resources/beat-covid/lab/kit_1> a obo:OBI_0000272 ;
+    sio:SIO_000300 "Kit 1"@en .
+
+<https://rdf.biosemantics.org/resources/beat-covid/lab/kit_2> a obo:OBI_0000272 ;
+    sio:SIO_000300 "Kit 2"@en .
+
+<https://rdf.biosemantics.org/resources/beat-covid/lab/kit_3> a obo:OBI_0000272 ;
+    sio:SIO_000300 "Kit 3"@en .
+
+<https://rdf.biosemantics.org/resources/beat-covid/lab/kit_4> a obo:OBI_0000272 ;
+    sio:SIO_000300 "Kit 4"@en .
+
+<https://rdf.biosemantics.org/resources/beat-covid/lab/measurement_process_date/BEATCOVID_04-05-2020> a obo:NCIT_C25164 ;
+    ns1:date "0401-01-01"^^xsd:date .
+
+<https://rdf.biosemantics.org/resources/beat-covid/lab/measurement_unit/pg_ml> a obo:IAO_0000003 ;
+    rdfs:label "pg/ml"^^xsd:string .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person/BEATCOVID_BEAT-001_CLINICAL_> a sio:SIO_000498 ;
+    sio:SIO_000228 <https://rdf.biosemantics.org/resources/beat-covid/person_study_role/BEATCOVID_201708856_BEAT-001> .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person_study_id/BEAT-001> a bco:beat_covid_id ;
+    obo:IAO_0000219 <https://rdf.biosemantics.org/resources/beat-covid/person_study_role/BEATCOVID_201708856_BEAT-001> ;
+    sio:SIO_000300 "BEAT-001"^^xsd:string .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person_age/54> a sio:SIO_001013 ;
+    sio:SIO_000300 54 .
+
+<https://rdf.biosemantics.org/resources/beat-covid/ward/KVVL> a obo:NCIT_C21541 ;
+    rdfs:label "KVVL"@en ;
+    obo:BFO_0000050 <https://rdf.biosemantics.org/resources/beat-covid/institute/LUMC> ;
+    sio:SIO_000300 "KVVL"^^xsd:string .
+
+<https://rdf.biosemantics.org/resources/beat-covid/institute/LUMC> a sio:SIO_000688 ;
+    rdfs:label "LUMC"@en ;
+    sio:SIO_000300 "LUMC"^^xsd:string .
+
+<https://rdf.biosemantics.org/resources/beat-covid/person_study_role/BEATCOVID_201708856_BEAT-001> a sio:SIO_000883 ;
+    obo:RO_0001025 <https://rdf.biosemantics.org/resources/beat-covid/institute/LUMC>,
+        <https://rdf.biosemantics.org/resources/beat-covid/ward/KVVL> ;
+    sio:SIO_000008 <https://rdf.biosemantics.org/resources/beat-covid/person_age/54> .
+

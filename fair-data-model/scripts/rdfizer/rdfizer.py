@@ -67,6 +67,8 @@ def generate_rdf(variables_dict):
     # BIOSAMPLES (SAMPLING PROCESS) MODEL
     # Biosample
     biosample = bc["biosample/BEATCOVID_" + variables_dict['record_id']]
+    # Process
+    sampling_process = bc["biosample/sampling_process/BEATCOVID_" + variables_dict['record_id']]
 
     # CLINICAL OBSERVATIONS (EXAMINATION PROCESS) MODEL
     # Identifier
@@ -96,6 +98,7 @@ def generate_rdf(variables_dict):
     # age
     rdf.add((age, RDF.type, sio.SIO_001013))
     rdf.add((age, sio.SIO_000300, Literal(variables_dict['age'], datatype=XSD.integer)))
+    rdf.add((age, sio.SIO_000001, person_study_role))
 
     # ward
     rdf.add((ward, RDF.type, obo.NCIT_C21541))
@@ -112,7 +115,6 @@ def generate_rdf(variables_dict):
     rdf.add((person_study_role, RDF.type, sio.SIO_000883))
     rdf.add((person_study_role, obo.RO_0001025, ward))
     rdf.add((person_study_role, obo.RO_0001025, institute))
-    rdf.add((person_study_role, sio.SIO_000008, age))
 
     # measurement process date
     rdf.add((measurement_process_date, RDF.type, obo.NCIT_C25164))
@@ -186,9 +188,9 @@ def generate_rdf(variables_dict):
             # rdf.add((lab_meas_process, DCTERMS.conformsTo, kit))
             # rdf.add((lab_meas_process, sio.SIO_000132, device))
             # rdf.add((lab_meas_process, sio.SIO_000628, clinical))
-            # rdf.add((lab_meas_process, prov.wasInformedBy, obo.OBI_0000070))
+            # rdf.add((lab_meas_process, prov.wasInformedBy, sampling_process))
             # role
-            #rdf.add((person_study_role, sio.SIO_000356, sampling_process))
+            #rdf.add((person_study_role, sio.SIO_000356, lab_meas_process))
 
     return rdf
 

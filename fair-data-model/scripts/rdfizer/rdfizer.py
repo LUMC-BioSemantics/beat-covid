@@ -67,8 +67,29 @@ def generate_rdf(variables_dict):
     # BIOSAMPLES (SAMPLING PROCESS) MODEL
     # Biosample
     biosample = bc["biosample/BEATCOVID_" + variables_dict['record_id']]
+
     # Process
-    sampling_process = bc["biosample/sampling_process/BEATCOVID_" + variables_dict['record_id']]
+    sampling_process = bc["biosample/sampling_process/BEATCOVID_"
+                          + variables_dict['record_id']]
+
+    # order
+    order = bc["biosample/order_" + variables_dict['order']]
+
+    # sampling process date
+    sampling_process_date = bc["biosample/sampling_process_date/BEATCOVID_"
+                               + variables_dict['date_sampling']]
+
+    # Attribute/object
+    organ = "blood_serum"
+    biosample_object = bc["object/" + organ]
+
+    # Role
+    person_donor_role = bc["person_donor_role/BEATCOVID_" + variables_dict['record_id']]
+
+    # Identifier
+    person_donor_id = bc["person_donor_id/" + variables_dict['beat_id']]
+    biosample_id = bc["biosample/biosample_id/BEATCOVID_" + variables_dict['record_id']]
+
 
     # CLINICAL OBSERVATIONS (EXAMINATION PROCESS) MODEL
     # Identifier
@@ -85,7 +106,7 @@ def generate_rdf(variables_dict):
     # Entity
     rdf.add((person, RDF.type, sio.SIO_000498))
     rdf.add((person, sio.SIO_000228, person_study_role))
-    #rdf.add((person, sio.SIO_000228, person_donor_role))
+    rdf.add((person, sio.SIO_000228, person_donor_role))
     #rdf.add((person, sio.SIO_000228, person_patient_role))
     #rdf.add((person, sio.SIO_000008, bc.phenotype_))
 
@@ -120,9 +141,44 @@ def generate_rdf(variables_dict):
     rdf.add((measurement_process_date, RDF.type, obo.NCIT_C25164))
     rdf.add((measurement_process_date, DCTERMS.date, Literal(variables_dict['lum_date_meas'], datatype=XSD.date)))
 
+
     # BIOSAMPLES (SAMPLING PROCESS) MODEL
+    # Process
+    rdf.add((sampling_process, RDF.type, sio.SIO_001049))
+    rdf.add((sampling_process, sio.SIO_000291, biosample_object))
+    rdf.add((sampling_process, sio.SIO_000230, person))
+    rdf.add((sampling_process, sio.SIO_000229, biosample))
+    rdf.add((sampling_process, obo.RO_0002091, order))
+    rdf.add((sampling_process, sio.SIO_000008, sampling_process_date))
+
     # Biosample
     rdf.add((biosample, RDF.type, sio.SIO_001050))
+    rdf.add((biosample, sio.SIO_000628, biosample_object))
+
+    # Attribute/object
+    rdf.add((biosample_object, RDF.type, sio.SIO_010003))
+    rdf.add((biosample_object, obo.BFO_0000050, person))
+
+    # order
+    rdf.add((order, RDF.type, obo.NCIT_C48906))
+    rdf.add((order, sio.SIO_000300, Literal(variables_dict['order'], datatype=XSD.string)))
+
+    # sampling process date
+    rdf.add((sampling_process_date, RDF.type, obo.NCIT_C25164))
+    rdf.add((sampling_process_date, DCTERMS.date, Literal(variables_dict['date_sampling'], datatype=XSD.date)))
+
+    # Role
+    rdf.add((person_donor_role, RDF.type, obo.OBI_1110087))
+    rdf.add((person_donor_role, sio.SIO_000356, sampling_process))
+
+    # Identifier
+    # biosample
+    rdf.add((biosample_id, RDF.type, bco.record_id))
+    rdf.add((biosample_id, sio.SIO_000300, Literal(variables_dict['record_id'], datatype=XSD.string)))
+    rdf.add((biosample_id, sio.SIO_000672, biosample))
+    # person_donor
+    rdf.add((person_donor_id, RDF.type, obo.NCIT_C164796))
+    rdf.add((person_donor_id, obo.IAO_0000219, person_donor_role))
 
 
     # CLINICAL OBSERVATIONS (EXAMINATION PROCESS) MODEL

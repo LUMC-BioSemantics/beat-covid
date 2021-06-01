@@ -41,6 +41,7 @@ def generate_rdf(variables_dict):
 
     # entries
     # Entity
+    if not variables_dict['clinical_id']: variables_dict['clinical_id'] = "NA"
     person = bc["person/BEATCOVID_" + variables_dict['beat_id'] + "_CLINICAL_" + variables_dict['clinical_id']]
 
     # LAB MEASUREMENTS (MEASUREMENT PROCESS) MODEL
@@ -93,7 +94,6 @@ def generate_rdf(variables_dict):
 
     # CLINICAL OBSERVATIONS (EXAMINATION PROCESS) MODEL
     # Identifier
-    if not variables_dict['clinical_id']: variables_dict['clinical_id'] = "NA"
     clinical = bc["clinical/patient_id/" + variables_dict['clinical_id']]
 
     # Observation
@@ -209,25 +209,25 @@ def generate_rdf(variables_dict):
                 rdf.add((device, RDFS.label, Literal("Luminex", lang='en')))
             # Attribute/object
             trait = bc["trait/" + protein_string]
-            # rdf.add((trait, RDF.type, sio.SIO_010043))
-            # rdf.add((trait, sio.SIO_000300, Literal(protein_string, datatype=XSD.string)))
-            # rdf.add((trait, obo.BFO_0000050, person))
+            rdf.add((trait, RDF.type, sio.SIO_010043))
+            rdf.add((trait, sio.SIO_000300, Literal(protein_string, datatype=XSD.string)))
+            rdf.add((trait, obo.BFO_0000050, person))
             # cytokine gene
             gene = bc["gene/" + protein_string]
-            #rdf.add((gene, RDF.type, sio.SIO_010035))
-            # rdf.add((trait, sio.SIO_010079, gene))
+            rdf.add((gene, RDF.type, sio.SIO_010035))
+            rdf.add((trait, sio.SIO_010079, gene))
             # Measurement
             quantitative_trait = bc["lab/quantitative_trait/BEATCOVID_" + variables_dict['record_id']
                                     + "_" + measurement + "_" + str(measurement_number)]
-            #rdf.add((quantitative_trait, RDF.type, obo.IAO_0000109))
-            # rdf.add((quantitative_trait, RDFS.label, Literal(measurement, datatype=XSD.string)))
-            # rdf.add((quantitative_trait, sio.SIO_000221, efo.EFO_0004385))
-            #if variables_dict[measurement] == 'OOR <':
-                # rdf.add((quantitative_trait, sio.SIO_000300, Literal(variables_dict[measurement], datatype=XSD.string)))
-            #else:
-                # rdf.add((quantitative_trait, sio.SIO_000300, Literal(variables_dict[measurement], datatype=XSD.float)))
-            # rdf.add((quantitative_trait, sio.SIO_000628, trait))
-            # rdf.add((trait, sio.SIO_000216, quantitative_trait))
+            rdf.add((quantitative_trait, RDF.type, obo.IAO_0000109))
+            rdf.add((quantitative_trait, RDFS.label, Literal(measurement, datatype=XSD.string)))
+            rdf.add((quantitative_trait, sio.SIO_000221, efo.EFO_0004385))
+            if variables_dict[measurement] == 'OOR <' or variables_dict[measurement] == 'OOR >':
+                rdf.add((quantitative_trait, sio.SIO_000300, Literal(variables_dict[measurement], datatype=XSD.string)))
+            else:
+                rdf.add((quantitative_trait, sio.SIO_000300, Literal(variables_dict[measurement], datatype=XSD.float)))
+            rdf.add((quantitative_trait, sio.SIO_000628, trait))
+            rdf.add((trait, sio.SIO_000216, quantitative_trait))
             # unit
             unit = bc["lab/measurement_unit/pg_ml"]
             rdf.add((unit, RDF.type, obo.IAO_0000003))
@@ -236,17 +236,17 @@ def generate_rdf(variables_dict):
             # Process
             lab_meas_process = bc["lab/measurement_process/BEATCOVID_" + variables_dict['record_id']
                                   + measurement]
-            #rdf.add((lab_meas_process, RDF.type, obo.OBI_0000070))
-            # rdf.add((lab_meas_process, sio.SIO_000291, trait))
-            # rdf.add((lab_meas_process, sio.SIO_000230, biosample))
-            # rdf.add((lab_meas_process, sio.SIO_000229, quantitative_trait))
-            # rdf.add((lab_meas_process, sio.SIO_000008, measurement_process_date))
-            # rdf.add((lab_meas_process, DCTERMS.conformsTo, kit))
-            # rdf.add((lab_meas_process, sio.SIO_000132, device))
-            # rdf.add((lab_meas_process, sio.SIO_000628, clinical))
-            # rdf.add((lab_meas_process, prov.wasInformedBy, sampling_process))
+            rdf.add((lab_meas_process, RDF.type, obo.OBI_0000070))
+            rdf.add((lab_meas_process, sio.SIO_000291, trait))
+            rdf.add((lab_meas_process, sio.SIO_000230, biosample))
+            rdf.add((lab_meas_process, sio.SIO_000229, quantitative_trait))
+            rdf.add((lab_meas_process, sio.SIO_000008, measurement_process_date))
+            rdf.add((lab_meas_process, DCTERMS.conformsTo, kit))
+            rdf.add((lab_meas_process, sio.SIO_000132, device))
+            rdf.add((lab_meas_process, sio.SIO_000628, clinical))
+            rdf.add((lab_meas_process, prov.wasInformedBy, sampling_process))
             # role
-            #rdf.add((person_study_role, sio.SIO_000356, lab_meas_process))
+            rdf.add((person_study_role, sio.SIO_000356, lab_meas_process))
 
     return rdf
 

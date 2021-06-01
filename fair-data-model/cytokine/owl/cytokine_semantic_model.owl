@@ -1,1596 +1,2407 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.org/beat-covid/cytokines-semantic-model.owl#"
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://purl.org/beat-covid/cytokines-semantic-model.owl"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:bao="http://www.bioassayontology.org/bao#"
-     xmlns:csm="http://purl.org/beat-covid/cytokines-semantic-model#"
-     xmlns:dct="http://purl.org/dc/terms/"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:sio="http://semanticscience.org/resource/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://purl.org/beat-covid/cytokines-semantic-model.owl">
-        <owl:versionIRI rdf:resource="http://purl.org/beat-covid/cytokines-semantic-model/v1.0/release.owl"/>
-        <dc:contributor rdf:resource="http://orcid.org/0000−0002−1215−167X"/>
-        <dc:contributor rdf:resource="http://orcid.org/0000−0002−8691−772X"/>
-        <dc:contributor rdf:resource="http://orcid.org/0000−0003−3934−0072"/>
-        <dc:creator rdf:resource="http://orcid.org/0000-0003-0169-8159"/>
-        <dc:creator rdf:resource="http://orcid.org/0000−0002−6844−0067"/>
-        <dc:creator rdf:resource="http://orcid.org/0000−0003−1795−5930"/>
-        <dct:description xml:lang="en">The cytokine semantic model provides an ontology for integration of health COVID-19 observational data collected in the LUMC hospital for patient monitoring and research.</dct:description>
-        <dct:issued>30-08-2020</dct:issued>
-        <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <dct:modified>30-09-2020</dct:modified>
-        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">free to use,share,modify. modify with attribution [http://creativecommons.org/licenses/by/4.0/].</dct:modified>
-        <dct:title xml:lang="en">Cytokines semantic model (CSM)</dct:title>
-        <owl:versionInfo xml:lang="en">1.0</owl:versionInfo>
-    </owl:Ontology>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/contributor -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/creator -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/identifier -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/description -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/issued -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/license -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/modified -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/rights -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/title -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
-    
-
-
-    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
-
-    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </rdf:Description>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#date -->
-
-    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/NCIT_C21541"/>
-        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_010003"/>
-        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_010043"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000688"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000219 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000219">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/NCIT_C164796"/>
-        <rdfs:domain rdf:resource="http://purl.org/beat-covid/cytokines-semantic-model#beat_covid_id"/>
-        <rdfs:domain rdf:resource="http://purl.org/beat-covid/cytokines-semantic-model#clinical_id"/>
-        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000115"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/OBI_1110087"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000016"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000715"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000883"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0001025 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001025">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000883"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCIT_C21541"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000688"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002091 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002091">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_001049"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48906"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/dc/terms/conformsTo -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/conformsTo">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000001 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000001">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_001013"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000883"/>
-        <dc:identifier>SIO_000001</dc:identifier>
-        <dct:description xml:lang="en">A is related to B iff there is some relation between A and B.</dct:description>
-        <rdfs:label xml:lang="en">is related to</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000008 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000008">
-        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000001"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
-        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_001023"/>
-        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_001049"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25164"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000011 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000011">
-        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000001"/>
-        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_001331"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000132 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000132">
-        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000001"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000216 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000216">
-        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000008"/>
-        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_010043"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000221 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000221">
-        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000008"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000228 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000228">
-        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000008"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/OBI_1110087"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000016"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000715"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000883"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000229 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000229">
-        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000132"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
-        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_001023"/>
-        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_001049"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000004"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_001050"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000230 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000230">
-        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000132"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
-        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_001023"/>
-        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_001049"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000715"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_001050"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000291 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000291">
-        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000230"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
-        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_001023"/>
-        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_001049"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000004"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_010003"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_010043"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000356 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000356">
-        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000001"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/OBI_1110087"/>
-        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000016"/>
-        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000715"/>
-        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000883"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000006"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_001023"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_001049"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000628 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000628">
-        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000001"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
-        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000340"/>
-        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_001023"/>
-        <rdfs:range rdf:resource="http://purl.org/beat-covid/cytokines-semantic-model#beat_covid_id"/>
-        <rdfs:range rdf:resource="http://purl.org/beat-covid/cytokines-semantic-model#clinical_id"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_010003"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_010043"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_010056"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000672 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000672">
-        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000011"/>
-        <rdfs:domain rdf:resource="http://purl.org/beat-covid/cytokines-semantic-model#record_id"/>
-        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000115"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_001050"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000793 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000793">
-        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000001"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25164"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001403 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_001403">
-        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000001"/>
-        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_001331"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000960"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000992"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_001210"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_001211"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_001289"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_001292"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_010079 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_010079">
-        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000001"/>
-        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_010043"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_010035"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0002854 -->
-
-    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0002854">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/ns/prov#wasInformedBy -->
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasInformedBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
-        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_001023"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
-        <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_001049"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Data properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.org/dc/terms/date -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/date">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000340"/>
-        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_001050"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/dc/terms/identifier -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/identifier">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000300 -->
-
-    <owl:DatatypeProperty rdf:about="http://semanticscience.org/resource/SIO_000300">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
-        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_001050"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
-
-    <owl:DatatypeProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000003 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000003">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000015"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000015"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C164796 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C164796">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000115"/>
-        <dc:identifier>NCIT_C164796</dc:identifier>
-        <dct:description xml:lang="en">an identifier for a donor in a biobank.</dct:description>
-        <rdfs:label xml:lang="en">donor registry identifier</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C21541 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C21541">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C25164 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25164">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000015"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C48906 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C48906">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000015"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000006"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000272 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000272">
-        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Standard"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000968 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000968">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/OBI_1110087 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/OBI_1110087">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000016"/>
-        <dc:identifier>OBI_1110087</dc:identifier>
-        <dct:description xml:lang="en">a role which inheres in an organism or part thereof from which any part including cell, organ or tissue is removed with the intention that the donated part will be placed into another organism and/or cultured in vitro.</dct:description>
-        <rdfs:label xml:lang="en">donor role</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/beat-covid/cytokines-semantic-model#beat_covid_id -->
-
-    <owl:Class rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#beat_covid_id">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000115"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/beat-covid/cytokines-semantic-model#clinical_id -->
-
-    <owl:Class rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#clinical_id">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000115"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/beat-covid/cytokines-semantic-model#record_id -->
-
-    <owl:Class rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#record_id">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000115"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/dc/terms/Standard -->
-
-    <owl:Class rdf:about="http://purl.org/dc/terms/Standard">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000015"/>
-        <dc:identifier>Standard</dc:identifier>
-        <dct:description xml:lang="en">a reference point against which other things can be evaluated or compared.</dct:description>
-        <rdfs:label xml:lang="en">standard</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000004 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000004">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000005 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000005">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000614"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000006 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000006"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000015 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000015">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
-        <dc:identifier>SIO_000015</dc:identifier>
-        <dct:description xml:lang="en">information content entity is an object that requires some background knowledge or procedure to correctly interpret.</dct:description>
-        <rdfs:label xml:lang="en">information content entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000016 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000016">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000340"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000115 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000115">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000015"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000340 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000340">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000614"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000498 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000498">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000614 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000614">
-        <dc:identifier>SIO_000614</dc:identifier>
-        <dct:description xml:lang="en">an attribute is a characteristic of some entity.</dct:description>
-        <rdfs:label xml:lang="en">attribute</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000688 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000688">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000715 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000715">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000016"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000776 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000776"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000883 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000883">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000016"/>
-        <dc:identifier>SIO_000883</dc:identifier>
-        <dct:description xml:lang="en">a subject role is the role of an individual that is the target of the study.</dct:description>
-        <rdfs:label xml:lang="en">subject role</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000960 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000960">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000005"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000992 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000992">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000005"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001013 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001013">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000015"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001023 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001023">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000006"/>
-        <dc:identifier>SIO_001023</dc:identifier>
-        <dct:description xml:lang="en">a medical screening is a medical test or series used to detect or predict the presence of disease in individuals at risk for disease within a defined group, such as a population, family, or workforce</dct:description>
-        <rdfs:label xml:lang="en">medical screening</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001049 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001049">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000006"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001050 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001050">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000004"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001210 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001210">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000005"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001211 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001211">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000005"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001289 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001289">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000005"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001292 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001292">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000005"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001331 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001331">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000015"/>
-        <dc:identifier>SIO_001331</dc:identifier>
-        <dct:description xml:lang="en">a diagnosis is the result of a medical investigation to identify a disorder from its signs and symptoms.</dct:description>
-        <rdfs:label xml:lang="en">diagnosis</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_010003 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010003">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000004"/>
-        <owl:disjointWith rdf:resource="http://semanticscience.org/resource/SIO_010043"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_010035 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010035">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000004"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_010043 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010043">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000004"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_010056 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010056">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000005"/>
-    </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000003 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000003"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000109"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000219 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000219"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C21541 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/NCIT_C21541"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C25164 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/NCIT_C25164"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C48906 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/NCIT_C48906"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0000070"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000272 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0000272"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000968 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0000968"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0001025 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RO_0001025"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002091 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RO_0002091"/>
-    
-
-
-    <!-- http://purl.org/beat-covid/cytokines-semantic-model#beat_covid_id -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#beat_covid_id"/>
-    
-
-
-    <!-- http://purl.org/beat-covid/cytokines-semantic-model#clinical_id -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#clinical_id"/>
-    
-
-
-    <!-- http://purl.org/beat-covid/cytokines-semantic-model#record_id -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#record_id"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/Agent -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/Agent"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/conformsTo -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/conformsTo"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/date -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/date"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/identifier -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/identifier"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000004 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_000004"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000005 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_000005"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000006 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_000006"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000008 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_000008"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000011 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_000011"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000016 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_000016"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000115 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_000115"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000132 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_000132"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000139 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_000139"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000216 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_000216"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000217 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_000217"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000221 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_000221"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000228 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_000228"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000229 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_000229"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000230 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_000230"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000291 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_000291"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000300 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_000300"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000340 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_000340"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000356 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_000356"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000498 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_000498"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000628 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_000628"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000642 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_000642"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000672 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_000672"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000688 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_000688"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000715 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_000715"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000776 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_000776"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000793 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_000793"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000960 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_000960"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000992 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_000992"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001013 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_001013"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001024 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_001024"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001049 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_001049"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001050 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_001050"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001210 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_001210"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001211 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_001211"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001289 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_001289"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001292 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_001292"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001403 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_001403"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_010003 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_010003"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_010035 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_010035"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_010043 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_010043"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_010056 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_010056"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_010079 -->
-
-    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_010079"/>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0002854 -->
-
-    <owl:NamedIndividual rdf:about="http://www.bioassayontology.org/bao#BAO_0002854"/>
-    
-
-
-    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
-
-    <owl:NamedIndividual rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
-    
-
-
-    <!-- http://www.w3.org/ns/prov#wasInformedBy -->
-
-    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov#wasInformedBy"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
-        <dc:identifier>BFO_0000050</dc:identifier>
-        <dct:description xml:lang="en">a core relation that holds between a part and its whole.</dct:description>
-        <rdfs:label xml:lang="en">part of</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000003">
-        <dct:description xml:lang="en">a measurement unit label is as a label that is part of a scalar measurement datum and denotes a unit of measure.</dct:description>
-        <dc:identifier>IAO_0000003</dc:identifier>
-        <rdfs:label xml:lang="en">measurement unit label</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000109">
-        <dct:description xml:lang="en">a measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device.</dct:description>
-        <rdfs:label xml:lang="en">measurement datum</rdfs:label>
-        <dc:identifier>IAO_0000109</dc:identifier>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000219">
-        <dct:description xml:lang="en">a primitive, instance-level, relation obtaining between an information content entity and some portion of reality. Denotation is what happens when someone creates an information content entity E in order to specifically refer to something. The only relation between E and the thing is that E can be used to &apos;pick out&apos; the thing. This relation connects those two together.</dct:description>
-        <rdfs:label xml:lang="en">denotes</rdfs:label>
-        <dc:identifier>IAO_0000219</dc:identifier>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C21541">
-        <dc:identifier>NCIT_C21541</dc:identifier>
-        <rdfs:label xml:lang="en">healthcare facility</rdfs:label>
-        <dct:description xml:lang="en">the buildings and organizations where healthcare services are provided, e.g. ward.</dct:description>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C25164">
-        <dc:identifier>NCIT_C25164</dc:identifier>
-        <rdfs:label xml:lang="en">date</rdfs:label>
-        <dct:description xml:lang="en">the particular day, month and year an event has happened or will happen.</dct:description>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C48906">
-        <rdfs:label xml:lang="en">order</rdfs:label>
-        <dct:description xml:lang="en">the act of requesting that a person, business, or organization do or supply something.</dct:description>
-        <dc:identifier>NCIT_C48906</dc:identifier>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000070">
-        <dct:description xml:lang="en">a planned process with the objective to produce information about the material entity that is the evaluant, by physically examining it or its proxies.</dct:description>
-        <dc:identifier>OBI_0000070</dc:identifier>
-        <rdfs:label xml:lang="en">assay</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000272">
-        <dc:identifier>OBI_0000272</dc:identifier>
-        <dct:description xml:lang="en">a plan specification which has sufficient level of detail and quantitative information to communicate it between investigation agents, so that different investigation agents will reliably be able to independently reproduce the process.</dct:description>
-        <rdfs:label xml:lang="en">protocol</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000968">
-        <dc:identifier>OBI_0000968</dc:identifier>
-        <dct:description xml:lang="en">a material entity that is designed to perform a function in a scientific investigation, but is not a reagent.</dct:description>
-        <rdfs:label xml:lang="en">device</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0001025">
-        <dc:identifier>RO_0001025</dc:identifier>
-        <rdfs:label xml:lang="en">located in</rdfs:label>
-        <dct:description xml:lang="en">a relation between two independent continuants, the target and the location, in which the target is entirely within the location.</dct:description>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002091">
-        <dct:description xml:lang="en">starts during is a relation between a process and an information content entity that states a point or period of time when the process has to start. X starts_during Y iff: (start(Y) before_or_simultaneous_with start(X)) AND (start(X) before_or_simultaneous_with end(Y)), e.g. the patient sampling starts during what is stated in the order done by the medical doctor.</dct:description>
-        <dc:identifier>RO_0002091</dc:identifier>
-        <rdfs:label xml:lang="en">starts during</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#beat_covid_id">
-        <dc:identifier>beat_covid_id</dc:identifier>
-        <dct:description xml:lang="en">an identifier for a patient participating in the Beat-COVID study.</dct:description>
-        <rdfs:label xml:lang="en">beat-covid identifier</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/beat-covid/cytokines-semantic-model.owl"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#clinical_id">
-        <rdfs:label xml:lang="en">clinical identifier</rdfs:label>
-        <dct:description xml:lang="en">an identifier for a patient in the clinical database.</dct:description>
-        <dc:identifier>clinical_id</dc:identifier>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/beat-covid/cytokines-semantic-model.owl"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#record_id">
-        <dc:identifier>record_id</dc:identifier>
-        <rdfs:label xml:lang="en">sample identifier</rdfs:label>
-        <dct:description xml:lang="en">an identifier for a sample or set of samples.</dct:description>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/beat-covid/cytokines-semantic-model.owl"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/dc/terms/conformsTo">
-        <dct:description xml:lang="en">an established standard to which the described resource conforms.</dct:description>
-        <rdfs:label xml:lang="en">conforms to</rdfs:label>
-        <dc:identifier>conformsTo</dc:identifier>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/dc/terms/date">
-        <dc:identifier>date</dc:identifier>
-        <dct:description xml:lang="en">a point or period of time associated with an event in the lifecycle of the resource.</dct:description>
-        <rdfs:label xml:lang="en">date</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/dc/terms/identifier">
-        <dct:description xml:lang="en">an unambiguous reference to the resource within a given context.</dct:description>
-        <rdfs:label xml:lang="en">identifier</rdfs:label>
-        <dc:identifier>identifier</dc:identifier>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000004">
-        <dct:description xml:lang="en">a material entity is a physical entity that is spatially extended, exists as a whole at any point in time and has mass.</dct:description>
-        <rdfs:label xml:lang="en">material entity</rdfs:label>
-        <dc:identifier>SIO_000004</dc:identifier>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000005">
-        <dc:identifier>SIO_000005</dc:identifier>
-        <rdfs:label xml:lang="en">quality</rdfs:label>
-        <dct:description xml:lang="en">a quality is an attribute that is intrinsically associated with its bearer (or its parts), but whose presence/absence and observed/measured value may vary.</dct:description>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000006">
-        <dc:identifier>SIO_000006</dc:identifier>
-        <rdfs:label xml:lang="en">process</rdfs:label>
-        <dct:description xml:lang="en">a process is an entity that is identifiable only through the unfolding of time, has temporal parts, and unless otherwise specified/predicted, cannot be identified from any instant of time in which it exists.</dct:description>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000008">
-        <dc:identifier>SIO_000008</dc:identifier>
-        <dct:description xml:lang="en">has attribute is a relation that associates a entity with an attribute where an attribute is an intrinsic characteristic such as a quality, capability, disposition, function, or is an externally derived attribute determined from some descriptor (e.g. a quantity, position, label/identifier) either directly or indirectly through generalization of entities of the same type.</dct:description>
-        <rdfs:label xml:lang="en">has attribute</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000011">
-        <dc:identifier>SIO_000011</dc:identifier>
-        <rdfs:label xml:lang="en">is attribute of</rdfs:label>
-        <dct:description xml:lang="en">is attribute of is a relation that associates an attribute with an entity where an attribute is an intrinsic characteristic such as a quality, capability, disposition, function, or is an externally derived attribute determined from some descriptor (e.g. a quantity, position, label/identifier) either directly or indirectly through generalization of entities of the same type.</dct:description>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000016">
-        <dc:identifier>SIO_000016</dc:identifier>
-        <dct:description xml:lang="en">a role is a realizable entity that describes behaviours, rights and obligations of an entity in some particular circumstance.</dct:description>
-        <rdfs:label xml:lang="en">role</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000115">
-        <dct:description xml:lang="en">an identifier is a label that specifically refers to (identifies) an entity (instance/type).</dct:description>
-        <rdfs:label xml:lang="en">identifier</rdfs:label>
-        <dc:identifier>SIO_000115</dc:identifier>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000132">
-        <dc:identifier>SIO_000132</dc:identifier>
-        <rdfs:label xml:lang="en">has participant</rdfs:label>
-        <dct:description xml:lang="en">has participant is a relation that describes the participation of the object in the (processual) subject.</dct:description>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000216">
-        <dct:description xml:lang="en">has measurement value is a relation between a quality/realizable and a measurement value.</dct:description>
-        <dc:identifier>SIO_000216</dc:identifier>
-        <rdfs:label xml:lang="en">has measurement value</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000221">
-        <dct:description xml:lang="en">has unit is a relation between a quantity and the unit it is a multiple of.</dct:description>
-        <rdfs:label xml:lang="en">has unit</rdfs:label>
-        <dc:identifier>SIO_000221</dc:identifier>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000228">
-        <rdfs:label xml:lang="en">has role</rdfs:label>
-        <dct:description xml:lang="en">has role is a relation between an entity and a role that it bears.</dct:description>
-        <dc:identifier>SIO_000228</dc:identifier>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000229">
-        <dc:identifier>SIO_000229</dc:identifier>
-        <dct:description xml:lang="en">has output is a relation between a process and an entity, where the entity is present at the end of the process.</dct:description>
-        <rdfs:label xml:lang="en">has output</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000230">
-        <dct:description xml:lang="en">has input is a relation between a process and an entity, where the entity is present at the beginning of the process.</dct:description>
-        <dc:identifier>SIO_000230</dc:identifier>
-        <rdfs:label xml:lang="en">has input</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000291">
-        <dc:identifier>SIO_000291</dc:identifier>
-        <dct:description xml:lang="en">has target is a relation between a process and an entity, where the entity is present at the beginning of the process and undergoes a change or transformation in the process.</dct:description>
-        <rdfs:label xml:lang="en">has target</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000300">
-        <dct:description xml:lang="en">a relation between a informational entity and its actual value (numeric, date, text, etc).</dct:description>
-        <rdfs:label xml:lang="en">has value</rdfs:label>
-        <dc:identifier>SIO_000300</dc:identifier>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000340">
-        <rdfs:label xml:lang="en">realizable entity</rdfs:label>
-        <dct:description xml:lang="en">a realizable entity is an attribute that is exhibited under some condition and is realized in some process.</dct:description>
-        <dc:identifier>SIO_000340</dc:identifier>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000356">
-        <dc:identifier>SIO_000356</dc:identifier>
-        <dct:description xml:lang="en">the role of a patient is realized in medical examination.</dct:description>
-        <rdfs:label xml:lang="en">is realized in</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000498">
-        <rdfs:label xml:lang="en">person</rdfs:label>
-        <dc:identifier>SIO_000498</dc:identifier>
-        <dct:description xml:lang="en">a person is an object that has certain capacities or attributes constituting personhood.</dct:description>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000628">
-        <rdfs:label xml:lang="en">refers to</rdfs:label>
-        <dct:description xml:lang="en">refers to is a relation between one entity and the entity that it makes reference to.</dct:description>
-        <dc:identifier>SIO_000628</dc:identifier>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000672">
-        <rdfs:label xml:lang="en">is identifier for</rdfs:label>
-        <dc:identifier>SIO_000672</dc:identifier>
-        <dct:description xml:lang="en">a relation between an identifier and an entity.</dct:description>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000688">
-        <dct:description xml:lang="en">institute is a society or organization having a object or common factor, and is normally applied to those with a scientific, educational, or social objective, e.g. Leiden University Medical Center (LUMC).</dct:description>
-        <dc:identifier>SIO_000688</dc:identifier>
-        <rdfs:label xml:lang="en">institute</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000715">
-        <dc:identifier>SIO_000715</dc:identifier>
-        <rdfs:label xml:lang="en">patient role</rdfs:label>
-        <dct:description xml:lang="en">a patient role is the role of an individual that is the recepient of medical care.</dct:description>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000776">
-        <dct:description xml:lang="en">an object is an entity that is wholly identifiable at any instant of time during which it exists.</dct:description>
-        <rdfs:label xml:lang="en">object</rdfs:label>
-        <dc:identifier>SIO_000776</dc:identifier>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000793">
-        <dct:description xml:lang="en">measured at is a relation between a measurement value and the time measurement.</dct:description>
-        <rdfs:label xml:lang="en">measured at</rdfs:label>
-        <dc:identifier>SIO_000793</dc:identifier>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000960">
-        <rdfs:label xml:lang="en">real</rdfs:label>
-        <dct:description xml:lang="en">real is the quality of an entity that exists in real space and time.</dct:description>
-        <dc:identifier>SIO_000960</dc:identifier>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000992">
-        <rdfs:label xml:lang="en">unsupported</rdfs:label>
-        <dc:identifier>SIO_000992</dc:identifier>
-        <dct:description xml:lang="en">unsupported is an existence quality in which there is no evidence to support the existence of the entity in any world (real or hypothetical).</dct:description>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001013">
-        <dct:description xml:lang="en">age is the length of time that a person has lived or a thing has existed.</dct:description>
-        <dc:identifier>SIO_001013</dc:identifier>
-        <rdfs:label xml:lang="en">age</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001049">
-        <rdfs:label xml:lang="en">sampling</rdfs:label>
-        <dct:description xml:lang="en">sampling is the act of obtaining a sample, whether through selection, collection or preparation.</dct:description>
-        <dc:identifier>SIO_001049</dc:identifier>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001050">
-        <dct:description xml:lang="en">a sample is a limited quantity of something (e.g. an individual or set of individuals from a population, or a portion of a substance) to be used for testing, analysis, inspection, investigation, demonstration, or trial use.</dct:description>
-        <rdfs:label xml:lang="en">sample</rdfs:label>
-        <dc:identifier>SIO_001050</dc:identifier>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001210">
-        <rdfs:label xml:lang="en">positive</rdfs:label>
-        <dc:identifier>SIO_001210</dc:identifier>
-        <dct:description xml:lang="en">positive is an assertional qualifier that expresses the validity or truth of a basic assertion, e.g. in a medical examination the observation is the presence of a trait or phenotype.</dct:description>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001211">
-        <rdfs:label xml:lang="en">negative</rdfs:label>
-        <dct:description xml:lang="en">negative is an assertional qualifier that expresses the falsity or lack of truth of a basic assertion, e.g. in a medical examination the observation is the absence of a trait or phenotype.</dct:description>
-        <dc:identifier>SIO_001211</dc:identifier>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001289">
-        <dct:description xml:lang="en">never refers to in none of the occasions.</dct:description>
-        <dc:identifier>SIO_001289</dc:identifier>
-        <rdfs:label xml:lang="en">never</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001292">
-        <dct:description xml:lang="en">always indicates that the event occurs at all times.</dct:description>
-        <dc:identifier>SIO_001292</dc:identifier>
-        <rdfs:label xml:lang="en">always</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001403">
-        <dc:identifier>SIO_001403</dc:identifier>
-        <rdfs:label xml:lang="en">is associated with</rdfs:label>
-        <dct:description xml:lang="en">x is associated with y when x and y are logically or statistically related to one another.</dct:description>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_010003">
-        <rdfs:label xml:lang="en">organ</rdfs:label>
-        <dct:description xml:lang="en">an organ is a collection of tissues joined in structural unit to serve a common function.</dct:description>
-        <dc:identifier>SIO_010003</dc:identifier>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_010035">
-        <dct:description xml:lang="en">a gene is part of a nucleic acid that contains all the necessary elements to encode a functional transcript.</dct:description>
-        <rdfs:label xml:lang="en">gene</rdfs:label>
-        <dc:identifier>SIO_010035</dc:identifier>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_010043">
-        <rdfs:label xml:lang="en">protein</rdfs:label>
-        <dct:description xml:lang="en">a protein is an organic polymer that is composed of one or more linear polymers of amino acids.</dct:description>
-        <dc:identifier>SIO_010043</dc:identifier>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_010056">
-        <rdfs:label xml:lang="en">phenotype</rdfs:label>
-        <dct:description xml:lang="en">a phenotype is an observable characteristic of an individual.</dct:description>
-        <dc:identifier>SIO_010056</dc:identifier>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_010079">
-        <rdfs:label xml:lang="en">is encoded by</rdfs:label>
-        <dc:identifier>SIO_010079</dc:identifier>
-        <dct:description xml:lang="en">a relation between two objects, in which the first object is produced from the information contained in the second object.</dct:description>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0002854">
-        <dct:description xml:lang="en">has bioassay type is a relation that associates the output of a property evaluated in a bioassay and the category of bioassay based on the property or process that the assay is interrogating, e.g. ADMET, functional, etc.</dct:description>
-        <rdfs:label xml:lang="en">has bioassay type</rdfs:label>
-        <dc:identifier>BAO_0002854</dc:identifier>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
-        <dct:description xml:lang="en">A human-readable name for the subject.</dct:description>
-        <dc:identifier>label</dc:identifier>
-        <rdfs:label xml:lang="en">label</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/ns/prov#wasInformedBy">
-        <rdfs:label xml:lang="en">was informed by</rdfs:label>
-        <dc:identifier>wasInformedBy</dc:identifier>
-        <dct:description xml:lang="en">was informed by is a relation between two processes where one process communicates to another process. Communication is the exchange of an entity by two activities, one activity using the entity generated by the other.</dct:description>
-    </rdf:Description>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // General axioms
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000070"/>
-            <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001023"/>
-            <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001049"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#beat_covid_id"/>
-            <rdf:Description rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#clinical_id"/>
-            <rdf:Description rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#record_id"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000960"/>
-            <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000992"/>
-            <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001210"/>
-            <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001211"/>
-            <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001289"/>
-            <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001292"/>
-            <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_010056"/>
-        </owl:members>
-    </rdf:Description>
-</rdf:RDF>
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://purl.org/beat-covid/cytokines-semantic-model.owl"
+     versionIRI="http://purl.org/beat-covid/cytokines-semantic-model/v1.0/release.owl">
+    <Prefix name="" IRI="http://purl.org/beat-covid/cytokines-semantic-model.owl#"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="bao" IRI="http://www.bioassayontology.org/bao#"/>
+    <Prefix name="csm" IRI="http://purl.org/beat-covid/cytokines-semantic-model#"/>
+    <Prefix name="dct" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="sio" IRI="http://semanticscience.org/resource/"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="repr" IRI="https://w3id.org/reproduceme#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <IRI>http://orcid.org/0000−0002−1215−167X</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <IRI>http://orcid.org/0000−0002−8691−772X</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <IRI>http://orcid.org/0000−0003−3934−0072</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>http://orcid.org/0000-0003-0169-8159</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>http://orcid.org/0000−0002−6844−0067</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>http://orcid.org/0000−0003−1795−5930</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <Literal xml:lang="en">The cytokine semantic model provides an ontology for integration of health COVID-19 observational data collected in the LUMC hospital for patient monitoring and research.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dct:issued"/>
+        <Literal>30-08-2020</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dct:license"/>
+        <IRI>https://creativecommons.org/licenses/by/4.0/</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dct:modified"/>
+        <Literal>30-09-2020</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dct:modified"/>
+        <Literal>free to use,share,modify. modify with attribution [http://creativecommons.org/licenses/by/4.0/].</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dct:title"/>
+        <Literal xml:lang="en">Cytokines semantic model (CSM)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal xml:lang="en">1.0</Literal>
+    </Annotation>
+    <Declaration>
+        <Class abbreviatedIRI="obo:IAO_0000003"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:IAO_0000109"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:NCIT_C164796"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:NCIT_C21541"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:NCIT_C25164"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:NCIT_C25664"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:NCIT_C48906"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:OBI_0000070"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:OBI_0000272"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:OBI_0000968"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/OBI_1110087"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="csm:beat_covid_id"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="csm:clinical_id"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="csm:record_id"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dct:Standard"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sio:SIO_000004"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sio:SIO_000005"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sio:SIO_000006"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sio:SIO_000015"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sio:SIO_000016"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sio:SIO_000115"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sio:SIO_000340"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sio:SIO_000498"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sio:SIO_000614"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sio:SIO_000688"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sio:SIO_000715"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sio:SIO_000776"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sio:SIO_000883"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sio:SIO_000960"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sio:SIO_000992"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sio:SIO_001013"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sio:SIO_001023"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sio:SIO_001049"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sio:SIO_001050"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sio:SIO_001210"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sio:SIO_001211"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sio:SIO_001289"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sio:SIO_001292"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sio:SIO_001331"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sio:SIO_010003"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sio:SIO_010035"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sio:SIO_010043"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sio:SIO_010056"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="repr:Version"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ttp://purl.obolibrary.org/obo/CMO_0001109"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ttp://purl.obolibrary.org/obo/NCIT_C175280"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:BFO_0000050"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:RO_0001025"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:RO_0002091"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="dct:conformsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000001"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000008"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000011"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000132"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000216"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000221"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000228"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000229"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000230"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000291"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000356"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000628"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000672"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000793"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sio:SIO_001403"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sio:SIO_010079"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="bao:BAO_0002854"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasInformedBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="dct:date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="dct:identifier"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="sio:SIO_000300"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="obo:BFO_0000050"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="obo:IAO_0000003"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="obo:IAO_0000109"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="obo:IAO_0000219"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="obo:NCIT_C21541"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="obo:NCIT_C25164"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="obo:NCIT_C48906"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="obo:OBI_0000070"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="obo:OBI_0000272"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="obo:OBI_0000968"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="obo:RO_0001025"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="obo:RO_0002091"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="csm:beat_covid_id"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="csm:clinical_id"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="csm:record_id"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dct:Agent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dct:conformsTo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dct:date"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dct:identifier"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_000004"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_000005"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_000006"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_000008"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_000011"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_000016"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_000115"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_000132"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_000139"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_000216"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_000217"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_000221"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_000228"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_000229"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_000230"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_000291"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_000300"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_000340"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_000356"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_000498"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_000628"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_000642"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_000672"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_000688"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_000715"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_000776"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_000793"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_000960"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_000992"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_001013"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_001024"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_001049"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_001050"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_001210"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_001211"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_001289"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_001292"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_001403"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_010003"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_010035"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_010043"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_010056"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sio:SIO_010079"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="bao:BAO_0002854"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="rdfs:label"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#wasInformedBy"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dct:issued"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dct:license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dct:modified"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dct:rights"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dct:title"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </Declaration>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:IAO_0000003"/>
+        <Class abbreviatedIRI="sio:SIO_000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:IAO_0000109"/>
+        <Class abbreviatedIRI="sio:SIO_000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:NCIT_C164796"/>
+        <Class abbreviatedIRI="sio:SIO_000115"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:NCIT_C21541"/>
+        <Class abbreviatedIRI="sio:SIO_000776"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:NCIT_C25164"/>
+        <Class abbreviatedIRI="sio:SIO_000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:NCIT_C25664"/>
+        <Class abbreviatedIRI="sio:SIO_000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:NCIT_C48906"/>
+        <Class abbreviatedIRI="sio:SIO_000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OBI_0000070"/>
+        <Class abbreviatedIRI="sio:SIO_000006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OBI_0000272"/>
+        <Class abbreviatedIRI="dct:Standard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OBI_0000968"/>
+        <Class abbreviatedIRI="sio:SIO_000776"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/OBI_1110087"/>
+        <Class abbreviatedIRI="sio:SIO_000016"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="csm:beat_covid_id"/>
+        <Class abbreviatedIRI="sio:SIO_000115"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="csm:clinical_id"/>
+        <Class abbreviatedIRI="sio:SIO_000115"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="csm:record_id"/>
+        <Class abbreviatedIRI="sio:SIO_000115"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dct:Standard"/>
+        <Class abbreviatedIRI="sio:SIO_000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sio:SIO_000004"/>
+        <Class abbreviatedIRI="sio:SIO_000776"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sio:SIO_000005"/>
+        <Class abbreviatedIRI="sio:SIO_000614"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sio:SIO_000015"/>
+        <Class abbreviatedIRI="sio:SIO_000776"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sio:SIO_000016"/>
+        <Class abbreviatedIRI="sio:SIO_000340"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sio:SIO_000115"/>
+        <Class abbreviatedIRI="sio:SIO_000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sio:SIO_000340"/>
+        <Class abbreviatedIRI="sio:SIO_000614"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sio:SIO_000498"/>
+        <Class abbreviatedIRI="sio:SIO_000776"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sio:SIO_000688"/>
+        <Class abbreviatedIRI="sio:SIO_000776"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sio:SIO_000715"/>
+        <Class abbreviatedIRI="sio:SIO_000016"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sio:SIO_000883"/>
+        <Class abbreviatedIRI="sio:SIO_000016"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sio:SIO_000960"/>
+        <Class abbreviatedIRI="sio:SIO_000005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sio:SIO_000992"/>
+        <Class abbreviatedIRI="sio:SIO_000005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sio:SIO_001013"/>
+        <Class abbreviatedIRI="sio:SIO_000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sio:SIO_001023"/>
+        <Class abbreviatedIRI="sio:SIO_000006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sio:SIO_001049"/>
+        <Class abbreviatedIRI="sio:SIO_000006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sio:SIO_001050"/>
+        <Class abbreviatedIRI="sio:SIO_000004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sio:SIO_001210"/>
+        <Class abbreviatedIRI="sio:SIO_000005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sio:SIO_001211"/>
+        <Class abbreviatedIRI="sio:SIO_000005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sio:SIO_001289"/>
+        <Class abbreviatedIRI="sio:SIO_000005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sio:SIO_001292"/>
+        <Class abbreviatedIRI="sio:SIO_000005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sio:SIO_001331"/>
+        <Class abbreviatedIRI="sio:SIO_000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sio:SIO_010003"/>
+        <Class abbreviatedIRI="sio:SIO_000004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sio:SIO_010035"/>
+        <Class abbreviatedIRI="sio:SIO_000004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sio:SIO_010043"/>
+        <Class abbreviatedIRI="sio:SIO_000004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sio:SIO_010056"/>
+        <Class abbreviatedIRI="sio:SIO_000005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="repr:Version"/>
+        <Class abbreviatedIRI="sio:SIO_000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ttp://purl.obolibrary.org/obo/CMO_0001109"/>
+        <Class abbreviatedIRI="sio:SIO_000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ttp://purl.obolibrary.org/obo/NCIT_C175280"/>
+        <Class abbreviatedIRI="sio:SIO_000015"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class abbreviatedIRI="obo:OBI_0000070"/>
+        <Class abbreviatedIRI="sio:SIO_001023"/>
+        <Class abbreviatedIRI="sio:SIO_001049"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="csm:beat_covid_id"/>
+        <Class abbreviatedIRI="csm:clinical_id"/>
+        <Class abbreviatedIRI="csm:record_id"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="sio:SIO_000960"/>
+        <Class abbreviatedIRI="sio:SIO_000992"/>
+        <Class abbreviatedIRI="sio:SIO_001210"/>
+        <Class abbreviatedIRI="sio:SIO_001211"/>
+        <Class abbreviatedIRI="sio:SIO_001289"/>
+        <Class abbreviatedIRI="sio:SIO_001292"/>
+        <Class abbreviatedIRI="sio:SIO_010056"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="sio:SIO_010003"/>
+        <Class abbreviatedIRI="sio:SIO_010043"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="obo:BFO_0000050"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="obo:RO_0001025"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="obo:RO_0002091"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="dct:conformsTo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000008"/>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000001"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000011"/>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000001"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000132"/>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000001"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000216"/>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000008"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000221"/>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000008"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000228"/>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000008"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000229"/>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000132"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000230"/>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000132"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000291"/>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000230"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000356"/>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000001"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000628"/>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000001"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000672"/>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000011"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000793"/>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000001"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="sio:SIO_001403"/>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000001"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="sio:SIO_010079"/>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000001"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="bao:BAO_0002854"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasInformedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000221"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000228"/>
+    </InverseFunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000001"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty abbreviatedIRI="obo:BFO_0000050"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty abbreviatedIRI="obo:RO_0001025"/>
+    </TransitiveObjectProperty>
+    <ReflexiveObjectProperty>
+        <ObjectProperty abbreviatedIRI="obo:BFO_0000050"/>
+    </ReflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="obo:BFO_0000050"/>
+        <Class abbreviatedIRI="obo:NCIT_C21541"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="obo:BFO_0000050"/>
+        <Class abbreviatedIRI="sio:SIO_010003"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="obo:BFO_0000050"/>
+        <Class abbreviatedIRI="sio:SIO_010043"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
+        <Class abbreviatedIRI="obo:NCIT_C164796"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
+        <Class abbreviatedIRI="csm:beat_covid_id"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
+        <Class abbreviatedIRI="csm:clinical_id"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
+        <Class abbreviatedIRI="sio:SIO_000115"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="obo:RO_0001025"/>
+        <Class abbreviatedIRI="sio:SIO_000883"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="obo:RO_0002091"/>
+        <Class abbreviatedIRI="sio:SIO_001049"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="dct:conformsTo"/>
+        <Class abbreviatedIRI="obo:OBI_0000070"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000001"/>
+        <Class abbreviatedIRI="sio:SIO_001013"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000008"/>
+        <Class abbreviatedIRI="obo:OBI_0000070"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000008"/>
+        <Class abbreviatedIRI="sio:SIO_001023"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000008"/>
+        <Class abbreviatedIRI="sio:SIO_001049"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000011"/>
+        <Class abbreviatedIRI="sio:SIO_001331"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000132"/>
+        <Class abbreviatedIRI="obo:OBI_0000070"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000216"/>
+        <Class abbreviatedIRI="sio:SIO_010043"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000221"/>
+        <Class abbreviatedIRI="obo:IAO_0000109"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000228"/>
+        <Class abbreviatedIRI="sio:SIO_000498"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000229"/>
+        <Class abbreviatedIRI="obo:OBI_0000070"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000229"/>
+        <Class abbreviatedIRI="sio:SIO_001023"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000229"/>
+        <Class abbreviatedIRI="sio:SIO_001049"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000230"/>
+        <Class abbreviatedIRI="obo:OBI_0000070"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000230"/>
+        <Class abbreviatedIRI="sio:SIO_001023"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000230"/>
+        <Class abbreviatedIRI="sio:SIO_001049"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000291"/>
+        <Class abbreviatedIRI="obo:OBI_0000070"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000291"/>
+        <Class abbreviatedIRI="sio:SIO_001023"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000291"/>
+        <Class abbreviatedIRI="sio:SIO_001049"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000356"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/OBI_1110087"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000356"/>
+        <Class abbreviatedIRI="sio:SIO_000016"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000356"/>
+        <Class abbreviatedIRI="sio:SIO_000715"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000356"/>
+        <Class abbreviatedIRI="sio:SIO_000883"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000628"/>
+        <Class abbreviatedIRI="obo:IAO_0000109"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000628"/>
+        <Class abbreviatedIRI="obo:OBI_0000070"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000628"/>
+        <Class abbreviatedIRI="sio:SIO_000340"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000628"/>
+        <Class abbreviatedIRI="sio:SIO_001023"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000672"/>
+        <Class abbreviatedIRI="csm:record_id"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000672"/>
+        <Class abbreviatedIRI="sio:SIO_000115"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000793"/>
+        <Class abbreviatedIRI="obo:IAO_0000109"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sio:SIO_001403"/>
+        <Class abbreviatedIRI="sio:SIO_001331"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sio:SIO_010079"/>
+        <Class abbreviatedIRI="sio:SIO_010043"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="bao:BAO_0002854"/>
+        <Class abbreviatedIRI="obo:IAO_0000109"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasInformedBy"/>
+        <Class abbreviatedIRI="obo:OBI_0000070"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasInformedBy"/>
+        <Class abbreviatedIRI="sio:SIO_001023"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="obo:BFO_0000050"/>
+        <Class abbreviatedIRI="sio:SIO_000498"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="obo:BFO_0000050"/>
+        <Class abbreviatedIRI="sio:SIO_000688"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/OBI_1110087"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
+        <Class abbreviatedIRI="sio:SIO_000016"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
+        <Class abbreviatedIRI="sio:SIO_000715"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
+        <Class abbreviatedIRI="sio:SIO_000883"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="obo:RO_0001025"/>
+        <Class abbreviatedIRI="obo:NCIT_C21541"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="obo:RO_0001025"/>
+        <Class abbreviatedIRI="sio:SIO_000688"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="obo:RO_0002091"/>
+        <Class abbreviatedIRI="obo:NCIT_C48906"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="dct:conformsTo"/>
+        <Class abbreviatedIRI="obo:OBI_0000272"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000001"/>
+        <Class abbreviatedIRI="sio:SIO_000883"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000008"/>
+        <Class abbreviatedIRI="obo:NCIT_C25164"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000011"/>
+        <Class abbreviatedIRI="sio:SIO_000498"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000132"/>
+        <Class abbreviatedIRI="obo:OBI_0000968"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000216"/>
+        <Class abbreviatedIRI="obo:IAO_0000109"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000221"/>
+        <Class abbreviatedIRI="obo:IAO_0000003"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000228"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/OBI_1110087"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000228"/>
+        <Class abbreviatedIRI="sio:SIO_000016"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000228"/>
+        <Class abbreviatedIRI="sio:SIO_000715"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000228"/>
+        <Class abbreviatedIRI="sio:SIO_000883"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000229"/>
+        <Class abbreviatedIRI="obo:IAO_0000109"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000229"/>
+        <Class abbreviatedIRI="sio:SIO_000004"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000229"/>
+        <Class abbreviatedIRI="sio:SIO_001050"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000230"/>
+        <Class abbreviatedIRI="obo:IAO_0000109"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000230"/>
+        <Class abbreviatedIRI="sio:SIO_000498"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000230"/>
+        <Class abbreviatedIRI="sio:SIO_000715"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000230"/>
+        <Class abbreviatedIRI="sio:SIO_001050"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000291"/>
+        <Class abbreviatedIRI="sio:SIO_000004"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000291"/>
+        <Class abbreviatedIRI="sio:SIO_000498"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000291"/>
+        <Class abbreviatedIRI="sio:SIO_010003"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000291"/>
+        <Class abbreviatedIRI="sio:SIO_010043"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000356"/>
+        <Class abbreviatedIRI="obo:OBI_0000070"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000356"/>
+        <Class abbreviatedIRI="sio:SIO_000006"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000356"/>
+        <Class abbreviatedIRI="sio:SIO_001023"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000356"/>
+        <Class abbreviatedIRI="sio:SIO_001049"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000628"/>
+        <Class abbreviatedIRI="csm:beat_covid_id"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000628"/>
+        <Class abbreviatedIRI="csm:clinical_id"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000628"/>
+        <Class abbreviatedIRI="sio:SIO_010003"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000628"/>
+        <Class abbreviatedIRI="sio:SIO_010043"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000628"/>
+        <Class abbreviatedIRI="sio:SIO_010056"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000672"/>
+        <Class abbreviatedIRI="sio:SIO_001050"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000793"/>
+        <Class abbreviatedIRI="obo:NCIT_C25164"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_001403"/>
+        <Class abbreviatedIRI="sio:SIO_000960"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_001403"/>
+        <Class abbreviatedIRI="sio:SIO_000992"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_001403"/>
+        <Class abbreviatedIRI="sio:SIO_001210"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_001403"/>
+        <Class abbreviatedIRI="sio:SIO_001211"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_001403"/>
+        <Class abbreviatedIRI="sio:SIO_001289"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_001403"/>
+        <Class abbreviatedIRI="sio:SIO_001292"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sio:SIO_010079"/>
+        <Class abbreviatedIRI="sio:SIO_010035"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="bao:BAO_0002854"/>
+        <Class abbreviatedIRI="obo:OBI_0000070"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasInformedBy"/>
+        <Class abbreviatedIRI="obo:OBI_0000070"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasInformedBy"/>
+        <Class abbreviatedIRI="sio:SIO_001049"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="dct:date"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="dct:identifier"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="sio:SIO_000300"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="sio:SIO_000300"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="dct:date"/>
+        <Class abbreviatedIRI="sio:SIO_000340"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="dct:date"/>
+        <Class abbreviatedIRI="sio:SIO_001050"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="sio:SIO_000300"/>
+        <Class abbreviatedIRI="obo:IAO_0000109"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="sio:SIO_000300"/>
+        <Class abbreviatedIRI="sio:SIO_001050"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="dct:date"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="dct:identifier"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="sio:SIO_000300"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="sio:SIO_000300"/>
+        <Datatype abbreviatedIRI="owl:real"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>obo:BFO_0000050</AbbreviatedIRI>
+        <Literal>BFO_0000050</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>obo:BFO_0000050</AbbreviatedIRI>
+        <Literal xml:lang="en">a core relation that holds between a part and its whole.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:BFO_0000050</AbbreviatedIRI>
+        <Literal xml:lang="en">part of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>obo:IAO_0000003</AbbreviatedIRI>
+        <Literal>IAO_0000003</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>obo:IAO_0000003</AbbreviatedIRI>
+        <Literal xml:lang="en">a measurement unit label is as a label that is part of a scalar measurement datum and denotes a unit of measure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:IAO_0000003</AbbreviatedIRI>
+        <Literal xml:lang="en">measurement unit label</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>obo:IAO_0000109</AbbreviatedIRI>
+        <Literal>IAO_0000109</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>obo:IAO_0000109</AbbreviatedIRI>
+        <Literal xml:lang="en">a measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:IAO_0000109</AbbreviatedIRI>
+        <Literal xml:lang="en">measurement datum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>obo:IAO_0000219</AbbreviatedIRI>
+        <Literal>IAO_0000219</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>obo:IAO_0000219</AbbreviatedIRI>
+        <Literal xml:lang="en">a primitive, instance-level, relation obtaining between an information content entity and some portion of reality. Denotation is what happens when someone creates an information content entity E in order to specifically refer to something. The only relation between E and the thing is that E can be used to &apos;pick out&apos; the thing. This relation connects those two together.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:IAO_0000219</AbbreviatedIRI>
+        <Literal xml:lang="en">denotes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>obo:NCIT_C164796</AbbreviatedIRI>
+        <Literal>NCIT_C164796</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>obo:NCIT_C164796</AbbreviatedIRI>
+        <Literal xml:lang="en">an identifier for a donor in a biobank.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:NCIT_C164796</AbbreviatedIRI>
+        <Literal xml:lang="en">donor registry identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>obo:NCIT_C21541</AbbreviatedIRI>
+        <Literal>NCIT_C21541</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>obo:NCIT_C21541</AbbreviatedIRI>
+        <Literal xml:lang="en">the buildings and organizations where healthcare services are provided, e.g. ward.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:NCIT_C21541</AbbreviatedIRI>
+        <Literal xml:lang="en">healthcare facility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>obo:NCIT_C25164</AbbreviatedIRI>
+        <Literal>NCIT_C25164</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>obo:NCIT_C25164</AbbreviatedIRI>
+        <Literal xml:lang="en">the particular day, month and year an event has happened or will happen.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:NCIT_C25164</AbbreviatedIRI>
+        <Literal xml:lang="en">date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>obo:NCIT_C25664</AbbreviatedIRI>
+        <Literal xml:lang="en">An ordered reference standard used to measure incremental changes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:NCIT_C25664</AbbreviatedIRI>
+        <Literal xml:lang="en">scale</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>obo:NCIT_C48906</AbbreviatedIRI>
+        <Literal>NCIT_C48906</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>obo:NCIT_C48906</AbbreviatedIRI>
+        <Literal xml:lang="en">the act of requesting that a person, business, or organization do or supply something.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:NCIT_C48906</AbbreviatedIRI>
+        <Literal xml:lang="en">order</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>obo:OBI_0000070</AbbreviatedIRI>
+        <Literal>OBI_0000070</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>obo:OBI_0000070</AbbreviatedIRI>
+        <Literal xml:lang="en">a planned process with the objective to produce information about the material entity that is the evaluant, by physically examining it or its proxies.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:OBI_0000070</AbbreviatedIRI>
+        <Literal xml:lang="en">assay</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>obo:OBI_0000272</AbbreviatedIRI>
+        <Literal>OBI_0000272</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>obo:OBI_0000272</AbbreviatedIRI>
+        <Literal xml:lang="en">a plan specification which has sufficient level of detail and quantitative information to communicate it between investigation agents, so that different investigation agents will reliably be able to independently reproduce the process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:OBI_0000272</AbbreviatedIRI>
+        <Literal xml:lang="en">protocol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>obo:OBI_0000968</AbbreviatedIRI>
+        <Literal>OBI_0000968</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>obo:OBI_0000968</AbbreviatedIRI>
+        <Literal xml:lang="en">a material entity that is designed to perform a function in a scientific investigation, but is not a reagent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:OBI_0000968</AbbreviatedIRI>
+        <Literal xml:lang="en">device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>obo:RO_0001025</AbbreviatedIRI>
+        <Literal>RO_0001025</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>obo:RO_0001025</AbbreviatedIRI>
+        <Literal xml:lang="en">a relation between two independent continuants, the target and the location, in which the target is entirely within the location.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:RO_0001025</AbbreviatedIRI>
+        <Literal xml:lang="en">located in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>obo:RO_0002091</AbbreviatedIRI>
+        <Literal>RO_0002091</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>obo:RO_0002091</AbbreviatedIRI>
+        <Literal xml:lang="en">starts during is a relation between a process and an information content entity that states a point or period of time when the process has to start. X starts_during Y iff: (start(Y) before_or_simultaneous_with start(X)) AND (start(X) before_or_simultaneous_with end(Y)), e.g. the patient sampling starts during what is stated in the order done by the medical doctor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:RO_0002091</AbbreviatedIRI>
+        <Literal xml:lang="en">starts during</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <IRI>http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/OBI_1110087</IRI>
+        <Literal>OBI_1110087</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <IRI>http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/OBI_1110087</IRI>
+        <Literal xml:lang="en">a role which inheres in an organism or part thereof from which any part including cell, organ or tissue is removed with the intention that the donated part will be placed into another organism and/or cultured in vitro.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/OBI_1110087</IRI>
+        <Literal xml:lang="en">donor role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>csm:beat_covid_id</AbbreviatedIRI>
+        <Literal>beat_covid_id</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>csm:beat_covid_id</AbbreviatedIRI>
+        <Literal xml:lang="en">an identifier for a patient participating in the Beat-COVID study.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>csm:beat_covid_id</AbbreviatedIRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>csm:beat_covid_id</AbbreviatedIRI>
+        <Literal xml:lang="en">beat-covid identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>csm:clinical_id</AbbreviatedIRI>
+        <Literal>clinical_id</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>csm:clinical_id</AbbreviatedIRI>
+        <Literal xml:lang="en">an identifier for a patient in the clinical database.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>csm:clinical_id</AbbreviatedIRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>csm:clinical_id</AbbreviatedIRI>
+        <Literal xml:lang="en">clinical identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>csm:record_id</AbbreviatedIRI>
+        <Literal>record_id</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>csm:record_id</AbbreviatedIRI>
+        <Literal xml:lang="en">an identifier for a sample or set of samples.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>csm:record_id</AbbreviatedIRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>csm:record_id</AbbreviatedIRI>
+        <Literal xml:lang="en">sample identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>dct:Standard</AbbreviatedIRI>
+        <Literal>Standard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>dct:Standard</AbbreviatedIRI>
+        <Literal xml:lang="en">a reference point against which other things can be evaluated or compared.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dct:Standard</AbbreviatedIRI>
+        <Literal xml:lang="en">standard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>dct:conformsTo</AbbreviatedIRI>
+        <Literal>conformsTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>dct:conformsTo</AbbreviatedIRI>
+        <Literal xml:lang="en">an established standard to which the described resource conforms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dct:conformsTo</AbbreviatedIRI>
+        <Literal xml:lang="en">conforms to</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>dct:date</AbbreviatedIRI>
+        <Literal>date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>dct:date</AbbreviatedIRI>
+        <Literal xml:lang="en">a point or period of time associated with an event in the lifecycle of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dct:date</AbbreviatedIRI>
+        <Literal xml:lang="en">date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>dct:identifier</AbbreviatedIRI>
+        <Literal>identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>dct:identifier</AbbreviatedIRI>
+        <Literal xml:lang="en">an unambiguous reference to the resource within a given context.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dct:identifier</AbbreviatedIRI>
+        <Literal xml:lang="en">identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_000001</AbbreviatedIRI>
+        <Literal>SIO_000001</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_000001</AbbreviatedIRI>
+        <Literal xml:lang="en">A is related to B iff there is some relation between A and B.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_000001</AbbreviatedIRI>
+        <Literal xml:lang="en">is related to</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_000004</AbbreviatedIRI>
+        <Literal>SIO_000004</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_000004</AbbreviatedIRI>
+        <Literal xml:lang="en">a material entity is a physical entity that is spatially extended, exists as a whole at any point in time and has mass.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_000004</AbbreviatedIRI>
+        <Literal xml:lang="en">material entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_000005</AbbreviatedIRI>
+        <Literal>SIO_000005</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_000005</AbbreviatedIRI>
+        <Literal xml:lang="en">a quality is an attribute that is intrinsically associated with its bearer (or its parts), but whose presence/absence and observed/measured value may vary.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_000005</AbbreviatedIRI>
+        <Literal xml:lang="en">quality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_000006</AbbreviatedIRI>
+        <Literal>SIO_000006</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_000006</AbbreviatedIRI>
+        <Literal xml:lang="en">a process is an entity that is identifiable only through the unfolding of time, has temporal parts, and unless otherwise specified/predicted, cannot be identified from any instant of time in which it exists.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_000006</AbbreviatedIRI>
+        <Literal xml:lang="en">process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_000008</AbbreviatedIRI>
+        <Literal>SIO_000008</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_000008</AbbreviatedIRI>
+        <Literal xml:lang="en">has attribute is a relation that associates a entity with an attribute where an attribute is an intrinsic characteristic such as a quality, capability, disposition, function, or is an externally derived attribute determined from some descriptor (e.g. a quantity, position, label/identifier) either directly or indirectly through generalization of entities of the same type.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_000008</AbbreviatedIRI>
+        <Literal xml:lang="en">has attribute</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_000011</AbbreviatedIRI>
+        <Literal>SIO_000011</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_000011</AbbreviatedIRI>
+        <Literal xml:lang="en">is attribute of is a relation that associates an attribute with an entity where an attribute is an intrinsic characteristic such as a quality, capability, disposition, function, or is an externally derived attribute determined from some descriptor (e.g. a quantity, position, label/identifier) either directly or indirectly through generalization of entities of the same type.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_000011</AbbreviatedIRI>
+        <Literal xml:lang="en">is attribute of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_000015</AbbreviatedIRI>
+        <Literal>SIO_000015</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_000015</AbbreviatedIRI>
+        <Literal xml:lang="en">information content entity is an object that requires some background knowledge or procedure to correctly interpret.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_000015</AbbreviatedIRI>
+        <Literal xml:lang="en">information content entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_000016</AbbreviatedIRI>
+        <Literal>SIO_000016</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_000016</AbbreviatedIRI>
+        <Literal xml:lang="en">a role is a realizable entity that describes behaviours, rights and obligations of an entity in some particular circumstance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_000016</AbbreviatedIRI>
+        <Literal xml:lang="en">role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_000115</AbbreviatedIRI>
+        <Literal>SIO_000115</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_000115</AbbreviatedIRI>
+        <Literal xml:lang="en">an identifier is a label that specifically refers to (identifies) an entity (instance/type).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_000115</AbbreviatedIRI>
+        <Literal xml:lang="en">identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_000132</AbbreviatedIRI>
+        <Literal>SIO_000132</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_000132</AbbreviatedIRI>
+        <Literal xml:lang="en">has participant is a relation that describes the participation of the object in the (processual) subject.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_000132</AbbreviatedIRI>
+        <Literal xml:lang="en">has participant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_000139</AbbreviatedIRI>
+        <Literal>has agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_000216</AbbreviatedIRI>
+        <Literal>SIO_000216</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_000216</AbbreviatedIRI>
+        <Literal xml:lang="en">has measurement value is a relation between a quality/realizable and a measurement value.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_000216</AbbreviatedIRI>
+        <Literal xml:lang="en">has measurement value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_000217</AbbreviatedIRI>
+        <Literal xml:lang="en">SIO_000217</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_000217</AbbreviatedIRI>
+        <Literal xml:lang="en">has quality is a relation between an entity and the quality that it bears.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_000217</AbbreviatedIRI>
+        <Literal>has quality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_000221</AbbreviatedIRI>
+        <Literal>SIO_000221</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_000221</AbbreviatedIRI>
+        <Literal xml:lang="en">has unit is a relation between a quantity and the unit it is a multiple of.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_000221</AbbreviatedIRI>
+        <Literal xml:lang="en">has unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_000228</AbbreviatedIRI>
+        <Literal>SIO_000228</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_000228</AbbreviatedIRI>
+        <Literal xml:lang="en">has role is a relation between an entity and a role that it bears.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_000228</AbbreviatedIRI>
+        <Literal xml:lang="en">has role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_000229</AbbreviatedIRI>
+        <Literal>SIO_000229</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_000229</AbbreviatedIRI>
+        <Literal xml:lang="en">has output is a relation between a process and an entity, where the entity is present at the end of the process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_000229</AbbreviatedIRI>
+        <Literal xml:lang="en">has output</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_000230</AbbreviatedIRI>
+        <Literal>SIO_000230</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_000230</AbbreviatedIRI>
+        <Literal xml:lang="en">has input is a relation between a process and an entity, where the entity is present at the beginning of the process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_000230</AbbreviatedIRI>
+        <Literal xml:lang="en">has input</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_000291</AbbreviatedIRI>
+        <Literal>SIO_000291</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_000291</AbbreviatedIRI>
+        <Literal xml:lang="en">has target is a relation between a process and an entity, where the entity is present at the beginning of the process and undergoes a change or transformation in the process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_000291</AbbreviatedIRI>
+        <Literal xml:lang="en">has target</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_000300</AbbreviatedIRI>
+        <Literal>SIO_000300</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_000300</AbbreviatedIRI>
+        <Literal xml:lang="en">a relation between a informational entity and its actual value (numeric, date, text, etc).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_000300</AbbreviatedIRI>
+        <Literal xml:lang="en">has value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_000340</AbbreviatedIRI>
+        <Literal>SIO_000340</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_000340</AbbreviatedIRI>
+        <Literal xml:lang="en">a realizable entity is an attribute that is exhibited under some condition and is realized in some process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_000340</AbbreviatedIRI>
+        <Literal xml:lang="en">realizable entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_000356</AbbreviatedIRI>
+        <Literal>SIO_000356</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_000356</AbbreviatedIRI>
+        <Literal xml:lang="en">the role of a patient is realized in medical examination.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_000356</AbbreviatedIRI>
+        <Literal xml:lang="en">is realized in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_000498</AbbreviatedIRI>
+        <Literal>SIO_000498</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_000498</AbbreviatedIRI>
+        <Literal xml:lang="en">a person is an object that has certain capacities or attributes constituting personhood.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_000498</AbbreviatedIRI>
+        <Literal xml:lang="en">person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_000614</AbbreviatedIRI>
+        <Literal>SIO_000614</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_000614</AbbreviatedIRI>
+        <Literal xml:lang="en">an attribute is a characteristic of some entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_000614</AbbreviatedIRI>
+        <Literal xml:lang="en">attribute</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_000628</AbbreviatedIRI>
+        <Literal>SIO_000628</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_000628</AbbreviatedIRI>
+        <Literal xml:lang="en">refers to is a relation between one entity and the entity that it makes reference to.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_000628</AbbreviatedIRI>
+        <Literal xml:lang="en">refers to</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_000642</AbbreviatedIRI>
+        <Literal xml:lang="en">SIO_000642</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_000642</AbbreviatedIRI>
+        <Literal xml:lang="en">is base for is a relation between a quality and the realizable entity that it is the basis for.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_000642</AbbreviatedIRI>
+        <Literal xml:lang="en">is base for</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_000672</AbbreviatedIRI>
+        <Literal>SIO_000672</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_000672</AbbreviatedIRI>
+        <Literal xml:lang="en">a relation between an identifier and an entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_000672</AbbreviatedIRI>
+        <Literal xml:lang="en">is identifier for</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_000688</AbbreviatedIRI>
+        <Literal>SIO_000688</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_000688</AbbreviatedIRI>
+        <Literal xml:lang="en">institute is a society or organization having a object or common factor, and is normally applied to those with a scientific, educational, or social objective, e.g. Leiden University Medical Center (LUMC).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_000688</AbbreviatedIRI>
+        <Literal xml:lang="en">institute</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_000715</AbbreviatedIRI>
+        <Literal>SIO_000715</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_000715</AbbreviatedIRI>
+        <Literal xml:lang="en">a patient role is the role of an individual that is the recepient of medical care.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_000715</AbbreviatedIRI>
+        <Literal xml:lang="en">patient role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_000776</AbbreviatedIRI>
+        <Literal>SIO_000776</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_000776</AbbreviatedIRI>
+        <Literal xml:lang="en">an object is an entity that is wholly identifiable at any instant of time during which it exists.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_000776</AbbreviatedIRI>
+        <Literal xml:lang="en">object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_000793</AbbreviatedIRI>
+        <Literal>SIO_000793</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_000793</AbbreviatedIRI>
+        <Literal xml:lang="en">measured at is a relation between a measurement value and the time measurement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_000793</AbbreviatedIRI>
+        <Literal xml:lang="en">measured at</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_000883</AbbreviatedIRI>
+        <Literal>SIO_000883</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_000883</AbbreviatedIRI>
+        <Literal xml:lang="en">a subject role is the role of an individual that is the target of the study.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_000883</AbbreviatedIRI>
+        <Literal xml:lang="en">subject role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_000960</AbbreviatedIRI>
+        <Literal>SIO_000960</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_000960</AbbreviatedIRI>
+        <Literal xml:lang="en">real is the quality of an entity that exists in real space and time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_000960</AbbreviatedIRI>
+        <Literal xml:lang="en">real</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_000992</AbbreviatedIRI>
+        <Literal>SIO_000992</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_000992</AbbreviatedIRI>
+        <Literal xml:lang="en">unsupported is an existence quality in which there is no evidence to support the existence of the entity in any world (real or hypothetical).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_000992</AbbreviatedIRI>
+        <Literal xml:lang="en">unsupported</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_001013</AbbreviatedIRI>
+        <Literal>SIO_001013</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_001013</AbbreviatedIRI>
+        <Literal xml:lang="en">age is the length of time that a person has lived or a thing has existed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_001013</AbbreviatedIRI>
+        <Literal xml:lang="en">age</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_001023</AbbreviatedIRI>
+        <Literal>SIO_001023</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_001023</AbbreviatedIRI>
+        <Literal xml:lang="en">a medical screening is a medical test or series used to detect or predict the presence of disease in individuals at risk for disease within a defined group, such as a population, family, or workforce</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_001023</AbbreviatedIRI>
+        <Literal xml:lang="en">medical screening</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_001024</AbbreviatedIRI>
+        <Literal xml:lang="en">SIO_001024</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_001024</AbbreviatedIRI>
+        <Literal xml:lang="en">A medical procedure is a procedure to identify, examine, alleviate or eliminate an undesirable biological disease or disorder.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_001024</AbbreviatedIRI>
+        <Literal xml:lang="en">medical procedure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_001049</AbbreviatedIRI>
+        <Literal>SIO_001049</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_001049</AbbreviatedIRI>
+        <Literal xml:lang="en">sampling is the act of obtaining a sample, whether through selection, collection or preparation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_001049</AbbreviatedIRI>
+        <Literal xml:lang="en">sampling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_001050</AbbreviatedIRI>
+        <Literal>SIO_001050</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_001050</AbbreviatedIRI>
+        <Literal xml:lang="en">a sample is a limited quantity of something (e.g. an individual or set of individuals from a population, or a portion of a substance) to be used for testing, analysis, inspection, investigation, demonstration, or trial use.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_001050</AbbreviatedIRI>
+        <Literal xml:lang="en">sample</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_001210</AbbreviatedIRI>
+        <Literal>SIO_001210</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_001210</AbbreviatedIRI>
+        <Literal xml:lang="en">positive is an assertional qualifier that expresses the validity or truth of a basic assertion, e.g. in a medical examination the observation is the presence of a trait or phenotype.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_001210</AbbreviatedIRI>
+        <Literal xml:lang="en">positive</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_001211</AbbreviatedIRI>
+        <Literal>SIO_001211</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_001211</AbbreviatedIRI>
+        <Literal xml:lang="en">negative is an assertional qualifier that expresses the falsity or lack of truth of a basic assertion, e.g. in a medical examination the observation is the absence of a trait or phenotype.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_001211</AbbreviatedIRI>
+        <Literal xml:lang="en">negative</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_001289</AbbreviatedIRI>
+        <Literal>SIO_001289</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_001289</AbbreviatedIRI>
+        <Literal xml:lang="en">never refers to in none of the occasions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_001289</AbbreviatedIRI>
+        <Literal xml:lang="en">never</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_001292</AbbreviatedIRI>
+        <Literal>SIO_001292</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_001292</AbbreviatedIRI>
+        <Literal xml:lang="en">always indicates that the event occurs at all times.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_001292</AbbreviatedIRI>
+        <Literal xml:lang="en">always</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_001331</AbbreviatedIRI>
+        <Literal>SIO_001331</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_001331</AbbreviatedIRI>
+        <Literal xml:lang="en">a diagnosis is the result of a medical investigation to identify a disorder from its signs and symptoms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_001331</AbbreviatedIRI>
+        <Literal xml:lang="en">diagnosis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_001403</AbbreviatedIRI>
+        <Literal>SIO_001403</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_001403</AbbreviatedIRI>
+        <Literal xml:lang="en">x is associated with y when x and y are logically or statistically related to one another.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_001403</AbbreviatedIRI>
+        <Literal xml:lang="en">is associated with</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_010003</AbbreviatedIRI>
+        <Literal>SIO_010003</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_010003</AbbreviatedIRI>
+        <Literal xml:lang="en">an organ is a collection of tissues joined in structural unit to serve a common function.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_010003</AbbreviatedIRI>
+        <Literal xml:lang="en">organ</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_010035</AbbreviatedIRI>
+        <Literal>SIO_010035</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_010035</AbbreviatedIRI>
+        <Literal xml:lang="en">a gene is part of a nucleic acid that contains all the necessary elements to encode a functional transcript.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_010035</AbbreviatedIRI>
+        <Literal xml:lang="en">gene</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_010043</AbbreviatedIRI>
+        <Literal>SIO_010043</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_010043</AbbreviatedIRI>
+        <Literal xml:lang="en">a protein is an organic polymer that is composed of one or more linear polymers of amino acids.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_010043</AbbreviatedIRI>
+        <Literal xml:lang="en">protein</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_010056</AbbreviatedIRI>
+        <Literal>SIO_010056</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_010056</AbbreviatedIRI>
+        <Literal xml:lang="en">a phenotype is an observable characteristic of an individual.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_010056</AbbreviatedIRI>
+        <Literal xml:lang="en">phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_010079</AbbreviatedIRI>
+        <Literal>SIO_010079</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_010079</AbbreviatedIRI>
+        <Literal xml:lang="en">a relation between two objects, in which the first object is produced from the information contained in the second object.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_010079</AbbreviatedIRI>
+        <Literal xml:lang="en">is encoded by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>bao:BAO_0002854</AbbreviatedIRI>
+        <Literal>BAO_0002854</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>bao:BAO_0002854</AbbreviatedIRI>
+        <Literal xml:lang="en">has bioassay type is a relation that associates the output of a property evaluated in a bioassay and the category of bioassay based on the property or process that the assay is interrogating, e.g. ADMET, functional, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>bao:BAO_0002854</AbbreviatedIRI>
+        <Literal xml:lang="en">has bioassay type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>rdfs:label</AbbreviatedIRI>
+        <Literal>label</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>rdfs:label</AbbreviatedIRI>
+        <Literal xml:lang="en">A human-readable name for the subject.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>rdfs:label</AbbreviatedIRI>
+        <Literal xml:lang="en">label</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <IRI>http://www.w3.org/ns/prov#wasInformedBy</IRI>
+        <Literal>wasInformedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <IRI>http://www.w3.org/ns/prov#wasInformedBy</IRI>
+        <Literal xml:lang="en">was informed by is a relation between two processes where one process communicates to another process. Communication is the exchange of an entity by two activities, one activity using the entity generated by the other.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/ns/prov#wasInformedBy</IRI>
+        <Literal xml:lang="en">was informed by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>repr:Version</AbbreviatedIRI>
+        <Literal xml:lang="en">A property of an entity which describes its difference with respect to its earlier form.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>repr:Version</AbbreviatedIRI>
+        <Literal xml:lang="en">version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <IRI>ttp://purl.obolibrary.org/obo/CMO_0001109</IRI>
+        <Literal>CMO_0001109</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <IRI>ttp://purl.obolibrary.org/obo/CMO_0001109</IRI>
+        <Literal>Any measurement of the degree to which the presentation of a disease state has caused pain or damage, established one or more lesions or infectious colonies, and/or taken over or interfered with the normal functioning of the body as a whole, or of one or more organs, tissues, cells or subcellular mechanisms of an organism.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ttp://purl.obolibrary.org/obo/CMO_0001109</IRI>
+        <Literal xml:lang="en">disease severity measurement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <IRI>ttp://purl.obolibrary.org/obo/NCIT_C175280</IRI>
+        <Literal xml:lang="en">An answer for a Severity Score query.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ttp://purl.obolibrary.org/obo/NCIT_C175280</IRI>
+        <Literal xml:lang="en">severity score answer</Literal>
+    </AnnotationAssertion>
+    <AnnotationPropertyRange>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>xsd:string</AbbreviatedIRI>
+    </AnnotationPropertyRange>
+</Ontology>
 
 
 

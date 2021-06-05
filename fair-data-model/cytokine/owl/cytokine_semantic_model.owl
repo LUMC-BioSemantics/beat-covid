@@ -7,7 +7,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://purl.org/beat-covid/cytokines-semantic-model.owl"
      versionIRI="http://purl.org/beat-covid/cytokines-semantic-model/v1.0/release.owl">
-    <Prefix name="" IRI="http://purl.org/beat-covid/cytokines-semantic-model.owl#"/>
+    <Prefix name="" IRI="http://purl.org/beat-covid/cytokines-semantic-model.owl"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
     <Prefix name="bao" IRI="http://www.bioassayontology.org/bao#"/>
     <Prefix name="csm" IRI="http://purl.org/beat-covid/cytokines-semantic-model#"/>
@@ -88,10 +88,16 @@
         <Class abbreviatedIRI="obo:NCIT_C25164"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="obo:NCIT_C25214"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="obo:NCIT_C25664"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:NCIT_C48906"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:NCIT_C81265"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:OBI_0000070"/>
@@ -143,6 +149,9 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="sio:SIO_000614"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sio:SIO_000653"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="sio:SIO_000688"/>
@@ -202,13 +211,7 @@
         <Class abbreviatedIRI="sio:SIO_010056"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="repr:Version"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="ttp://purl.obolibrary.org/obo/CMO_0001109"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="ttp://purl.obolibrary.org/obo/NCIT_C175280"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="obo:BFO_0000050"/>
@@ -537,11 +540,19 @@
         <Class abbreviatedIRI="sio:SIO_000015"/>
     </SubClassOf>
     <SubClassOf>
+        <Class abbreviatedIRI="obo:NCIT_C25214"/>
+        <Class abbreviatedIRI="sio:SIO_000006"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="obo:NCIT_C25664"/>
         <Class abbreviatedIRI="sio:SIO_000015"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:NCIT_C48906"/>
+        <Class abbreviatedIRI="sio:SIO_000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:NCIT_C81265"/>
         <Class abbreviatedIRI="sio:SIO_000015"/>
     </SubClassOf>
     <SubClassOf>
@@ -603,6 +614,10 @@
     <SubClassOf>
         <Class abbreviatedIRI="sio:SIO_000498"/>
         <Class abbreviatedIRI="sio:SIO_000776"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sio:SIO_000653"/>
+        <Class abbreviatedIRI="sio:SIO_000015"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="sio:SIO_000688"/>
@@ -677,15 +692,7 @@
         <Class abbreviatedIRI="sio:SIO_000005"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="repr:Version"/>
-        <Class abbreviatedIRI="sio:SIO_000015"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="ttp://purl.obolibrary.org/obo/CMO_0001109"/>
-        <Class abbreviatedIRI="sio:SIO_000015"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="ttp://purl.obolibrary.org/obo/NCIT_C175280"/>
         <Class abbreviatedIRI="sio:SIO_000015"/>
     </SubClassOf>
     <DisjointClasses>
@@ -1359,6 +1366,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>obo:NCIT_C25214</AbbreviatedIRI>
+        <Literal xml:lang="en">Systematic, objective appraisal of the significance, effectiveness, and impact of activities or condition according to specified objectives and criteria.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:NCIT_C25214</AbbreviatedIRI>
+        <Literal xml:lang="en">evaluation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
         <AbbreviatedIRI>obo:NCIT_C25664</AbbreviatedIRI>
         <Literal xml:lang="en">An ordered reference standard used to measure incremental changes.</Literal>
     </AnnotationAssertion>
@@ -1381,6 +1398,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:NCIT_C48906</AbbreviatedIRI>
         <Literal xml:lang="en">order</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>obo:NCIT_C81265</AbbreviatedIRI>
+        <Literal xml:lang="en">A description of the technique for the appraisal of a subject or object.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:NCIT_C81265</AbbreviatedIRI>
+        <Literal xml:lang="en">evaluation method</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:identifier"/>
@@ -1958,6 +1985,16 @@
         <Literal xml:lang="en">is base for</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>sio:SIO_000653</AbbreviatedIRI>
+        <Literal xml:lang="en">A version label is a label for a particular form or variation of an earlier or original type.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sio:SIO_000653</AbbreviatedIRI>
+        <Literal xml:lang="en">version label</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:identifier"/>
         <AbbreviatedIRI>sio:SIO_000672</AbbreviatedIRI>
         <Literal>SIO_000672</Literal>
@@ -2363,16 +2400,6 @@
         <Literal xml:lang="en">was informed by</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dct:description"/>
-        <AbbreviatedIRI>repr:Version</AbbreviatedIRI>
-        <Literal xml:lang="en">A property of an entity which describes its difference with respect to its earlier form.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>repr:Version</AbbreviatedIRI>
-        <Literal xml:lang="en">version</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:identifier"/>
         <IRI>ttp://purl.obolibrary.org/obo/CMO_0001109</IRI>
         <Literal>CMO_0001109</Literal>
@@ -2386,16 +2413,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>ttp://purl.obolibrary.org/obo/CMO_0001109</IRI>
         <Literal xml:lang="en">disease severity measurement</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dct:description"/>
-        <IRI>ttp://purl.obolibrary.org/obo/NCIT_C175280</IRI>
-        <Literal xml:lang="en">An answer for a Severity Score query.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>ttp://purl.obolibrary.org/obo/NCIT_C175280</IRI>
-        <Literal xml:lang="en">severity score answer</Literal>
     </AnnotationAssertion>
     <AnnotationPropertyRange>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>

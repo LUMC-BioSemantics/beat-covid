@@ -73,6 +73,9 @@
         <Literal xml:lang="en">1.0</Literal>
     </Annotation>
     <Declaration>
+        <Class abbreviatedIRI="obo:CMO_0001109"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="obo:IAO_0000003"/>
     </Declaration>
     <Declaration>
@@ -211,9 +214,6 @@
         <Class abbreviatedIRI="sio:SIO_010056"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ttp://purl.obolibrary.org/obo/CMO_0001109"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty abbreviatedIRI="obo:BFO_0000050"/>
     </Declaration>
     <Declaration>
@@ -229,6 +229,9 @@
         <ObjectProperty abbreviatedIRI="dct:conformsTo"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty abbreviatedIRI="dct:hasVersion"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty abbreviatedIRI="sio:SIO_000001"/>
     </Declaration>
     <Declaration>
@@ -242,6 +245,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="sio:SIO_000216"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000217"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="sio:SIO_000221"/>
@@ -280,7 +286,16 @@
         <ObjectProperty abbreviatedIRI="bao:BAO_0002854"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="http://www.ontology-of-units-of-measure.org/resource/om-2/hasScale"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="http://www.w3.org/ns/prov#wasInformedBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="obo:LABO_0000118"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="obo:LABO_0000119"/>
     </Declaration>
     <Declaration>
         <DataProperty abbreviatedIRI="dct:date"/>
@@ -520,6 +535,10 @@
         <Datatype abbreviatedIRI="xsd:date"/>
     </Declaration>
     <SubClassOf>
+        <Class abbreviatedIRI="obo:CMO_0001109"/>
+        <Class abbreviatedIRI="sio:SIO_000015"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="obo:IAO_0000003"/>
         <Class abbreviatedIRI="sio:SIO_000015"/>
     </SubClassOf>
@@ -691,10 +710,6 @@
         <Class abbreviatedIRI="sio:SIO_010056"/>
         <Class abbreviatedIRI="sio:SIO_000005"/>
     </SubClassOf>
-    <SubClassOf>
-        <Class IRI="ttp://purl.obolibrary.org/obo/CMO_0001109"/>
-        <Class abbreviatedIRI="sio:SIO_000015"/>
-    </SubClassOf>
     <DisjointClasses>
         <Class abbreviatedIRI="obo:OBI_0000070"/>
         <Class abbreviatedIRI="sio:SIO_001023"/>
@@ -752,6 +767,10 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty abbreviatedIRI="sio:SIO_000216"/>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000008"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="sio:SIO_000217"/>
         <ObjectProperty abbreviatedIRI="sio:SIO_000008"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -863,6 +882,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="dct:conformsTo"/>
         <Class abbreviatedIRI="obo:OBI_0000070"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="dct:hasVersion"/>
+        <Class abbreviatedIRI="obo:NCIT_C81265"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="sio:SIO_000001"/>
@@ -993,6 +1016,10 @@
         <Class abbreviatedIRI="obo:IAO_0000109"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ontology-of-units-of-measure.org/resource/om-2/hasScale"/>
+        <Class abbreviatedIRI="obo:NCIT_C81265"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.w3.org/ns/prov#wasInformedBy"/>
         <Class abbreviatedIRI="obo:OBI_0000070"/>
     </ObjectPropertyDomain>
@@ -1039,6 +1066,10 @@
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="dct:conformsTo"/>
         <Class abbreviatedIRI="obo:OBI_0000272"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="dct:hasVersion"/>
+        <Class abbreviatedIRI="sio:SIO_000653"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="sio:SIO_000001"/>
@@ -1201,6 +1232,10 @@
         <Class abbreviatedIRI="obo:OBI_0000070"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ontology-of-units-of-measure.org/resource/om-2/hasScale"/>
+        <Class abbreviatedIRI="obo:NCIT_C25664"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.w3.org/ns/prov#wasInformedBy"/>
         <Class abbreviatedIRI="obo:OBI_0000070"/>
     </ObjectPropertyRange>
@@ -1208,6 +1243,14 @@
         <ObjectProperty IRI="http://www.w3.org/ns/prov#wasInformedBy"/>
         <Class abbreviatedIRI="sio:SIO_001049"/>
     </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="obo:LABO_0000118"/>
+        <DataProperty abbreviatedIRI="sio:SIO_000300"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="obo:LABO_0000119"/>
+        <DataProperty abbreviatedIRI="sio:SIO_000300"/>
+    </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty abbreviatedIRI="dct:date"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
@@ -1228,6 +1271,14 @@
         <DataProperty abbreviatedIRI="sio:SIO_000300"/>
     </FunctionalDataProperty>
     <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="obo:LABO_0000118"/>
+        <Class abbreviatedIRI="obo:NCIT_C25664"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="obo:LABO_0000119"/>
+        <Class abbreviatedIRI="obo:NCIT_C25664"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty abbreviatedIRI="dct:date"/>
         <Class abbreviatedIRI="sio:SIO_000340"/>
     </DataPropertyDomain>
@@ -1243,6 +1294,22 @@
         <DataProperty abbreviatedIRI="sio:SIO_000300"/>
         <Class abbreviatedIRI="sio:SIO_001050"/>
     </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="obo:LABO_0000118"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="obo:LABO_0000118"/>
+        <Datatype abbreviatedIRI="owl:real"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="obo:LABO_0000119"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="obo:LABO_0000119"/>
+        <Datatype abbreviatedIRI="owl:real"/>
+    </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty abbreviatedIRI="dct:date"/>
         <Datatype abbreviatedIRI="xsd:dateTime"/>
@@ -1273,6 +1340,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:BFO_0000050</AbbreviatedIRI>
         <Literal xml:lang="en">part of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>obo:CMO_0001109</AbbreviatedIRI>
+        <Literal>CMO_0001109</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>obo:CMO_0001109</AbbreviatedIRI>
+        <Literal>Any measurement of the degree to which the presentation of a disease state has caused pain or damage, established one or more lesions or infectious colonies, and/or taken over or interfered with the normal functioning of the body as a whole, or of one or more organs, tissues, cells or subcellular mechanisms of an organism.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:CMO_0001109</AbbreviatedIRI>
+        <Literal xml:lang="en">disease severity measurement</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:identifier"/>
@@ -1321,6 +1403,26 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>obo:LABO_0000118</AbbreviatedIRI>
+        <Literal xml:lang="en">LABO_0000118</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:LABO_0000118</AbbreviatedIRI>
+        <Literal xml:lang="en">has minimal value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>obo:LABO_0000119</AbbreviatedIRI>
+        <Literal xml:lang="en">LABO_0000119</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:LABO_0000119</AbbreviatedIRI>
+        <Literal xml:lang="en">has maximal value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
         <AbbreviatedIRI>obo:NCIT_C164796</AbbreviatedIRI>
         <Literal>NCIT_C164796</Literal>
     </AnnotationAssertion>
@@ -1365,6 +1467,11 @@
         <Literal xml:lang="en">date</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>obo:NCIT_C25214</AbbreviatedIRI>
+        <Literal>NCIT_C25214</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dct:description"/>
         <AbbreviatedIRI>obo:NCIT_C25214</AbbreviatedIRI>
         <Literal xml:lang="en">Systematic, objective appraisal of the significance, effectiveness, and impact of activities or condition according to specified objectives and criteria.</Literal>
@@ -1373,6 +1480,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:NCIT_C25214</AbbreviatedIRI>
         <Literal xml:lang="en">evaluation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>obo:NCIT_C25664</AbbreviatedIRI>
+        <Literal>NCIT_C25664</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dct:description"/>
@@ -1398,6 +1510,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:NCIT_C48906</AbbreviatedIRI>
         <Literal xml:lang="en">order</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>obo:NCIT_C81265</AbbreviatedIRI>
+        <Literal>NCIT_C81265</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dct:description"/>
@@ -1603,6 +1720,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>dct:date</AbbreviatedIRI>
         <Literal xml:lang="en">date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>dct:hasVersion</AbbreviatedIRI>
+        <Literal>hasVersion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <AbbreviatedIRI>dct:hasVersion</AbbreviatedIRI>
+        <Literal xml:lang="en">A related resource that is a version, edition, or adaptation of the described resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dct:hasVersion</AbbreviatedIRI>
+        <Literal>has version</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:identifier"/>
@@ -1983,6 +2115,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>sio:SIO_000642</AbbreviatedIRI>
         <Literal xml:lang="en">is base for</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <AbbreviatedIRI>sio:SIO_000653</AbbreviatedIRI>
+        <Literal>SIO:000653</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dct:description"/>
@@ -2371,6 +2508,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <IRI>http://www.ontology-of-units-of-measure.org/resource/om-2/hasScale</IRI>
+        <Literal xml:lang="en">hasScale</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.ontology-of-units-of-measure.org/resource/om-2/hasScale</IRI>
+        <Literal xml:lang="en">has scale</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
         <AbbreviatedIRI>rdfs:label</AbbreviatedIRI>
         <Literal>label</Literal>
     </AnnotationAssertion>
@@ -2398,21 +2545,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://www.w3.org/ns/prov#wasInformedBy</IRI>
         <Literal xml:lang="en">was informed by</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
-        <IRI>ttp://purl.obolibrary.org/obo/CMO_0001109</IRI>
-        <Literal>CMO_0001109</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dct:description"/>
-        <IRI>ttp://purl.obolibrary.org/obo/CMO_0001109</IRI>
-        <Literal>Any measurement of the degree to which the presentation of a disease state has caused pain or damage, established one or more lesions or infectious colonies, and/or taken over or interfered with the normal functioning of the body as a whole, or of one or more organs, tissues, cells or subcellular mechanisms of an organism.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>ttp://purl.obolibrary.org/obo/CMO_0001109</IRI>
-        <Literal xml:lang="en">disease severity measurement</Literal>
     </AnnotationAssertion>
     <AnnotationPropertyRange>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>

@@ -6,8 +6,6 @@
 @prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix sio:     <http://semanticscience.org/resource/> .
 @prefix om: 	 <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
-@prefix swo:	 <http://www.ebi.ac.uk/swo/> .
-@prefix repr:	 <https://w3id.org/reproduceme#> .
 
 # SEVERITY SCORE
 # Entity
@@ -21,7 +19,7 @@ bc:person_patient_role_ a sio:SIO_000715 ;
 #Process
 bc:severity_score_evaluation_process_ a obo:NCIT_C25214 ;
 									  sio:SIO_000229 bc:severity_score_answer ;
-									  sio:SIO:000230 bc:severity_score_measurement_method ;
+									  dc:conformsTo bc:severity_score_measurement_method ;
 									  sio:SIO_000217 bc:severity_score_evaluation_process_date .
 
 # Process Answer
@@ -35,7 +33,7 @@ bc:severity_score_evaluation_process_date a obo:NCIT_C25164 ;
 # Process Method
 bc:severity_score_measurement_method a obo:NCIT_C81265 ;
 									 om:hasScale bc:severity_score_result_scale ;
-									 swo:SWO_0004000 bc:severity_score_measurement_version ;
+									 dc:hasVersion bc:severity_score_measurement_version ;
 									 sio:SIO:000300 "Leiden Severity Score"^^xsd:string .
 
 # Scale

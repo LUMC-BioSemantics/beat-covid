@@ -1,0 +1,56 @@
+@prefix bc:      <https://rdf.biosemantics.org/resources/beat-covid/> .
+@prefix bco:     <http://purl.org/beat-covid/cytokines-semantic-model.owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:     <http://purl.org/dc/terms/> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
+@prefix sio:     <http://semanticscience.org/resource/> .
+@prefix efo:     <http://www.ebi.ac.uk/efo/> .
+@prefix prov:    <http://http://http://www.w3.org/ns/prov#> .
+
+
+
+# Entity
+bc:person_ a sio:SIO_000498 ; # (instance uri= beat_id)
+           sio:SIO_000228 bc:person_donor_role_ .
+   
+
+
+# BIOSAMPLES (SAMPLING PROCESS)
+# Process
+bc:sampling_process_ a sio:SIO_001049 ;
+                     sio:SIO_000291 bc:organ_ ; # blood
+                     sio:SIO_000230 bc:person_ ;
+                     sio:SIO_000229 bc:sample_ ;
+                     obo:RO_0002091 bc:order_ ;
+                     sio:SIO_000008 bc:sampling_process_date_ .
+
+bc:order_ a obo:NCIT_C48906 ;
+          sio:SIO_000300 "BEATVR"^^xsd:string .
+
+bc:sampling_process_date_ a obo:NCIT_C25164 ;
+                          dct:date "08-05-2020"^^xsd:date .
+
+
+# Attribute/object
+bc:organ_ a sio:SIO_010003 ;
+          obo:BFO_0000050 bc:person_ . # to relate with biosample
+
+# Role
+bc:person_donor_role_ a obo:OBI_1110087 ; # sio:SIO_000016 ; # suggest obi 'donor role http://purl.obolibrary.org/obo/OBI_1110087'
+                      sio:SIO_000356 bc:sampling_process_ .
+
+# Identifier
+bc:sample_id_ a bco:record_id ; # record_id
+              sio:SIO_000300 "201708869"^^xsd:string ;
+              sio:SIO_000672 bc:sample_ .
+
+bc:person_donor_id_ a obo:NCIT_C164796 ; # obo:NCIT_C164337 ; # suggest 'donor identifier http://purl.obolibrary.org/obo/NCIT_C164796'
+                    obo:IAO_0000219 bc:person_donor_role_ .
+
+# Sample
+bc:sample_ a sio:SIO_001050 ;
+           sio:SIO_000628 bc:organ_ . 
+
+

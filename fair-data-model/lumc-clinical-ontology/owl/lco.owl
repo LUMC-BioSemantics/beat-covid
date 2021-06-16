@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.org/beat-covid/cytokines-semantic-model.owl"
-     xml:base="http://purl.org/beat-covid/cytokines-semantic-model.owl"
+<rdf:RDF xmlns="http://purl.org/beat-covid/lco.owl"
+     xml:base="http://purl.org/beat-covid/lco.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:bao="http://www.bioassayontology.org/bao#"
-     xmlns:csm="http://purl.org/beat-covid/cytokines-semantic-model#"
      xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:lco="http://purl.org/beat-covid/lco#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -153,8 +153,8 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000219">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/NCIT_C164796"/>
-        <rdfs:domain rdf:resource="http://purl.org/beat-covid/cytokines-semantic-model#beat_covid_id"/>
-        <rdfs:domain rdf:resource="http://purl.org/beat-covid/cytokines-semantic-model#clinical_id"/>
+        <rdfs:domain rdf:resource="http://purl.org/beat-covid/lco#beat_covid_id"/>
+        <rdfs:domain rdf:resource="http://purl.org/beat-covid/lco#clinical_id"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000115"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/OBI_1110087"/>
         <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000016"/>
@@ -364,8 +364,8 @@
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000340"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_001023"/>
-        <rdfs:range rdf:resource="http://purl.org/beat-covid/cytokines-semantic-model#beat_covid_id"/>
-        <rdfs:range rdf:resource="http://purl.org/beat-covid/cytokines-semantic-model#clinical_id"/>
+        <rdfs:range rdf:resource="http://purl.org/beat-covid/lco#beat_covid_id"/>
+        <rdfs:range rdf:resource="http://purl.org/beat-covid/lco#clinical_id"/>
         <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_010003"/>
         <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_010043"/>
         <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_010056"/>
@@ -377,7 +377,7 @@
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000672">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000011"/>
-        <rdfs:domain rdf:resource="http://purl.org/beat-covid/cytokines-semantic-model#record_id"/>
+        <rdfs:domain rdf:resource="http://purl.org/beat-covid/lco#record_id"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000115"/>
         <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_001050"/>
     </owl:ObjectProperty>
@@ -671,25 +671,25 @@
     
 
 
-    <!-- http://purl.org/beat-covid/cytokines-semantic-model#beat_covid_id -->
+    <!-- http://purl.org/beat-covid/lco#beat_covid_id -->
 
-    <owl:Class rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#beat_covid_id">
+    <owl:Class rdf:about="http://purl.org/beat-covid/lco#beat_covid_id">
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000115"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/beat-covid/cytokines-semantic-model#clinical_id -->
+    <!-- http://purl.org/beat-covid/lco#clinical_id -->
 
-    <owl:Class rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#clinical_id">
+    <owl:Class rdf:about="http://purl.org/beat-covid/lco#clinical_id">
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000115"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/beat-covid/cytokines-semantic-model#record_id -->
+    <!-- http://purl.org/beat-covid/lco#record_id -->
 
-    <owl:Class rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#record_id">
+    <owl:Class rdf:about="http://purl.org/beat-covid/lco#record_id">
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000115"/>
     </owl:Class>
     
@@ -1035,21 +1035,21 @@
     
 
 
-    <!-- http://purl.org/beat-covid/cytokines-semantic-model#beat_covid_id -->
+    <!-- http://purl.org/beat-covid/lco#beat_covid_id -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#beat_covid_id"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/beat-covid/lco#beat_covid_id"/>
     
 
 
-    <!-- http://purl.org/beat-covid/cytokines-semantic-model#clinical_id -->
+    <!-- http://purl.org/beat-covid/lco#clinical_id -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#clinical_id"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/beat-covid/lco#clinical_id"/>
     
 
 
-    <!-- http://purl.org/beat-covid/cytokines-semantic-model#record_id -->
+    <!-- http://purl.org/beat-covid/lco#record_id -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#record_id"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/beat-covid/lco#record_id"/>
     
 
 
@@ -1431,23 +1431,23 @@
         <dc:identifier>RO_0002091</dc:identifier>
         <rdfs:label xml:lang="en">starts during</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#beat_covid_id">
-        <dc:identifier>beat_covid_id</dc:identifier>
+    <rdf:Description rdf:about="http://purl.org/beat-covid/lco#beat_covid_id">
         <dct:description xml:lang="en">an identifier for a patient participating in the Beat-COVID study.</dct:description>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/beat-covid/lco.owl"/>
+        <dc:identifier>beat_covid_id</dc:identifier>
         <rdfs:label xml:lang="en">beat-covid identifier</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/beat-covid/cytokines-semantic-model.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#clinical_id">
-        <rdfs:label xml:lang="en">clinical identifier</rdfs:label>
-        <dct:description xml:lang="en">an identifier for a patient in the clinical database.</dct:description>
+    <rdf:Description rdf:about="http://purl.org/beat-covid/lco#clinical_id">
         <dc:identifier>clinical_id</dc:identifier>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/beat-covid/cytokines-semantic-model.owl"/>
+        <dct:description xml:lang="en">an identifier for a patient in the clinical database.</dct:description>
+        <rdfs:label xml:lang="en">clinical identifier</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/beat-covid/lco.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#record_id">
-        <dc:identifier>record_id</dc:identifier>
-        <rdfs:label xml:lang="en">sample identifier</rdfs:label>
+    <rdf:Description rdf:about="http://purl.org/beat-covid/lco#record_id">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/beat-covid/lco.owl"/>
         <dct:description xml:lang="en">an identifier for a sample or set of samples.</dct:description>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/beat-covid/cytokines-semantic-model.owl"/>
+        <rdfs:label xml:lang="en">sample identifier</rdfs:label>
+        <dc:identifier>record_id</dc:identifier>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/conformsTo">
         <dct:description xml:lang="en">an established standard to which the described resource conforms.</dct:description>
@@ -1485,8 +1485,8 @@
         <rdfs:label xml:lang="en">has attribute</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000011">
-        <dc:identifier>SIO_000011</dc:identifier>
         <rdfs:label xml:lang="en">is attribute of</rdfs:label>
+        <dc:identifier>SIO_000011</dc:identifier>
         <dct:description xml:lang="en">is attribute of is a relation that associates an attribute with an entity where an attribute is an intrinsic characteristic such as a quality, capability, disposition, function, or is an externally derived attribute determined from some descriptor (e.g. a quantity, position, label/identifier) either directly or indirectly through generalization of entities of the same type.</dct:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000016">
@@ -1505,8 +1505,8 @@
         <dct:description xml:lang="en">has participant is a relation that describes the participation of the object in the (processual) subject.</dct:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000216">
-        <dc:identifier>SIO_000216</dc:identifier>
         <dct:description xml:lang="en">has measurement value is a relation between a quality/realizable and a measurement value.</dct:description>
+        <dc:identifier>SIO_000216</dc:identifier>
         <rdfs:label xml:lang="en">has measurement value</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000217">
@@ -1521,8 +1521,8 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000228">
         <rdfs:label xml:lang="en">has role</rdfs:label>
-        <dc:identifier>SIO_000228</dc:identifier>
         <dct:description xml:lang="en">has role is a relation between an entity and a role that it bears.</dct:description>
+        <dc:identifier>SIO_000228</dc:identifier>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000229">
         <dc:identifier>SIO_000229</dc:identifier>
@@ -1701,9 +1701,9 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#beat_covid_id"/>
-            <rdf:Description rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#clinical_id"/>
-            <rdf:Description rdf:about="http://purl.org/beat-covid/cytokines-semantic-model#record_id"/>
+            <rdf:Description rdf:about="http://purl.org/beat-covid/lco#beat_covid_id"/>
+            <rdf:Description rdf:about="http://purl.org/beat-covid/lco#clinical_id"/>
+            <rdf:Description rdf:about="http://purl.org/beat-covid/lco#record_id"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>

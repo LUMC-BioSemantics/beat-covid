@@ -1,0 +1,673 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#"
+     xml:base="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:cytokine-ontology="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#CD163 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#CD163">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Chitinase_3-like_1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Chitinase_3-like_1">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Quantity"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#GM-CSF -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#GM-CSF">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IFN-a2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IFN-a2">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IFN-b -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IFN-b">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IFN-g -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IFN-g">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-10 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-10">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-11 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-11">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-16 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-16">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-19 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-19">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-1b -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-1b">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-2">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-20 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-20">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-22 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-22">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-26 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-26">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-27 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-27">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-32 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-32">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-34 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-34">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-35 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-35">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-4 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-4">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-6 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-6">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-6Ra -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-6Ra">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-8 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-8">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#MIF -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#MIF">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#MMP-1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#MMP-1">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#MMP-2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#MMP-2">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#MMP-3 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#MMP-3">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Osteocalcin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Osteocalcin">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Osteopontin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Osteopontin">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Pentraxin-3 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Pentraxin-3">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Quantity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Quantity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#TNF-R1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#TNF-R1">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#TNF-R2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#TNF-R2">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#TNF-a -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#TNF-a">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#TSLP -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#TSLP">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#gp130 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#gp130">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#6Ckine/CCL21 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#6Ckine/CCL21">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#APRIL/TNFSF13 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#APRIL/TNFSF13">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#BAFF/TNFSF13B -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#BAFF/TNFSF13B">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#BCA-1/CXCL13 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#BCA-1/CXCL13">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#CD30/TNFRSF8 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#CD30/TNFRSF8">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#CTACK/CCL27 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#CTACK/CCL27">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#ENA-78/CXCL5 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#ENA-78/CXCL5">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Eotaxin-2/CCL24 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Eotaxin-2/CCL24">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Eotaxin-3/CCL26 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Eotaxin-3/CCL26">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Eotaxin/CCL11 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Eotaxin/CCL11">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Fractalkine/CX3CL1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Fractalkine/CX3CL1">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#GCP-2/CXCL6 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#GCP-2/CXCL6">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Gro-a/CXCL1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Gro-a/CXCL1">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Gro-b/CXCL2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Gro-b/CXCL2">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#I-309/CCL1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#I-309/CCL1">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#I-TAC/CXCL11 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#I-TAC/CXCL11">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-28A/IFN-l2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-28A/IFN-l2">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-29/IFN-l1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-29/IFN-l1">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-8/CXCL8 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IL-8/CXCL8">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IP-10/CXCL10 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#IP-10/CXCL10">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#LIGHT/TNFSF14 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#LIGHT/TNFSF14">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#MCP-1/CCL2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#MCP-1/CCL2">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#MCP-2/CCL8 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#MCP-2/CCL8">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#MCP-3/CCL7 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#MCP-3/CCL7">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#MCP-4/CCL13 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#MCP-4/CCL13">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#MDC/CCL22 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#MDC/CCL22">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#MIG/CXCL9 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#MIG/CXCL9">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#MIP-1a/CCL3 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#MIP-1a/CCL3">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#MIP-1d/CCL15 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#MIP-1d/CCL15">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#MIP-3a/CCL20 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#MIP-3a/CCL20">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#MIP-3b/CCL19 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#MIP-3b/CCL19">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#MPIF-1/CCL23 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#MPIF-1/CCL23">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#SCYB16/CXCL16 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#SCYB16/CXCL16">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#SDF1a+b/CXCL12 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#SDF1a+b/CXCL12">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#TARC/CCL17 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#TARC/CCL17">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#TECK/CCL25 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#TECK/CCL25">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#TWEAK/TNFSF12 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#TWEAK/TNFSF12">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Clinical_metrics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Human -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Human">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Living_thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Living_thing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Living_thing"/>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Patient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Human"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#P1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#P1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2020/4/cytokine-ontology#Patient"/>
+        <IL-16 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">104.0</IL-16>
+        <MIF rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2918.0</MIF>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

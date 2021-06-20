@@ -17,7 +17,7 @@ SELECT ?patient_id ?sample_id ?organ ?sampling_process_date_value WHERE {
     ?person a sio:SIO_000498;
               sio:SIO_000228 ?person_donor_role .
 
-    ?person_donor_role a obo:NCIT_C164796 . # patient role (http://semanticscience.org/resource/SIO_000715)
+    ?person_donor_role a obo:OBI_1110087 . # QQ: patient role (http://semanticscience.org/resource/SIO_000715), CHB: using OBI 'donor role'
 
     ?patient_id a bco:clinical_id ;
                   obo:IAO_0000219 ?person_donor_role .
@@ -26,19 +26,17 @@ SELECT ?patient_id ?sample_id ?organ ?sampling_process_date_value WHERE {
               sio:SIO_000628 ?organ .
 
     ?organ a sio:SIO_010003 ;
-          obo:BFO_0000050 ?person_ . # not belong to the same person?
+          obo:BFO_0000050 ?person . 
 
     ?sample_id a bco:record_id ;
                  sio:SIO_000672 ?sample .
 
     ?sampling_process_ a sio:SIO_001049 ;
-                       sio:SIO_000291 ?organ_ ; # not targets the same organ ?
-                       sio:SIO_000230 ?person_ ; # not has input from the same person ?
-                       sio:SIO_000229 ?sample_ ; # not has input from the same person ?
+                       sio:SIO_000291 ?organ ;
+                       sio:SIO_000230 ?person ;
+                       sio:SIO_000229 ?sample ;
+                       sio:SIO_000217 ?sampling_process_date .
 
-                       # has quality http://semanticscience.org/resource/SIO_000217
-                       sio:SIO_000008 ?sampling_process_date_ .
-
-    ?sampling_process_date_ a obo:NCIT_C25164 ;
-                dct:date  ?sampling_process_date_value . # Add a line to get value
+    ?sampling_process_date a obo:NCIT_C25164 ;
+                dct:date  ?sampling_process_date_value .
 }

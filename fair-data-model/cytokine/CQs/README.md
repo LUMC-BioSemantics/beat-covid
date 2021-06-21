@@ -1,4 +1,4 @@
-# Data Model Verification
+# Using Competency Questions for Data Model Verification
 
 This folder contains Competency Questions (Gruninger & Fox, 1995) that were constructed to verify the semantic model. The set of CQs was extracted, refined and answered with support from domain experts and modellers. In literature, CQs are claimed as an efficient way of testing models, since they are based on real questions. It is also argued that CQs help to define design project requirements, such as adherence to process models and identification of stakeholders (Falbo, 2004).
 

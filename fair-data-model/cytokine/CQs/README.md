@@ -7,7 +7,7 @@ In this folder, CQS are answered in SPARQL queries for reusability purposes. We 
 # Reasoning
 The questions presented here were built in an attempt to cover all modules from the data model, namely biosample, clinical, lab measurement and severity score.
 
-##### CQ1 – What are all the samples (and their annotations) that were collected from a patient?
+#### CQ1 – What are all the samples (and their annotations) that were collected from a patient?
 This question intends to address samples collected for patients, but also the metadata around this concept, such as the target organ and the sampling process date.
 
 ## CQ2 - What are the measurement values for the samples collected from a specific patient for a specific measurement process?

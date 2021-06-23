@@ -5,7 +5,7 @@ This folder contains Competency Questions (Gruninger & Fox, 1995) that were cons
 In this folder, CQS are answered in SPARQL queries for reusability purposes. We are aware of the possibility to checking the model by answering CQs using ShEx or Shacl. However, we decided to use SPARQL since queries can be reused in our project and by external users.
 
 # License
-The content of this folder is licensed under Creative Commons [CC0](https://creativecommons.org/share-your-work/public-domain/cc0/).
+The content of this folder is licensed under [MIT Licence](https://opensource.org/licenses/MIT).
 
 # References
 - de Almeida Falbo, R. (2014, September). SABiO: Systematic Approach for Building Ontologies. In ONTO. COM/ODISE@ FOIS.

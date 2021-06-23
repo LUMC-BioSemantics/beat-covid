@@ -21,7 +21,11 @@ ASK WHERE {
 
     ?measurement_process a obo:OBI_0000070 ;
                            sio:SIO_000291 ?trait_cytokine ;
-                           sio:SIO_000229 ?quantitative_trait .
+                           sio:SIO_000229 ?quantitative_trait ;
+                           sio:SIO_000008 ?measurement_process_date .
+
+    ?measurement_process_date a obo:NCIT_C25164 ; 
+                                dc:Date ?measurement_process_date_value . 
 
     ?quantitative_trait a obo:IAO_0000109 .
 

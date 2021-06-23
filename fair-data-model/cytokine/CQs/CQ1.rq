@@ -17,6 +17,7 @@ ASK WHERE {
     ?person_donor_role a obo:OBI_1110087 .
 
     ?patient_id a bco:clinical_id ;
+                  sio:SIO_000300 person_patient_idstring ;
                   obo:IAO_0000219 ?person_donor_role .
 
     ?sample a sio:SIO_001050 ;
@@ -36,4 +37,6 @@ ASK WHERE {
 
     ?sampling_process_date a obo:NCIT_C25164 ;
                 dct:date  ?sampling_process_date_value .
+
+    FILTER isLiteral(?person_patient_idstring)
 }

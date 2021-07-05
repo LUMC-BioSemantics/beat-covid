@@ -7,7 +7,7 @@
 @prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix sio:     <http://semanticscience.org/resource/> .
 @prefix efo:     <http://www.ebi.ac.uk/efo/> .
-@prefix prov:    <http://http://http://www.w3.org/ns/prov#> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
 
 
 
@@ -38,9 +38,7 @@ bc:measurement_process_date_ a obo:NCIT_C25164 ;
 # Entity
 bc:person_ a sio:SIO_000498 ; 
            sio:SIO_000228 bc:person_study_role_ ,
-                          bc:person_donor_role_ ,
-                          bc:person_patient_role_ ;
-           sio:SIO_000008 bc:phenotype_ . 
+                          bc:person_donor_role_ .
    
 # Attribute/object
 <http://purl.uniprot.org/uniprot/O00585> a sio:SIO_010043 ;
@@ -129,39 +127,7 @@ bc:sample_ a sio:SIO_001050 ;
 
 
 
-
-# CLINICAL OBSERVATIONS (EXAMINATION PROCESS)
-# Process
-bc:clinical_exam_process_ a sio:SIO_001023 ;
-                          sio:SIO_000291 bc:person_ ; 
-                          sio:SIO_000230 bc:quantitative_trait_ ;
-                          sio:SIO_000229 bc:clinical_observation_ ;
-                          sio:SIO_000628 bc:person_study_id_ ;
-                          sio:SIO_000008 bc:clinical_exam_process_date_ ;
-                          prov:wasInformedBy bc:measurement_process_ .
-
-bc:clinical_exam_process_date_ a obo:NCIT_C25164 ;
-                               dct:date "22-04-2020 01:00:31"^^xsd:dateTime .
-
-# Attribute/object
-bc:phenotype_ a obo:HP_0001945 ;
-              rdfs:label "Fever"@en .         
-
-obo:HP_0001945 a sio:SIO_010056 . 
-
-# Role
-bc:person_patient_role_ a sio:SIO_000715 ;
-                        sio:SIO_000356 bc:clinical_exam_process_ .
-
-
+# CLINICAL OBSERVATIONS 
 # Identifier
 bc:person_clinical_id_ a bco:clinical_id ;
-                       sio:SIO_000300 "1100207"^^xsd:string ;
-                       obo:IAO_0000219 bc:person_patient_role_ .
-
-
-# Observation
-bc:clinical_observation_ a sio:SIO_001331 ; 
-                         sio:SIO_000628 bc:phenotype_ ;
-                         sio:SIO_001403 sio:SIO_000992 ; 
-                         sio:SIO_000011 bc:person_ .
+                       sio:SIO_000300 "1100207"^^xsd:string .

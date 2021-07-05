@@ -16,6 +16,6 @@ SELECT (COUNT (DISTINCT ?person) AS ?number_of_patients)  WHERE {
         ?person a sio:SIO_000498;
               sio:SIO_000228 ?patient_role.
 
-        # Get all person who plays patitient role
+        # Get all person who plays patient role.
         ?patient_role a sio:SIO_000715 .
 }

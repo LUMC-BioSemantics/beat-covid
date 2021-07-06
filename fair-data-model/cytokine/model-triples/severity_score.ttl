@@ -18,29 +18,29 @@ bc:person_patient_role_ a sio:SIO_000715 ;
 
 #Process
 bc:severity_score_evaluation_process_ a obo:NCIT_C25214 ;
-									  sio:SIO_000229 bc:severity_score_answer ;
+									  sio:SIO_000229 bc:severity_score_answer_ ;
 									  dct:conformsTo bc:severity_score_measurement_method ;
-									  sio:SIO_000217 bc:severity_score_evaluation_process_date .
+									  sio:SIO_000008 bc:severity_score_evaluation_process_date_ .
 
 # Process Answer
-bc:severity_score_answer a obo:CMO_0001109 ;
+bc:severity_score_answer_ a obo:CMO_0001109 ;
 						 sio:SIO_000300 "5"^^xsd:float .
 
 # Process Date
-bc:severity_score_evaluation_process_date a obo:NCIT_C25164 ;
+bc:severity_score_evaluation_process_date_ a obo:NCIT_C25164 ;
 										  dct:date "29-01-2020 01:00:31"^^xsd:dateTime .
 
 # Process Method
 bc:severity_score_measurement_method a obo:NCIT_C81265 ;
-									 om:hasScale bc:severity_score_result_scale ;
-									 dct:hasVersion bc:severity_score_measurement_version ;
+									 om:hasScale bc:severity_score_result_scale_ ;
+									 dct:hasVersion bc:severity_score_measurement_version_ ;
 									 sio:SIO_000300 "Leiden Severity Score"^^xsd:string .
 
 # Scale
-bc:severity_score_result_scale a obo:NCIT_C25664 ;
+bc:severity_score_result_scale_ a obo:NCIT_C25664 ;
 							   obo:LABO_0000118 "0"^^xsd:integer ;
 							   obo:LABO_0000119 "1"^^xsd:integer .
 
 # Measurement Method Version
-bc:severity_score_measurement_version a sio:SIO_000653 ;
+bc:severity_score_measurement_version_ a sio:SIO_000653 ;
 								   sio:SIO_000300 "1.0"^^xsd:float .

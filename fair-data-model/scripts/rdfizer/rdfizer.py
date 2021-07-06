@@ -17,7 +17,7 @@ bco = Namespace("http://purl.org/beat-covid/cytokines-semantic-model.owl#")
 obo = Namespace("http://purl.obolibrary.org/obo/")
 sio = Namespace("http://semanticscience.org/resource/")
 efo = Namespace("http://www.ebi.ac.uk/efo/")
-prov = Namespace("http://http://http://www.w3.org/ns/prov#")
+prov = Namespace("http://www.w3.org/ns/prov#")
 
 has_output = sio.SIO_000229
 has_value = sio.SIO_000300
@@ -227,7 +227,7 @@ def generate_rdf(variables_dict):
             else:
                 rdf.add((quantitative_trait, sio.SIO_000300, Literal(variables_dict[measurement], datatype=XSD.float)))
             rdf.add((quantitative_trait, sio.SIO_000628, trait))
-            rdf.add((trait, sio.SIO_000216, quantitative_trait))
+            #rdf.add((trait, sio.SIO_000216, quantitative_trait))
             # unit
             unit = bc["lab/measurement_unit/pg_ml"]
             rdf.add((unit, RDF.type, obo.IAO_0000003))

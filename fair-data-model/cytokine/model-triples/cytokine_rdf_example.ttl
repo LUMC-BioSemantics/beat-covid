@@ -44,8 +44,7 @@ bc:person_ a sio:SIO_000498 ;
 <http://purl.uniprot.org/uniprot/O00585> a sio:SIO_010043 ;
                                          sio:SIO_000300 "CCL21"^^xsd:string ;
                                          obo:BFO_0000050 bc:person_ ; 
-                                         sio:SIO_010079 <https://identifiers.org/ncbigene:6366> ;
-                                         sio:SIO_000216 bc:quantitative_trait_ .
+                                         sio:SIO_010079 <https://identifiers.org/ncbigene:6366> .
 
 <https://identifiers.org/ncbigene:6366> a sio:SIO_010035 .
 

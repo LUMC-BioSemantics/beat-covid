@@ -25,3 +25,7 @@ SPARQL query examples.
 
 ### synthetic-data
 Synthetic cytokine raw data. 
+
+## License
+This project is licensed under the terms of the MIT license [CC0 license](LICENSE).
+

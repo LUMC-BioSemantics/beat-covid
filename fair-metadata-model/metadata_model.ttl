@@ -1,0 +1,69 @@
+
+<http://purl.org/biosemantics-lumc/test-fdp/distribution/> a <http://www.w3.org/ns/ldp#DirectContainer>;
+  <http://purl.org/dc/terms/title> "Distributions";
+  <http://www.w3.org/ns/ldp#contains> <http://purl.org/biosemantics-lumc/test-fdp/distribution/7645f6f2-a6d7-4400-87f5-7506fba46c23>,
+    <http://purl.org/biosemantics-lumc/test-fdp/distribution/7909be11-6fd7-4aea-a2cc-6bdd21d1212d>,
+    <http://purl.org/biosemantics-lumc/test-fdp/distribution/9aa8a36f-7470-4ec0-89ec-39d0b9a34aa1>,
+    <http://purl.org/biosemantics-lumc/test-fdp/distribution/e7e97f2b-f3d7-480d-9665-89563283f624>;
+  <http://www.w3.org/ns/ldp#hasMemberRelation> <http://www.w3.org/ns/dcat#distribution>;
+  <http://www.w3.org/ns/ldp#membershipResource> <http://purl.org/biosemantics-lumc/test-fdp/dataset/91603187-9281-4588-8c4d-de9108171f85> .
+
+<http://purl.org/biosemantics-lumc/test-fdp/dataset/91603187-9281-4588-8c4d-de9108171f85>
+  a <http://www.w3.org/ns/dcat#Dataset>, <http://www.w3.org/ns/dcat#Resource>;
+  <http://purl.allotrope.org/ontologies/property#AFX_0000553> <http://purl.obolibrary.org/obo/NCIT_C15206>;
+  <http://purl.allotrope.org/ontologies/property#AFX_0002699> <http://purl.obolibrary.org/obo/MONDO_0100096>;
+  <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/MONDO_0100096>;
+  <http://purl.obolibrary.org/obo/RO_0000086> <http://semanticscience.org/resource/SIO_001410>;
+  <http://purl.obolibrary.org/obo/RO_0002354> <http://purl.obolibrary.org/obo/OGMS_0000014>;
+  <http://purl.obolibrary.org/obo/exo.obo#characterizes> <http://purl.obolibrary.org/obo/MONDO_0100096>;
+  <http://purl.org/dc/terms/accessRights> <http://purl.org/biosemantics-lumc/test-fdp/dataset/91603187-9281-4588-8c4d-de9108171f85#accessRights>;
+  <http://purl.org/dc/terms/description> """The description of Beat COVID project related datasets, several specific metadata elements are used to capture their nature.
+
+The datasets include data about patient conditions, cytokine mesurements, severity score and so on.""";
+  <http://purl.org/dc/terms/hasVersion> "1.0";
+  <http://purl.org/dc/terms/isPartOf> <http://purl.org/biosemantics-lumc/test-fdp/catalog/71972d60-59cc-4bf3-b7e4-0292e49b5c1f>;
+  <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-1/en>;
+  <http://purl.org/dc/terms/license> <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0>;
+  <http://purl.org/dc/terms/publisher> [ a <http://xmlns.com/foaf/0.1/Agent>;
+      <http://xmlns.com/foaf/0.1/name> "Qinqin Long"
+    ];
+  <http://purl.org/dc/terms/title> "Description of Beat COVID project related dataset.";
+  <http://purl.org/dc/terms/type> <http://purl.obolibrary.org/obo/NCIT_C47846>;
+  <http://rdf.biosemantics.org/ontologies/fdp-o#metadataIdentifier> <http://purl.org/biosemantics-lumc/test-fdp/dataset/91603187-9281-4588-8c4d-de9108171f85#identifier>;
+  <http://rdf.biosemantics.org/ontologies/fdp-o#metadataIssued> "2021-06-10T12:55:35.250782588Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+  <http://rdf.biosemantics.org/ontologies/fdp-o#metadataModified> "2021-06-23T06:24:00.36802254Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+  <http://semanticscience.org/resource/SIO_000628> <http://purl.org/biosemantics-lumc/test-fdp/dataset/91603187-9281-4588-8c4d-de9108171f85/metrics/445c0a70d1e214e545b261559e2842f4>,
+    <http://purl.org/biosemantics-lumc/test-fdp/dataset/91603187-9281-4588-8c4d-de9108171f85/metrics/5d27e854a9e78eb3f663331cd47cdc13>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Description of Beat COVID project related dataset.";
+  <http://www.w3.org/ns/dcat#distribution> <http://purl.org/biosemantics-lumc/test-fdp/distribution/7645f6f2-a6d7-4400-87f5-7506fba46c23>,
+    <http://purl.org/biosemantics-lumc/test-fdp/distribution/7909be11-6fd7-4aea-a2cc-6bdd21d1212d>,
+    <http://purl.org/biosemantics-lumc/test-fdp/distribution/9aa8a36f-7470-4ec0-89ec-39d0b9a34aa1>,
+    <http://purl.org/biosemantics-lumc/test-fdp/distribution/e7e97f2b-f3d7-480d-9665-89563283f624>;
+  <http://www.w3.org/ns/dcat#keyword> "COVID19";
+  <http://www.w3.org/ns/dcat#theme> <http://purl.obolibrary.org/obo/DOID_0080600>;
+  <http://www.w3.org/ns/dcat#type> <http://purl.obolibrary.org/obo/NCIT_C47846> .
+
+<http://purl.org/biosemantics-lumc/test-fdp/dataset/91603187-9281-4588-8c4d-de9108171f85#identifier>
+  a <http://purl.org/spar/datacite/Identifier>;
+  <http://purl.org/dc/terms/identifier> "http://purl.org/biosemantics-lumc/test-fdp/dataset/91603187-9281-4588-8c4d-de9108171f85" .
+
+<http://purl.org/biosemantics-lumc/test-fdp/dataset/91603187-9281-4588-8c4d-de9108171f85#accessRights>
+  a <http://purl.org/dc/terms/RightsStatement>;
+  <http://purl.org/dc/terms/description> "This resource has no access restriction" .
+
+<http://purl.org/biosemantics-lumc/test-fdp/dataset/91603187-9281-4588-8c4d-de9108171f85/metrics/445c0a70d1e214e545b261559e2842f4>
+  <http://semanticscience.org/resource/SIO_000332> <https://www.ietf.org/rfc/rfc3986.txt>;
+  <http://semanticscience.org/resource/SIO_000628> <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<http://purl.org/biosemantics-lumc/test-fdp/dataset/91603187-9281-4588-8c4d-de9108171f85/metrics/5d27e854a9e78eb3f663331cd47cdc13>
+  <http://semanticscience.org/resource/SIO_000332> <https://www.wikidata.org/wiki/Q8777>;
+  <http://semanticscience.org/resource/SIO_000628> <https://www.wikidata.org/wiki/Q8777> .
+
+<http://purl.org/biosemantics-lumc/test-fdp/distribution/> a <http://www.w3.org/ns/ldp#DirectContainer>;
+  <http://purl.org/dc/terms/title> "Distributions";
+  <http://www.w3.org/ns/ldp#contains> <http://purl.org/biosemantics-lumc/test-fdp/distribution/7645f6f2-a6d7-4400-87f5-7506fba46c23>,
+    <http://purl.org/biosemantics-lumc/test-fdp/distribution/7909be11-6fd7-4aea-a2cc-6bdd21d1212d>,
+    <http://purl.org/biosemantics-lumc/test-fdp/distribution/9aa8a36f-7470-4ec0-89ec-39d0b9a34aa1>,
+    <http://purl.org/biosemantics-lumc/test-fdp/distribution/e7e97f2b-f3d7-480d-9665-89563283f624>;
+  <http://www.w3.org/ns/ldp#hasMemberRelation> <http://www.w3.org/ns/dcat#distribution>;
+  <http://www.w3.org/ns/ldp#membershipResource> <http://purl.org/biosemantics-lumc/test-fdp/dataset/91603187-9281-4588-8c4d-de9108171f85> .

@@ -1,34 +1,30 @@
 # QC2 – What are the measurement values for the samples collected from a specific patient for a specific measurement process?
 
 PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
-PREFIX owl:     <http://www.w3.org/2002/07/owl#>
 PREFIX dct:     <http://purl.org/dc/terms/>
 PREFIX obo:     <http://purl.obolibrary.org/obo/>
-PREFIX ncit:    <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#>
 PREFIX sio:     <http://semanticscience.org/resource/>
 PREFIX prov:    <http://http://http://www.w3.org/ns/prov#>
 PREFIX bco:     <http://purl.org/beat-covid/cytokines-semantic-model.owl#>
 
 ASK WHERE {
     ?person a sio:SIO_000498;
-              sio:SIO_000228 ?person_donor_role .
+            sio:SIO_000228 ?person_donor_role .
 
     ?person_donor_role a obo:OBI_1110087 .
 
     ?patient_id a bco:clinical_id ;
-                  sio:SIO_000300 person_patient_idstring ;
-                  obo:IAO_0000219 ?person_donor_role .
+                sio:SIO_000300 person_patient_idstring ;
+                obo:IAO_0000219 ?person_donor_role .
 
     ?sample a sio:SIO_001050 ;
-              sio:SIO_000628 ?organ .
+            sio:SIO_000628 ?organ .
 
     ?organ a sio:SIO_010003 ;
-          obo:BFO_0000050 ?person . # not belong to the same person?
+           obo:BFO_0000050 ?person . # not belong to the same person?
 
     ?sample_id a bco:record_id ;
-                 sio:SIO_000672 ?sample .
+               sio:SIO_000672 ?sample .
 
     ?sampling_process_ a sio:SIO_001049 ;
                        sio:SIO_000291 ?organ ;
@@ -37,7 +33,7 @@ ASK WHERE {
                        sio:SIO_000217 ?sampling_process_date .
 
     ?sampling_process_date a obo:NCIT_C25164 ;
-                      dct:date  ?sampling_process_date_value .
+                           dct:date  ?sampling_process_date_value .
 
     ?measurement_process a obo:OBI_0000070 ;
                          prov:wasInformedBy ?sampling_process ;
@@ -45,10 +41,10 @@ ASK WHERE {
                          sio:SIO_000008 ?measurement_process_date .
 
     ?measurement_process_date a obo:NCIT_C25164 ; 
-                                dc:Date ?measurement_process_date_value . 
+                              dct:Date ?measurement_process_date_value . 
 
     ?quantitative_trait a obo:IAO_0000109 ;
-                      sio:SIO_000300 ?measurement_value .
+                        sio:SIO_000300 ?measurement_value .
 
     FILTER isLiteral(?person_patient_idstring)
 }

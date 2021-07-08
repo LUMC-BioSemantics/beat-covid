@@ -1,12 +1,8 @@
 # QC5 - What are the cytokine measurement values and the disease severity score answers for a specific patient?
 
 PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
-PREFIX owl:     <http://www.w3.org/2002/07/owl#>
-PREFIX dc:     <http://purl.org/dc/terms/>
+PREFIX dct:     <http://purl.org/dc/terms/>
 PREFIX obo:     <http://purl.obolibrary.org/obo/>
-PREFIX ncit:    <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#>
 PREFIX sio:     <http://semanticscience.org/resource/>
 PREFIX bco:     <http://purl.org/beat-covid/cytokines-semantic-model.owl#>
 
@@ -32,7 +28,7 @@ ASK WHERE {
                            sio:SIO_000008 ?measurement_process_date .
 
     ?measurement_process_date a obo:NCIT_C25164 ; 
-                                dc:Date ?measurement_process_date_value . 
+                                dct:Date ?measurement_process_date_value . 
 
     ?severity_score_evaluation_process a obo:NCIT_C25214 ;
                                          sio:SIO_000229 ?severity_score_answer ;

@@ -1,12 +1,8 @@
 # QC6 - What are the severity score measurement and age of each patient?
 
 PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
-PREFIX owl:     <http://www.w3.org/2002/07/owl#>
-PREFIX dc:     <http://purl.org/dc/terms/>
+PREFIX dct:     <http://purl.org/dc/terms/>
 PREFIX obo:     <http://purl.obolibrary.org/obo/>
-PREFIX ncit:    <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#>
 PREFIX sio:     <http://semanticscience.org/resource/>
 PREFIX bco:     <http://purl.org/beat-covid/cytokines-semantic-model.owl#>
 
@@ -29,7 +25,7 @@ ASK WHERE {
 
     ?severity_score_evaluation_process a obo:NCIT_C25214 ;
                                          sio:SIO_000229 ?severity_score_answer ;
-                                         dc:conformsTo ?severity_score_measurement_method ;
+                                         dct:conformsTo ?severity_score_measurement_method ;
 									     sio:SIO_000217 ?severity_score_evaluation_process_date .
 
     ?severity_score_evaluation_process_date a obo:NCIT_C25164 ;

@@ -1,0 +1,363 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://lumc.nl/biosemantics/beatcovid-patient"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://lumc.nl/biosemantics/beatcovid-patient">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Anomaly"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#COVID-19"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#COVID-19_Stages"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#COVID-19_Trajectory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Care_Unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Clinical_Condition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Clinical_Outcome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Death"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diagnosis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drug_Administration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Exam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Health_Care"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Home_Care"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ICU"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intervention"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-ICU_Hospitalization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pathology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pathology_Stages"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pathology_Symptoms"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pathology_Trajectory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Patient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Patient_Discharge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Property"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Symptom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Symptom_Level"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Symptoms_of_COVID-19"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Treatment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ICU_+_Mecanico_Ventilation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#clinical_condition_component"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#diagnosis_based_on_clinical_condition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#diagnosis_pathology"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#exam_measures_property"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#health_care_exams"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#health_care_outcome"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#health_care_patient"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#health_care_treatment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#patient_anomaly"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#patient_property"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#patient_symptom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#stage_based_on_symptom_level"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#symptom_level_describes_symptom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#trajectory_stages"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#treatment_clinical_condition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#treatment_drug_administration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#treatment_intervention"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#treatment_placement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Stage1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Stage2"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#COVID-19"/>
+        <Class IRI="#Pathology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#COVID-19_Stages"/>
+        <Class IRI="#Pathology_Stages"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#COVID-19_Trajectory"/>
+        <Class IRI="#Pathology_Trajectory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Death"/>
+        <Class IRI="#Clinical_Outcome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Home_Care"/>
+        <Class IRI="#Care_Unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ICU"/>
+        <Class IRI="#Care_Unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-ICU_Hospitalization"/>
+        <Class IRI="#Care_Unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Patient_Discharge"/>
+        <Class IRI="#Clinical_Outcome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Symptoms_of_COVID-19"/>
+        <Class IRI="#Pathology_Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ICU_+_Mecanico_Ventilation"/>
+        <Class IRI="#Care_Unit"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#COVID-19_Stages"/>
+        <NamedIndividual IRI="#Stage1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#COVID-19_Stages"/>
+        <NamedIndividual IRI="#Stage2"/>
+    </ClassAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#clinical_condition_component"/>
+        <Class IRI="#Clinical_Condition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#diagnosis_based_on_clinical_condition"/>
+        <Class IRI="#Diagnosis"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#diagnosis_pathology"/>
+        <Class IRI="#Diagnosis"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#exam_measures_property"/>
+        <Class IRI="#Exam"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#health_care_exams"/>
+        <Class IRI="#Health_Care"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#health_care_outcome"/>
+        <Class IRI="#Health_Care"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#health_care_patient"/>
+        <Class IRI="#Health_Care"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#health_care_treatment"/>
+        <Class IRI="#Health_Care"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#patient_anomaly"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#patient_property"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#patient_symptom"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#stage_based_on_symptom_level"/>
+        <Class IRI="#Pathology_Stages"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#symptom_level_describes_symptom"/>
+        <Class IRI="#Symptom_Level"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#trajectory_stages"/>
+        <Class IRI="#Pathology_Trajectory"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#treatment_clinical_condition"/>
+        <Class IRI="#Treatment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#treatment_drug_administration"/>
+        <Class IRI="#Treatment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#treatment_intervention"/>
+        <Class IRI="#Treatment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#treatment_placement"/>
+        <Class IRI="#Treatment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#clinical_condition_component"/>
+        <Class IRI="#Anomaly"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#clinical_condition_component"/>
+        <Class IRI="#Property"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#clinical_condition_component"/>
+        <Class IRI="#Symptom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#diagnosis_based_on_clinical_condition"/>
+        <Class IRI="#Clinical_Condition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#diagnosis_pathology"/>
+        <Class IRI="#Pathology"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#exam_measures_property"/>
+        <Class IRI="#Property"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#health_care_exams"/>
+        <Class IRI="#Exam"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#health_care_outcome"/>
+        <Class IRI="#Clinical_Outcome"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#health_care_patient"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#health_care_treatment"/>
+        <Class IRI="#Treatment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#patient_anomaly"/>
+        <Class IRI="#Anomaly"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#patient_property"/>
+        <Class IRI="#Property"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#patient_symptom"/>
+        <Class IRI="#Symptom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#stage_based_on_symptom_level"/>
+        <Class IRI="#Symptom_Level"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#symptom_level_describes_symptom"/>
+        <Class IRI="#Symptom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#trajectory_stages"/>
+        <Class IRI="#Pathology_Stages"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#treatment_clinical_condition"/>
+        <Class IRI="#Clinical_Condition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#treatment_drug_administration"/>
+        <Class IRI="#Drug_Administration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#treatment_intervention"/>
+        <Class IRI="#Intervention"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#treatment_placement"/>
+        <Class IRI="#Care_Unit"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

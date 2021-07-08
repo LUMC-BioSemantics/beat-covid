@@ -1,0 +1,41 @@
+# QC6 - What are the severity score measurement and age of each patient?
+
+PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dct:     <http://purl.org/dc/terms/>
+PREFIX obo:     <http://purl.obolibrary.org/obo/>
+PREFIX sio:     <http://semanticscience.org/resource/>
+PREFIX bco:     <http://purl.org/beat-covid/cytokines-semantic-model.owl#>
+
+ASK WHERE {
+    ?person a sio:SIO_000498 ;
+              sio:SIO_000228 ?person_patient_role ;
+              sio:SIO_000228 ?person_study_role .
+
+    ?person_age a sio:SIO_001013 ;
+                   sio:SIO_000001 ?person_study_role ;
+                   sio:SIO_000300 ?person_age_value .
+
+
+    ?person_patient_role a sio:SIO_000715 ;
+                         sio:SIO_000356 ?severity_score_evaluation_process  .
+
+    ?patient_id a bco:clinical_id  ;
+                  obo:IAO_0000219 ?person_patient_role ;
+                  sio:SIO_000300 ?patient_idstring .
+
+    ?severity_score_evaluation_process a obo:NCIT_C25214 ;
+                                         sio:SIO_000229 ?severity_score_answer ;
+                                         dct:conformsTo ?severity_score_measurement_method ;
+									     sio:SIO_000217 ?severity_score_evaluation_process_date .
+
+    ?severity_score_evaluation_process_date a obo:NCIT_C25164 ;
+                                        dct:Date ?severity_score_evaluation_process_date_value .
+
+    ?severity_score_measurement_method a obo:NCIT_C81265 ;
+                                         sio:SIO_000671 ?severity_score_measurement_method_id ;
+
+    ?severity_score_answer a obo:CMO:0001109 ;
+                              sio:SIO_000300 ?severity_score_answer_value .
+
+    FILTER isLiteral(?patient_idstring)
+}

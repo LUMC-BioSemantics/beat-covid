@@ -1,0 +1,44 @@
+# QC4 - What are the severity score measurements of a patient and which measurement method was used?
+
+PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dct:     <http://purl.org/dc/terms/>
+PREFIX obo:     <http://purl.obolibrary.org/obo/>
+PREFIX sio:     <http://semanticscience.org/resource/>
+PREFIX bco:     <http://purl.org/beat-covid/cytokines-semantic-model.owl#>
+PREFIX om:      <http://www.ontology-of-units-of-measure.org/resource/om-2/>
+
+ASK WHERE {
+    ?person a sio:SIO_000498 ; 
+              sio:SIO_000228 ?person_patient_role . 
+
+    ?person_patient_role a sio:SIO_000715 ;
+                         sio:SIO_000356 ?severity_score_evaluation_process  .
+
+    ?patient_id a bco:clinical_id  ;
+                  obo:IAO_0000219 ?person_patient_role ;
+                  sio:SIO_000300 ?patient_idstring .
+
+    ?severity_score_evaluation_process a obo:NCIT_C25214 ;
+                                         sio:SIO_000229 ?severity_score_answer ;
+                                         dct:conformsTo ?severity_score_measurement_method ;
+									     sio:SIO_000217 ?severity_score_evaluation_process_date . 
+
+    ?severity_score_evaluation_process_date a obo:NCIT_C25164 ;
+                                              dct:date  ?severity_score_evaluation_process_date_value .
+
+    ?severity_score_measurement_method a obo:NCIT_C81265 ;
+                                      sio:SIO_000671 ?severity_score_measurement_method_id ;
+                                      dct:hasVersion ?severity_score_measurement_version ;
+                                      om:hasScale ?severity_score_result_scale .
+
+    ?severity_score_answer a obo:CMO:0001109 ;
+                          sio:SIO_000300 ?severity_score_answer_value .
+
+    ?severity_score_measurement_version sio:SIO_000300 ?severity_score_measurement_version_value .
+
+    ?severity_score_result_scale a obo:NCIT:C25664 ;
+                                   obo:LABO_0000118 ?scale_min ;
+							       obo:LABO_0000119 ?scale_max .
+
+    FILTER isLiteral(?patient_idstring)
+}

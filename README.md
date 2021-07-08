@@ -12,7 +12,8 @@ From the group of 'Big data' we are working on the FAIRification of the patient 
 In the `fair-data-model` directory is the ontological model work to link different clinical data. Our first ontological model is within the `cytokine` subdirectory, and links cytokines lab measurements, biosamples and score phenotypes.
 
 # Licenses
-**Scripts** under this folder and recursive subfolders are under the [MIT License]().
+Project **Scripts** under this folder and recursive subfolders are licensed under the terms of the [MIT License](LICENSE).
 
 
-**Data** under this folder and recursive subfolders are under the [CC0 License]().
+Project **Data** under this folder and recursive subfolders are licensed under the terms of the [CC0 License](https://creativecommons.org/share-your-work/public-domain/cc0/).
+

@@ -7,7 +7,7 @@
 @prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix sio:     <http://semanticscience.org/resource/> .
 @prefix efo:     <http://www.ebi.ac.uk/efo/> .
-@prefix prov:    <http://http://http://www.w3.org/ns/prov#> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
 
 
 
@@ -46,8 +46,7 @@ bc:person_ a sio:SIO_000498 ; # (instance uri= beat_id)
 bc:trait_cytokine_ a sio:SIO_010043 ;
                    sio:SIO_000300 "CCL21"^^xsd:string ;
                    obo:BFO_0000050 bc:person_ ; # cytokine
-                   sio:SIO_010079 bc:cytokine_ ;
-                   sio:SIO_000216 bc:quantitative_trait_ .
+                   sio:SIO_010079 bc:cytokine_ .
 
 bc:cytokine_ a sio:SIO_010035 .
 

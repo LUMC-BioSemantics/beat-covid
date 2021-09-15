@@ -7,7 +7,7 @@
 @prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix sio:     <http://semanticscience.org/resource/> .
 @prefix efo:     <http://www.ebi.ac.uk/efo/> .
-@prefix prov:    <http://http://http://www.w3.org/ns/prov#> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
 
 
 
@@ -43,8 +43,7 @@ bc:person_ a sio:SIO_000498 ; # (instance uri= beat_id)
 bc:trait_cytokine_ a sio:SIO_010043 ;
                    sio:SIO_000300 "CCL21"^^xsd:string ;
                    obo:BFO_0000050 bc:person_ ; # cytokine
-                   sio:SIO_010079 bc:cytokine_ ;
-                   sio:SIO_000216 bc:quantitative_trait_ .
+                   sio:SIO_010079 bc:cytokine_ .
 
 bc:cytokine_ a sio:SIO_010035 .
 
@@ -79,7 +78,7 @@ bc:quantitative_trait_ a obo:IAO_0000109 ;
                 rdfs:label "lum_CCL21_1"^^xsd:string ;
                 sio:SIO_000221 efo:EFO_0004385 ;
                 sio:SIO_000300 "101413"^^xsd:float ;
-                sio:SIO_000628 <http://purl.uniprot.org/uniprot/O00585> .
+                sio:SIO_000628 bc:trait_cytokine_ .
 
 efo:EFO_0004385 a obo:IAO_0000003 ;
                 rdfs:label "pg/ml"^^xsd:string .
@@ -99,4 +98,5 @@ bc:sample_ a sio:SIO_001050 .
 
 # CLINICAL OBSERVATIONS (EXAMINATION PROCESS)
 # Identifier
-bc:person_clinical_id_ a bco:clinical_id .
+bc:person_clinical_id_ a bco:clinical_id ;
+                       sio:SIO_000300 "1100207"^^xsd:string .
